@@ -21,9 +21,19 @@
 - 제13장 첫 모험 재설계
 - 제1화 〈두 번 핀 꽃〉 원고
 
-이 자료는 `imports/chatgpt/` 폴더에서 확인한다.
+이 자료는 `imports/chatgpt/` 폴더에서 확인한다. 이 폴더는 수정 금지 원본이다.
 
 최신 통합 파일이라고 해서 모든 설정이 확정된 것은 아니다. 사용자 승인 여부와 변경 이력을 기준으로 판단한다.
+
+2026-10-19 원본을 분야별 정본으로 이관했다. 작업 시에는 다음 문서를 기준으로 한다.
+
+- 정본 색인과 표기 규칙: `docs/canon.md`
+- 결정과 변경 이력: `docs/decisions.md`
+- 미확정 설정: `docs/open-questions.md`
+- 분야별 정본: `docs/world/`, `docs/creatures/`, `docs/characters/`, `docs/plot/`
+- 원고: `manuscript/book1/`
+
+이 문서와 정본 문서가 다르면 `docs/decisions.md`의 최신 결정을 우선한다.
 
 ## 3. 핵심 세계관
 

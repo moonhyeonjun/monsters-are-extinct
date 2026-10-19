@@ -1,3 +1,92 @@
-# Canon
+# Canon — 정본 색인
 
-확정된 세계관
+《괴물은 멸종했습니다》의 정본은 이 저장소의 `docs/`와 `manuscript/`에 있는 승인된 설정과 원고다. 이 문서는 정본의 색인, 표기 규칙, 핵심 요약이다.
+
+- 판단 우선순위와 결정 기록: [decisions.md](decisions.md)
+- 미확정 설정: [open-questions.md](open-questions.md)
+- 원본 자료: `imports/chatgpt/` — **수정 금지** (D-001)
+
+## 1. 상태 표기
+
+| 표기 | 의미 |
+|---|---|
+| `[확정]` | 사용자가 승인한 설정. decisions.md의 결정(D-xxx)을 근거로 한다. |
+| `[기본]` | 원본 자료의 세계 일관성 기준. 승인 결정과 충돌하지 않는 한 우선 적용한다. |
+| `[초안]` | 원본 자료의 작업안. 수정 가능하다. |
+| `[보류]` | 검증 또는 선택이 필요하다. open-questions.md의 질문(Q-xxx)과 연결된다. |
+| `[작가 비밀]` | 독자에게 아직 공개하지 않는 정보. 위 상태 표기와 함께 쓴다. 공개 시점은 [plot/foreshadowing.md](plot/foreshadowing.md)에서 관리한다. |
+
+- AI가 새로 제안한 설정은 승인 전까지 `[초안]`으로만 넣고, 출처에 '제안'이라고 적는다.
+
+## 2. 출처 표기
+
+| 표기 | 가리키는 곳 |
+|---|---|
+| `마스터` | `imports/chatgpt/세계관 마스터 v1.3.md` |
+| `§I-n` | 마스터 첫머리 통합 본문(v0.5)의 0~10절. 예: `§I-4` = 거생종 도감 I |
+| `§5-n` | 마스터 첫머리 안의 제5장 '대토벌의 진짜 역사' |
+| `§n-m` (n = 6~13) | 마스터 제n장의 m절. 예: `§12-3` = 추적자 세 사람 |
+| `제1화 원고` | [manuscript/book1/ep01-두-번-핀-꽃.md](../manuscript/book1/ep01-두-번-핀-꽃.md) |
+
+- `imports/chatgpt/아우렐 사건 개정안.md`, `첫 모험 재설계.md`는 마스터 §12, §13과 같으므로 출처는 마스터로 표기한다.
+
+## 3. 정본 파일
+
+### 세계 — `docs/world/`
+| 파일 | 내용 |
+|---|---|
+| [overview.md](world/overview.md) | 작품의 약속, 세계 구조, 환류기관, 기능군, 대체 시설 |
+| [restoration.md](world/restoration.md) | 복원학, 복원 단계, 장비, 대륙복원협회, 강제환류, 제4온실 사고 |
+| [history.md](world/history.md) | 공식 연표, 공식 역사, 세계 안의 기록, 독자 공개 순서(원본안) |
+| [history-secret.md](world/history-secret.md) | `[작가 비밀]` 첫 번째 침묵, 길을 지운 사람들, 역사 인물 3인, 다섯 기록 |
+| [geography.md](world/geography.md) | 대륙 지역, 수계, 이동 거리 |
+| [milbaram.md](world/milbaram.md) | 밀바람 마을, 장소, 작물 이상의 원인, 수문 보수 |
+| [irvanel.md](world/irvanel.md) | `[작가 비밀]` 이르바넬의 정체, 규모, 수계, 진입로, 위기 |
+| [factions.md](world/factions.md) | 흑각단, 대체문명연맹, 적대 세력 공개 순서 |
+
+### 거생종 — `docs/creatures/`
+| 파일 | 내용 |
+|---|---|
+| [index.md](creatures/index.md) | 18종 색인과 공식 판정 |
+| [aurel.md](creatures/aurel.md) | 아우렐 상세, 확인 3단계, 발견 개체의 경위 |
+| [food-web.md](creatures/food-web.md) | `[작가 비밀]` 먹이그물과 생태 연결 |
+
+### 인물 — `docs/characters/`
+| 파일 | 내용 |
+|---|---|
+| [lia-veln.md](characters/lia-veln.md) | 리아 벨른, 환류 감각, 진로 동기 |
+| [family-village.md](characters/family-village.md) | 마렌, 다렌, 니오, 도아 |
+| [mardin-lowell.md](characters/mardin-lowell.md) | 마르딘 로웰 |
+| [apprentices.md](characters/apprentices.md) | 테오, 세나, 핀, 유진 |
+| [book1-trackers.md](characters/book1-trackers.md) | 카셀, 베르크, 로안 |
+| [antagonists.md](characters/antagonists.md) | 에드반 로케르 |
+
+### 플롯 — `docs/plot/`
+| 파일 | 내용 |
+|---|---|
+| [series-arc.md](plot/series-arc.md) | 시리즈 장기 구조, 이르바넬 첫 진입 기준 |
+| [foreshadowing.md](plot/foreshadowing.md) | `[작가 비밀]` 정보 통제, 복선표 F01~F10 |
+| [book1-outline.md](plot/book1-outline.md) | 1권 〈봄이 두 번 오는 밤〉 사건 구조, 시간표, 14장, 회차 현황 |
+| [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙 |
+
+### 원고 — `manuscript/`
+| 파일 | 상태 |
+|---|---|
+| [book1/ep01-두-번-핀-꽃.md](../manuscript/book1/ep01-두-번-핀-꽃.md) | 제1화 초고 (D-011: 우선 유지) |
+
+## 4. 핵심 확정 사항 요약
+
+| 항목 | 내용 | 근거 |
+|---|---|---|
+| 세계 | 아르벨리아, 벨로란 대륙, 멸종력 312년 | AGENTS.md / 정본 승격 대기 (Q-세계-01) |
+| 거생종 | 환류기관을 가진 생명체. 인간에게는 약 300년 전 멸종한 존재로 알려짐 | AGENTS.md |
+| 생존 | 일부 거생종은 숨겨진 생태권 이르바넬과 그 주변에서 살아남았다 `[작가 비밀]` | AGENTS.md |
+| 주인공 | 리아 벨른. 환류기관의 미세한 울림을 감지하는 감각. 마음을 읽거나 명령하지 못함 | D-004 |
+| 아우렐 | 공식 멸종 판정 유지. 개체 확인 → 종 동정 → 야생 개체군 확인은 별도 단계 | D-005, D-012 |
+| 발견 개체 | 노르바 외곽에서 밀렵, 하벨 방면 운송 중 탈출. 원래 서식지·부모 행방은 미확정 | D-006 |
+| 추적자 | 카셀(공식 조사원), 베르크(불법 거래 연결 민간 연구원), 로안(산악 추적자). 모두 아우렐인 줄 몰랐다 | D-007 |
+| 진로 | 개체를 떠나보내며 '도망치지 않아도 되는 곳'을 지키기 위해 복원사를 꿈꾼다 | D-008 |
+| 정보 통제 | 첫 모험에서 이르바넬의 명칭과 소재를 공개하지 않는다 | D-009 |
+| 이름 | 리아·마렌·다렌·니오 벨른, 도아 린펠, 밀바람 마을 | D-010 |
+| 첫 모험 | 제1화 원고 유지, 제2화 첫 목격, 밀, 여름 열두째 주, 하벨 서부 | D-011 |
+| 갈등 설계 | 수문 보수 일정이 아우렐의 안전과 직접 충돌. 리아의 자발적 정보 공개가 보호에 실질적 영향 | D-013, D-014 |
