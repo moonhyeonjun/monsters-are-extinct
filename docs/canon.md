@@ -79,6 +79,11 @@
 | [book1-ep02-plan.md](plot/book1-ep02-plan.md) | 제2화 〈닫혀야 할 물문〉 회차 기획 [초안] |
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙 |
 
+### 제안서 — `docs/proposals/` (승인 전, 정본 아님)
+| 파일 | 내용 |
+|---|---|
+| [great-hunt-and-naming.md](proposals/great-hunt-and-naming.md) | 대토벌의 인과관계, 거생종 충돌 사례, 작명 규칙, 인물 이름 검토, 거생종 명칭 체계 (2026-10-20) |
+
 ### 원고 — `manuscript/`
 | 파일 | 상태 |
 |---|---|
