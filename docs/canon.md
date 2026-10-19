@@ -77,6 +77,7 @@
 | [foreshadowing.md](plot/foreshadowing.md) | `[작가 비밀]` 정보 통제, 복선표 F01~F10, 후보 F11~F16 |
 | [book1-outline.md](plot/book1-outline.md) | 1권 〈봄이 두 번 오는 밤〉 시간 표기, 회차 현황, 작중 날짜별 사건표, 14장 |
 | [book1-ep02-plan.md](plot/book1-ep02-plan.md) | 제2화 〈닫혀야 할 물문〉 회차 기획 [초안] |
+| [book1-ep03-plan.md](plot/book1-ep03-plan.md) | 제3화 〈손을 뻗지 않는 법〉 회차 기획 [초안] |
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙 |
 
 ### 제안서 — `docs/proposals/` (승인 전, 정본 아님)
