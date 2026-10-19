@@ -17,6 +17,15 @@
 | `[작가 비밀]` | 독자에게 아직 공개하지 않는 정보. 위 상태 표기와 함께 쓴다. 공개 시점은 [plot/foreshadowing.md](plot/foreshadowing.md)에서 관리한다. |
 
 - AI가 새로 제안한 설정은 승인 전까지 `[초안]`으로만 넣고, 출처에 '제안'이라고 적는다.
+- `작업 가정`: 집필과 일정 계산을 위한 임시값. 정본 설정이 아니며 [open-questions.md](open-questions.md) '작업 가정'에 모은다. (D-022)
+
+### 시간 표기 (D-015)
+
+| 축 | 표기 | 의미 |
+|---|---|---|
+| 작중 날짜 | `D`, `D+n`, `D-n` | `D` = 제1화의 당일 |
+| 서사 장 | `1장`~`14장` | 1권 4막 14장 기획 단위 ([plot/book1-outline.md](plot/book1-outline.md) §8) |
+| 연재 회차 | `제n화` | `manuscript/`의 원고 단위 |
 
 ## 2. 출처 표기
 
@@ -48,7 +57,7 @@
 | 파일 | 내용 |
 |---|---|
 | [index.md](creatures/index.md) | 18종 색인과 공식 판정 |
-| [aurel.md](creatures/aurel.md) | 아우렐 상세, 확인 3단계, 발견 개체의 경위 |
+| [aurel.md](creatures/aurel.md) | 아우렐 상세, 발견 개체의 상태, 확인 3단계, 작중 날짜별 경위 |
 | [food-web.md](creatures/food-web.md) | `[작가 비밀]` 먹이그물과 생태 연결 |
 
 ### 인물 — `docs/characters/`
@@ -58,15 +67,15 @@
 | [family-village.md](characters/family-village.md) | 마렌, 다렌, 니오, 도아 |
 | [mardin-lowell.md](characters/mardin-lowell.md) | 마르딘 로웰 |
 | [apprentices.md](characters/apprentices.md) | 테오, 세나, 핀, 유진 |
-| [book1-trackers.md](characters/book1-trackers.md) | 카셀, 베르크, 로안 |
+| [book1-trackers.md](characters/book1-trackers.md) | 카셀, 베르크, 로안. 인물별 행동 순서와 정보 습득 시점 |
 | [antagonists.md](characters/antagonists.md) | 에드반 로케르 |
 
 ### 플롯 — `docs/plot/`
 | 파일 | 내용 |
 |---|---|
 | [series-arc.md](plot/series-arc.md) | 시리즈 장기 구조, 이르바넬 첫 진입 기준 |
-| [foreshadowing.md](plot/foreshadowing.md) | `[작가 비밀]` 정보 통제, 복선표 F01~F10 |
-| [book1-outline.md](plot/book1-outline.md) | 1권 〈봄이 두 번 오는 밤〉 사건 구조, 시간표, 14장, 회차 현황 |
+| [foreshadowing.md](plot/foreshadowing.md) | `[작가 비밀]` 정보 통제, 복선표 F01~F10, 후보 F11~F14 |
+| [book1-outline.md](plot/book1-outline.md) | 1권 〈봄이 두 번 오는 밤〉 시간 표기, 회차 현황, 작중 날짜별 사건표, 14장 |
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙 |
 
 ### 원고 — `manuscript/`
@@ -89,4 +98,8 @@
 | 정보 통제 | 첫 모험에서 이르바넬의 명칭과 소재를 공개하지 않는다 | D-009 |
 | 이름 | 리아·마렌·다렌·니오 벨른, 도아 린펠, 밀바람 마을 | D-010 |
 | 첫 모험 | 제1화 원고 유지, 제2화 첫 목격, 밀, 여름 열두째 주, 하벨 서부 | D-011 |
-| 갈등 설계 | 수문 보수 일정이 아우렐의 안전과 직접 충돌. 리아의 자발적 정보 공개가 보호에 실질적 영향 | D-013, D-014 |
+| 갈등 설계 | 합리적인 수문 보수가 옛 우회 배수로의 영향을 받는 은신처와 충돌. 리아가 은신처 위치·돌봄 실수·관찰 기록을 자발적으로 공개하고, 그 선택이 구조 계획과 인계 결과를 바꿈 | D-013, D-014, D-017, D-018 |
+| 첫 목격 | 작중 D+1 밤 (제2화). 제1화 원고는 변경하지 않음 | D-015 |
+| 발견 개체 | 젖을 뗀 초식성. 운송 중 누적 쇠약과 앞다리 부상 | D-016 |
+| 첫 사건의 결말 | 베르크의 무단 확보 시도 저지, 조사 대상으로 남음. 세르딘 본부가 아닌 지역 보호시설로 인계. 이별이 서식지를 지키는 복원사의 길을 고르는 계기 | D-019, D-020, D-021 |
+| 확정하지 않는 항목 | 운송 거리·날짜, 보호시설 위치·이동 시간, 체중·온습도·섭취량, 제1화 충격음의 원인, 원래 서식지·부모, 베르크의 배후 조직, 리아 감각의 기원 | D-022 |
