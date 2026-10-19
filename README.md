@@ -16,7 +16,7 @@
 | `docs/decisions.md` | 설정 결정과 변경 이력 |
 | `docs/open-questions.md` | 미확정 설정과 검증 과제 |
 | `docs/world/` | 세계관, 역사, 지리, 이르바넬, 세력 |
-| `docs/creatures/` | 거생종 도감 |
+| `docs/creatures/` | 환류종 도감 |
 | `docs/characters/` | 등장인물 |
 | `docs/plot/` | 시리즈 구조, 복선, 1권 플롯, 집필 기준 |
 | `manuscript/` | 원고 |
