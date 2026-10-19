@@ -1,6 +1,6 @@
 # 제2화 〈닫혀야 할 물문〉 — 회차 기획 [초안]
 
-> 상태: **회차 기획 (2차) — 원고 초안 1차 편집됨 (2026-10-20).** 원고: [ep02-닫혀야-할-물문.md](../../manuscript/book1/ep02-닫혀야-할-물문.md) (사용자 검토 전)
+> 상태: **회차 기획 (2차) — 원고 1차 승인 (2026-10-20, `0b806f7`, D-035).** 원고: [ep02-닫혀야-할-물문.md](../../manuscript/book1/ep02-닫혀야-할-물문.md) (사용자 검토 전)
 > 근거 결정: D-011, D-013, D-015~D-018, D-022~D-034
 > 관련 문서: [book1-outline.md](book1-outline.md) §4 사건표, [creatures/aurel.md](../creatures/aurel.md), [world/milbaram.md](../world/milbaram.md), [characters/lia-veln.md](../characters/lia-veln.md), [foreshadowing.md](foreshadowing.md)
 > 표기: `[확정]` 승인된 결정 / `[제안]` 이 기획의 제안(승인 전) / `작업 가정` [open-questions.md](../open-questions.md) '작업 가정'의 임시값
