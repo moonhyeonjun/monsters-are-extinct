@@ -84,6 +84,7 @@
 | 파일 | 내용 |
 |---|---|
 | [great-hunt-and-naming.md](proposals/great-hunt-and-naming.md) | 대토벌의 인과관계, 거생종 충돌 사례, 작명 규칙, 인물 이름 검토, 거생종 명칭 체계 (2026-10-20). 일부를 D-036~D-040으로 채택, 나머지는 제안 상태 |
+| [creature-terminology.md](proposals/creature-terminology.md) | '거생종' 명칭 변경 검토: 환류종·환수·괴물 체계, 18종 적합도, 등장 위치, 변경 범위 (2026-10-20, 승인 전) |
 
 ### 원고 — `manuscript/`
 | 파일 | 상태 |
