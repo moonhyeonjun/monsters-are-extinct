@@ -85,6 +85,7 @@
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙, 생물을 부르는 말, 원고 평가 기준(D-052), 인물별 대화 지침과 장기 원칙(D-053) |
 | [style-diagnosis.md](plot/style-diagnosis.md) | 제1~6화 문체 진단서, 인물별 대화 설계(제안), 유지할 문체적 장점 |
 | [ep06-trial-edit.md](plot/ep06-trial-edit.md) | 제6화 장면 A·B 시범 편집안 (원본·수정안 비교). D-053으로 선택 적용 |
+| [style-edit-ep01-05.md](plot/style-edit-ep01-05.md) | 제1~5화 문체 선택 편집 기록 (D-054): 회차별 변경과 이유, 유지한 문장, 분량 |
 
 ### 제안서 — `docs/proposals/` (승인 전, 정본 아님)
 | 파일 | 내용 |
@@ -96,12 +97,12 @@
 ### 원고 — `manuscript/`
 | 파일 | 상태 |
 |---|---|
-| [book1/ep01-두-번-핀-꽃.md](../manuscript/book1/ep01-두-번-핀-꽃.md) | 제1화 초고 (D-011: 우선 유지) |
-| [book1/ep02-닫혀야-할-물문.md](../manuscript/book1/ep02-닫혀야-할-물문.md) | 제2화 초안. 1차 승인 (`5e6d620`, D-035) |
-| [book1/ep03-손을-뻗지-않는-법.md](../manuscript/book1/ep03-손을-뻗지-않는-법.md) | 제3화 초안. 1차 승인 (`18eb16d`, D-043) |
-| [book1/ep04-봄이-두-번-찾아오는-자리.md](../manuscript/book1/ep04-봄이-두-번-찾아오는-자리.md) | 제4화 초안. 1차 승인 (`21dfadf`, D-046) |
-| [book1/ep05-떠내려온-물병.md](../manuscript/book1/ep05-떠내려온-물병.md) | 제5화 초안. 1차 승인 (`c75bc0d`, D-049) |
-| [book1/ep06-일곱-글자.md](../manuscript/book1/ep06-일곱-글자.md) | 제6화 초안 (사용자 검토 전). F17 회수, 문체 선택 개선 (D-053) |
+| [book1/ep01-두-번-핀-꽃.md](../manuscript/book1/ep01-두-번-핀-꽃.md) | 제1화 초고 (D-011: 우선 유지). 일상 말투의 기준 (D-054) |
+| [book1/ep02-닫혀야-할-물문.md](../manuscript/book1/ep02-닫혀야-할-물문.md) | 제2화 초안. 1차 승인 (`5e6d620`, D-035), 문체 선택 편집 (D-054) |
+| [book1/ep03-손을-뻗지-않는-법.md](../manuscript/book1/ep03-손을-뻗지-않는-법.md) | 제3화 초안. 1차 승인 (`18eb16d`, D-043), 문체 선택 편집 (D-054) |
+| [book1/ep04-봄이-두-번-찾아오는-자리.md](../manuscript/book1/ep04-봄이-두-번-찾아오는-자리.md) | 제4화 초안. 1차 승인 (`21dfadf`, D-046), 문체 선택 편집 (D-054) |
+| [book1/ep05-떠내려온-물병.md](../manuscript/book1/ep05-떠내려온-물병.md) | 제5화 초안. 1차 승인 (`c75bc0d`, D-049), 문체 선택 편집 (D-054) |
+| [book1/ep06-일곱-글자.md](../manuscript/book1/ep06-일곱-글자.md) | 제6화 초안. F17 회수, 문체 선택 개선 (D-053). 1차 승인 (`f954a69`, D-054) |
 
 ## 4. 핵심 확정 사항 요약
 

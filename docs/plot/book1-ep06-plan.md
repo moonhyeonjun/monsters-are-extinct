@@ -1,6 +1,6 @@
 # 제6화 〈일곱 글자〉 — 회차 기획 [초안]
 
-> 상태: **회차 기획 (1차) — D-051로 결정 반영, 원고 초안 작성 후 D-053으로 문체 선택 개선 (2026-10-20).** 원고: [ep06-일곱-글자.md](../../manuscript/book1/ep06-일곱-글자.md) (사용자 검토 전)
+> 상태: **회차 기획 (1차) — D-051로 결정 반영, 원고 초안 작성 후 D-053으로 문체 선택 개선 (2026-10-20).** 원고: [ep06-일곱-글자.md](../../manuscript/book1/ep06-일곱-글자.md) (1차 승인 `f954a69`, D-054)
 > 근거 결정: D-016~D-020, D-024, D-030, D-033, D-034, D-042~D-051
 > 관련 문서: [book1-outline.md](book1-outline.md), [book1-ep05-plan.md](book1-ep05-plan.md), [key-scenes.md](key-scenes.md) 장면 A, [foreshadowing.md](foreshadowing.md) F17, [world/milbaram.md](../world/milbaram.md), [characters/book1-trackers.md](../characters/book1-trackers.md)
 > 표기: `[확정]` 승인된 결정 / `[지시]` 2026-10-20 제6화 기획 지시 / `[제안]` 이 기획의 제안(승인 전) / `작업 가정` [open-questions.md](../open-questions.md) '작업 가정'의 임시값
