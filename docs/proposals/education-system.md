@@ -1,6 +1,6 @@
 # 제안서 — 세계관 교육 체계
 
-> 상태: **제안서 (2026-10-20).** 사용자 승인 전이다. 이 문서는 기존 설정과 원고를 바꾸지 않는다. 교육기관 이름, 교육 연령, 학비, 자격 제도는 **모두 제안**이다.
+> 상태: **제안서 (2026-10-20).** 기본 원칙 9개는 **D-059로 정본에 반영**되었다 ([world/education.md](../world/education.md)). 그 밖의 내용은 사용자 승인 전이다. 이 문서는 기존 설정과 원고를 바꾸지 않는다. 교육기관 이름, 교육 연령, 학비, 자격 제도는 **모두 제안**이다.
 > 근거: [world/overview.md](../world/overview.md) · [world/geography.md](../world/geography.md) · [world/history.md](../world/history.md) · [world/history-secret.md](../world/history-secret.md) `[작가 비밀]` · [world/restoration.md](../world/restoration.md) · [world/milbaram.md](../world/milbaram.md) · [world/factions.md](../world/factions.md) · [characters/lia-veln.md](../characters/lia-veln.md) · [characters/family-village.md](../characters/family-village.md) · [characters/apprentices.md](../characters/apprentices.md) · [characters/mardin-lowell.md](../characters/mardin-lowell.md) · 마스터 §9-3, §9-7, §10-10, §11-2~11-8 · 제1~7화 원고
 > 승인 여부: [open-questions.md](../open-questions.md) Q-세계-10
 > 표기: 이 문서의 모든 항목은 [제안]이다. 기존 정본을 인용할 때만 `[확정]`·`[초안]`을 붙인다.

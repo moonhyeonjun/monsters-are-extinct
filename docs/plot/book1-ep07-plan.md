@@ -1,6 +1,6 @@
 # 제7화 〈가장 안전한 자리〉 — 회차 기획 [초안]
 
-> 상태: **회차 기획 (1차) — D-056으로 결정 반영, 원고 초안 작성 후 D-057로 선택 퇴고 (2026-10-20).** 원고: [ep07-가장-안전한-자리.md](../../manuscript/book1/ep07-가장-안전한-자리.md) (사용자 검토 전). 결정된 사항은 §13, 원고에서 바뀐 세부는 §14를 따른다. 그 밖의 [제안]은 원고 작성의 바탕이 된 기획안이다.
+> 상태: **회차 기획 (1차) — D-056으로 결정 반영, 원고 초안 작성 후 D-057로 선택 퇴고 (2026-10-20).** 원고: [ep07-가장-안전한-자리.md](../../manuscript/book1/ep07-가장-안전한-자리.md) (**1차 승인** `5675c59`, D-058). 결정된 사항은 §13, 원고에서 바뀐 세부는 §14를 따른다. 그 밖의 [제안]은 원고 작성의 바탕이 된 기획안이다.
 > 근거 결정: D-007, D-012, D-016, D-018~D-020, D-022, D-034, D-041, D-050, D-051, D-052~D-057
 > 관련 문서: [book1-outline.md](book1-outline.md), [book1-ep06-plan.md](book1-ep06-plan.md), [style-guide.md](style-guide.md) §7~9, [characters/family-village.md](../characters/family-village.md), [characters/book1-trackers.md](../characters/book1-trackers.md), [world/milbaram.md](../world/milbaram.md) §5-1
 > 표기: `[확정]` 승인된 결정 / `[지시]` 2026-10-20 제7화 기획 지시 / `[제안]` 이 기획의 제안(승인 전) / `작업 가정` [open-questions.md](../open-questions.md) '작업 가정'의 임시값

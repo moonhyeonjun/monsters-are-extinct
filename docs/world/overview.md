@@ -60,6 +60,7 @@
 ## 6. 관련 문서
 
 - 복원학과 협회: [restoration.md](restoration.md)
+- 교육: [education.md](education.md) (D-059)
 - 역사: [history.md](history.md), [history-secret.md](history-secret.md) `[작가 비밀]`
 - 지리: [geography.md](geography.md), [milbaram.md](milbaram.md), [irvanel.md](irvanel.md) `[작가 비밀]`
 - 세력: [factions.md](factions.md)

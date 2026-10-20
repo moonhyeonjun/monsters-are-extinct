@@ -46,6 +46,7 @@
 |---|---|
 | [overview.md](world/overview.md) | 작품의 약속, 세계 구조, 환류기관, 기능군, 대체 시설 |
 | [restoration.md](world/restoration.md) | 복원학, 복원 단계, 장비, 대륙복원협회, 강제환류, 제4온실 사고 |
+| [education.md](world/education.md) | 교육: 단일 제도 없음, 하벨 농촌의 겨울 배움터, 리아·도아·니오의 교육 사실, 복원사 교육의 범위, 감각은 측정을 대체하지 않음 (D-059). 세부는 제안 |
 | [history.md](world/history.md) | 공식 연표, 공식 역사, 세계 안의 기록, 독자 공개 순서(원본안) |
 | [history-secret.md](world/history-secret.md) | `[작가 비밀]` 첫 번째 침묵, 길을 지운 사람들, 역사 인물 3인, 다섯 기록 |
 | [geography.md](world/geography.md) | 대륙 지역, 수계, 이동 거리 |
@@ -82,7 +83,7 @@
 | [book1-ep05-plan.md](plot/book1-ep05-plan.md) | 제5화 〈떠내려온 물병〉 회차 기획 [초안] |
 | [book1-ep06-plan.md](plot/book1-ep06-plan.md) | 제6화 〈일곱 글자〉 회차 기획 [초안] (공개와 F17 회수, 구조와 열린 수문) |
 | [book1-ep07-plan.md](plot/book1-ep07-plan.md) | 제7화 〈가장 안전한 자리〉 회차 기획 [초안] (구조 이후의 여운, 니오 첫 등장, 베르크와 카셀의 판단, D-055·D-056) |
-| [book1-ep08-plan.md](plot/book1-ep08-plan.md) | 제8화 〈똑바로 물어봐〉(가제) 회차 기획 [초안] (외부 갈등 재점화, 베르크의 확보 시도, 도아와 리아, 로안 등장안, D-057) |
+| [book1-ep08-plan.md](plot/book1-ep08-plan.md) | 제8화 〈똑바로 물어봐〉 회차 기획 [초안] (방향 확정 D-060: 두 중심 갈등, 베르크의 위임장과 야간 반출, 카셀의 대리 경계, 로안 D+6, 두 등불) |
 | [key-scenes.md](plot/key-scenes.md) | 장기 명장면 후보 (기록장의 빈칸, 이르바넬의 첫 숨, 마지막 사냥의 진실). 미승인 후보, 검토 원칙 D-045 [초안] |
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙, 생물을 부르는 말, 원고 평가 기준(D-052), 인물별 대화 지침과 장기 원칙(D-053) |
 | [style-diagnosis.md](plot/style-diagnosis.md) | 제1~6화 문체 진단서, 인물별 대화 설계(제안), 유지할 문체적 장점 |
@@ -95,7 +96,7 @@
 | [great-hunt-and-naming.md](proposals/great-hunt-and-naming.md) | 대토벌의 인과관계, 환류종 충돌 사례, 작명 규칙, 인물 이름 검토, 환류종 명칭 체계 (2026-10-20). 일부를 D-036~D-040으로 채택, 나머지는 제안 상태 |
 | [creature-terminology.md](proposals/creature-terminology.md) | '거생종' 명칭 변경 검토: 환류종·환수·괴물 체계, 18종 적합도, 등장 위치, 변경 범위 (2026-10-20). D-041로 채택(환수·옛 학술어안 불채택) |
 | [extinction-timeline.md](proposals/extinction-timeline.md) | 환류종 멸종 이후 경과 시간 재검토: 300·500·800·1,000년 비교, 연호 대안, 영향 범위 (2026-10-20). B′안을 D-047로 채택 (국가별 병행 연호는 미채택·미정) |
-| [education-system.md](proposals/education-system.md) | 세계관 교육 체계 제안: 나라별 교육 구조, 밀바람 겨울 배움터, 리아·도아·니오의 교육 배경, 복원사 견습·자격, 나라별 대토벌 역사 교육과 편견, 충돌 점검 (Q-세계-10) |
+| [education-system.md](proposals/education-system.md) | 세계관 교육 체계 제안: 나라별 교육 구조, 밀바람 겨울 배움터, 리아·도아·니오의 교육 배경, 복원사 견습·자격, 나라별 대토벌 역사 교육과 편견, 충돌 점검 (Q-세계-10). 기본 원칙은 D-059로 [world/education.md](world/education.md)에 반영 |
 
 ### 원고 — `manuscript/`
 | 파일 | 상태 |
@@ -106,7 +107,7 @@
 | [book1/ep04-봄이-두-번-찾아오는-자리.md](../manuscript/book1/ep04-봄이-두-번-찾아오는-자리.md) | 제4화 초안. 1차 승인 (`21dfadf`, D-046), 문체 선택 편집 (D-054) |
 | [book1/ep05-떠내려온-물병.md](../manuscript/book1/ep05-떠내려온-물병.md) | 제5화 초안. 1차 승인 (`c75bc0d`, D-049), 문체 선택 편집 (D-054) |
 | [book1/ep06-일곱-글자.md](../manuscript/book1/ep06-일곱-글자.md) | 제6화 초안. F17 회수, 문체 선택 개선 (D-053). 1차 승인 (`f954a69`, D-054) |
-| [book1/ep07-가장-안전한-자리.md](../manuscript/book1/ep07-가장-안전한-자리.md) | 제7화 초안. 승인 방향, 선택 퇴고 (D-057). 니오 첫 등장, 문을 두드리다, 같은 장부 (D-056) |
+| [book1/ep07-가장-안전한-자리.md](../manuscript/book1/ep07-가장-안전한-자리.md) | 제7화 초안. 선택 퇴고 (D-057), 1차 승인 (`5675c59`, D-058). 니오 첫 등장, 문을 두드리다, 같은 장부 (D-056) |
 
 ## 4. 핵심 확정 사항 요약
 
