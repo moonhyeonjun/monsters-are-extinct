@@ -80,7 +80,7 @@
 | [book1-ep03-plan.md](plot/book1-ep03-plan.md) | 제3화 〈손을 뻗지 않는 법〉 회차 기획 [초안] |
 | [book1-ep04-plan.md](plot/book1-ep04-plan.md) | 제4화 〈봄이 두 번 찾아오는 자리〉 회차 기획 [초안] |
 | [book1-ep05-plan.md](plot/book1-ep05-plan.md) | 제5화 〈떠내려온 물병〉 회차 기획 [초안] |
-| [book1-ep06-plan.md](plot/book1-ep06-plan.md) | 제6화 회차 기획 [초안] (가제 제안 〈일곱 글자〉, 공개와 F17 회수, 구조와 열린 수문) |
+| [book1-ep06-plan.md](plot/book1-ep06-plan.md) | 제6화 〈일곱 글자〉 회차 기획 [초안] (공개와 F17 회수, 구조와 열린 수문) |
 | [key-scenes.md](plot/key-scenes.md) | 장기 명장면 후보 (기록장의 빈칸, 이르바넬의 첫 숨, 마지막 사냥의 진실). 미승인 후보, 검토 원칙 D-045 [초안] |
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙 |
 
@@ -99,6 +99,7 @@
 | [book1/ep03-손을-뻗지-않는-법.md](../manuscript/book1/ep03-손을-뻗지-않는-법.md) | 제3화 초안. 1차 승인 (`18eb16d`, D-043) |
 | [book1/ep04-봄이-두-번-찾아오는-자리.md](../manuscript/book1/ep04-봄이-두-번-찾아오는-자리.md) | 제4화 초안. 1차 승인 (`21dfadf`, D-046) |
 | [book1/ep05-떠내려온-물병.md](../manuscript/book1/ep05-떠내려온-물병.md) | 제5화 초안. 1차 승인 (`c75bc0d`, D-049) |
+| [book1/ep06-일곱-글자.md](../manuscript/book1/ep06-일곱-글자.md) | 제6화 초안 (사용자 검토 전). F17 회수 |
 
 ## 4. 핵심 확정 사항 요약
 
