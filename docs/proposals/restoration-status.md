@@ -1,6 +1,6 @@
 # 제안서 — 복원학의 성과와 멸종 인식의 정합성
 
-> 상태: **비교 제안서 (2026-10-21). B+C안이 D-068로 채택되었다** (정본: [creatures/restoration-status.md](../creatures/restoration-status.md)). 채택 시 '야생 멸종'은 0~2단계 종에만 쓰도록 조정했다(이 제안서 §3의 3~4단계 '야생 멸종' 표기는 대체됨). 이 문서는 기존 설정과 원고를 바꾸지 않는다. 도감의 복원 단계와 멸종 판정은 **그대로**다.
+> 상태: **비교 제안서 (2026-10-21). B+C안이 D-068로 채택되었다** (정본: [creatures/restoration-status.md](../creatures/restoration-status.md)). 채택 시 '야생 멸종'은 1~2단계 종에만 쓰도록 조정했다(D-068의 '0~2단계'는 D-070으로 정정)(이 제안서 §3의 3~4단계 '야생 멸종' 표기는 대체됨). 이 문서는 기존 설정과 원고를 바꾸지 않는다. 도감의 복원 단계와 멸종 판정은 **그대로**다.
 > 근거: [creatures/index.md](../creatures/index.md) §2 · [world/restoration.md](../world/restoration.md) §1~3 · [world/history.md](../world/history.md) §1~2 · [world/overview.md](../world/overview.md) §2 · [world/irvanel.md](../world/irvanel.md) `[작가 비밀]` · [creatures/food-web.md](../creatures/food-web.md) · [creatures/aurel.md](../creatures/aurel.md) §4 · [world/education.md](../world/education.md) · [proposals/education-system.md](education-system.md) · [proposals/creature-terminology.md](creature-terminology.md) · 마스터 §I-2, §I-4, §I-5, §I-9 5항, §8-2 · 제1~9화 원고
 > 결정 대상: [open-questions.md](../open-questions.md) Q-생물-10
 > 표기: 기존 정본은 `[확정]`·`[초안]`·`[작가 비밀]`, 이 문서의 제안은 [제안]
