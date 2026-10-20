@@ -114,6 +114,7 @@
 | Q-원고-02 | 회차당 목표 분량과 1권 전체 분량 | §10-10 | P1 | 열림 |
 | Q-원고-03 | PROJECT_RULES.md 처리 (AGENTS.md와 중복: 포인터만 남김 / 삭제) | 루트 문서 | P1 | 열림 |
 | Q-원고-04 | 장기 명장면 후보(기록장의 빈칸, 이르바넬의 첫 숨, 마지막 사냥의 진실)의 채택과 세부. 특히 장면 A의 '물문 개방을 늦춘다'는 정의 | D-044 | P1 | 제안 있음: [plot/key-scenes.md](plot/key-scenes.md) §F (신규) |
+| Q-원고-05 | 인물별 대화 설계(리아·도아·마렌·다렌·카셀·베르크) 승인, 제6화 시범 편집안 적용 여부와 범위(제6화 나머지, 제4·5화 일부) | D-052 | P0 | 제안 있음: [plot/style-diagnosis.md](plot/style-diagnosis.md) §3, [plot/ep06-trial-edit.md](plot/ep06-trial-edit.md) §5 (신규) |
 
 ---
 

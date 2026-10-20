@@ -82,7 +82,9 @@
 | [book1-ep05-plan.md](plot/book1-ep05-plan.md) | 제5화 〈떠내려온 물병〉 회차 기획 [초안] |
 | [book1-ep06-plan.md](plot/book1-ep06-plan.md) | 제6화 〈일곱 글자〉 회차 기획 [초안] (공개와 F17 회수, 구조와 열린 수문) |
 | [key-scenes.md](plot/key-scenes.md) | 장기 명장면 후보 (기록장의 빈칸, 이르바넬의 첫 숨, 마지막 사냥의 진실). 미승인 후보, 검토 원칙 D-045 [초안] |
-| [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙 |
+| [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙, 생물을 부르는 말, 원고 평가 기준(D-052) |
+| [style-diagnosis.md](plot/style-diagnosis.md) | 제1~6화 문체 진단서, 인물별 대화 설계(제안), 유지할 문체적 장점 |
+| [ep06-trial-edit.md](plot/ep06-trial-edit.md) | 제6화 장면 A·B 시범 편집안 (원본·수정안 비교, 사용자 검토 전) |
 
 ### 제안서 — `docs/proposals/` (승인 전, 정본 아님)
 | 파일 | 내용 |
