@@ -1,6 +1,6 @@
 # 제안서 — '아우렐' 후보명의 공개 범위
 
-> 상태: **비교 제안서 (2026-10-21).** 사용자 승인 전이다. 이 문서는 원고를 바꾸지 않는다. 아래 §4의 수정안은 **승인 후에** 적용한다.
+> 상태: **비교 제안서 (2026-10-21). B안이 D-074로 채택되어 §4의 수정안을 적용했다.**
 > 근거: [creatures/aurel.md](../creatures/aurel.md) §6 · [characters/book1-trackers.md](../characters/book1-trackers.md) §7 · [characters/mardin-lowell.md](../characters/mardin-lowell.md) · [plot/foreshadowing.md](../plot/foreshadowing.md) F11·F13 · [plot/book1-outline.md](../plot/book1-outline.md) §8 · 결정 D-005, D-007, D-009, D-012, D-068, D-071 · 제9·10화 원고
 > 결정 대상: [open-questions.md](../open-questions.md) Q-원고-06
 
