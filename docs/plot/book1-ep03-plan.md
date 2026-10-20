@@ -1,6 +1,6 @@
 # 제3화 〈손을 뻗지 않는 법〉 — 회차 기획 [초안]
 
-> 상태: **회차 기획 (1차) — D-042로 결정 반영, 원고 초안 작성됨 (2026-10-20).** 원고: [ep03-손을-뻗지-않는-법.md](../../manuscript/book1/ep03-손을-뻗지-않는-법.md) (사용자 검토 전)
+> 상태: **회차 기획 (1차) — 원고 1차 승인 (2026-10-20, `18eb16d`, D-043).** 마지막 기록장 장면은 첫 모험의 주요 감정 복선 F17로 관리한다. 원고: [ep03-손을-뻗지-않는-법.md](../../manuscript/book1/ep03-손을-뻗지-않는-법.md) (사용자 검토 전)
 > 근거 결정: D-004, D-008, D-015~D-018, D-022~D-031, D-034~D-036, D-039, D-041, D-042
 > 관련 문서: [book1-outline.md](book1-outline.md) §4 사건표, [book1-ep02-plan.md](book1-ep02-plan.md), [creatures/aurel.md](../creatures/aurel.md), [characters/lia-veln.md](../characters/lia-veln.md), [characters/family-village.md](../characters/family-village.md)
 > 표기: `[확정]` 승인된 결정 / `[지시]` 2026-10-20 제3화 기획 지시 / `[제안]` 이 기획의 제안(승인 전) / `작업 가정` [open-questions.md](../open-questions.md) '작업 가정'의 임시값

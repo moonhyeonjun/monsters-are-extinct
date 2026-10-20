@@ -74,10 +74,11 @@
 | 파일 | 내용 |
 |---|---|
 | [series-arc.md](plot/series-arc.md) | 시리즈 장기 구조, 이르바넬 첫 진입 기준 |
-| [foreshadowing.md](plot/foreshadowing.md) | `[작가 비밀]` 정보 통제, 복선표 F01~F10, 후보 F11~F16 |
+| [foreshadowing.md](plot/foreshadowing.md) | `[작가 비밀]` 정보 통제, 복선표 F01~F10, 후보 F11~F16, 감정 복선 F17 |
 | [book1-outline.md](plot/book1-outline.md) | 1권 〈봄이 두 번 오는 밤〉 시간 표기, 회차 현황, 작중 날짜별 사건표, 14장 |
 | [book1-ep02-plan.md](plot/book1-ep02-plan.md) | 제2화 〈닫혀야 할 물문〉 회차 기획 [초안] |
 | [book1-ep03-plan.md](plot/book1-ep03-plan.md) | 제3화 〈손을 뻗지 않는 법〉 회차 기획 [초안] |
+| [book1-ep04-plan.md](plot/book1-ep04-plan.md) | 제4화 회차 기획 [초안] (가제 제안 〈봄이 두 번 찾아오는 자리〉) |
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙 |
 
 ### 제안서 — `docs/proposals/` (승인 전, 정본 아님)
@@ -91,6 +92,7 @@
 |---|---|
 | [book1/ep01-두-번-핀-꽃.md](../manuscript/book1/ep01-두-번-핀-꽃.md) | 제1화 초고 (D-011: 우선 유지) |
 | [book1/ep02-닫혀야-할-물문.md](../manuscript/book1/ep02-닫혀야-할-물문.md) | 제2화 초안. 1차 승인 (`5e6d620`, D-035) |
+| [book1/ep03-손을-뻗지-않는-법.md](../manuscript/book1/ep03-손을-뻗지-않는-법.md) | 제3화 초안. 1차 승인 (`18eb16d`, D-043) |
 
 ## 4. 핵심 확정 사항 요약
 
