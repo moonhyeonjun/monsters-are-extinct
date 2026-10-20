@@ -81,6 +81,7 @@
 | [book1-ep04-plan.md](plot/book1-ep04-plan.md) | 제4화 〈봄이 두 번 찾아오는 자리〉 회차 기획 [초안] |
 | [book1-ep05-plan.md](plot/book1-ep05-plan.md) | 제5화 〈떠내려온 물병〉 회차 기획 [초안] |
 | [book1-ep06-plan.md](plot/book1-ep06-plan.md) | 제6화 〈일곱 글자〉 회차 기획 [초안] (공개와 F17 회수, 구조와 열린 수문) |
+| [book1-ep07-plan.md](plot/book1-ep07-plan.md) | 제7화 〈가장 안전한 자리〉(가제) 회차 기획 [초안] (구조 이후의 여운, 니오 첫 등장안, 베르크와 카셀의 판단, D-055) |
 | [key-scenes.md](plot/key-scenes.md) | 장기 명장면 후보 (기록장의 빈칸, 이르바넬의 첫 숨, 마지막 사냥의 진실). 미승인 후보, 검토 원칙 D-045 [초안] |
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙, 생물을 부르는 말, 원고 평가 기준(D-052), 인물별 대화 지침과 장기 원칙(D-053) |
 | [style-diagnosis.md](plot/style-diagnosis.md) | 제1~6화 문체 진단서, 인물별 대화 설계(제안), 유지할 문체적 장점 |
