@@ -88,6 +88,7 @@
 |---|---|
 | [great-hunt-and-naming.md](proposals/great-hunt-and-naming.md) | 대토벌의 인과관계, 환류종 충돌 사례, 작명 규칙, 인물 이름 검토, 환류종 명칭 체계 (2026-10-20). 일부를 D-036~D-040으로 채택, 나머지는 제안 상태 |
 | [creature-terminology.md](proposals/creature-terminology.md) | '거생종' 명칭 변경 검토: 환류종·환수·괴물 체계, 18종 적합도, 등장 위치, 변경 범위 (2026-10-20). D-041로 채택(환수·옛 학술어안 불채택) |
+| [extinction-timeline.md](proposals/extinction-timeline.md) | 환류종 멸종 이후 경과 시간 재검토: 300·500·800·1,000년 비교, 권장 B′(대토벌 종결 약 500년 전 + 멸종력 원년 = 공식 멸종 선언), 연호 대안, 영향 범위 (2026-10-20, 승인 전) |
 
 ### 원고 — `manuscript/`
 | 파일 | 상태 |
