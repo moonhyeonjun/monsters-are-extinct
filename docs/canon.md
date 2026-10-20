@@ -87,6 +87,7 @@
 | [book1-ep08-plan.md](plot/book1-ep08-plan.md) | 제8화 〈똑바로 물어봐〉 회차 기획 [초안] (방향 확정 D-060: 두 중심 갈등, 베르크의 위임장과 야간 반출, 카셀의 대리 경계, 로안 D+6, 두 등불) |
 | [book1-ep09-plan.md](plot/book1-ep09-plan.md) | 제9화 〈원본〉 회차 기획 [초안] (D+7 도착 검증, 원본 기록장 전달, 권한과 전문성의 구분, 위임장 조회, 임시 보호 판단, D-064·D-065) |
 | [book1-ep10-plan.md](plot/book1-ep10-plan.md) | 제10화 〈기록에 없는 짐승〉(가제) 회차 기획 [초안] ('도망친 복원 개체' 가설, 산길 재조사, 바퀴 자국, 마르딘의 정정, D-069·D-070) |
+| [book1-ep11-plan.md](plot/book1-ep11-plan.md) | 제11화 〈빌린 자리〉(가제) 회차 기획 [초안] (천막의 한계, 방앗간 아래 칸, 베르크의 사용료, 도아의 장터 조사, 협회 부서 업무 제안, D-073) |
 | [key-scenes.md](plot/key-scenes.md) | 장기 명장면 후보 (기록장의 빈칸, 이르바넬의 첫 숨, 마지막 사냥의 진실). 미승인 후보, 검토 원칙 D-045 [초안] |
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙, 생물을 부르는 말, 원고 평가 기준(D-052), 인물별 대화 지침과 장기 원칙(D-053) |
 | [style-diagnosis.md](plot/style-diagnosis.md) | 제1~6화 문체 진단서, 인물별 대화 설계(제안), 유지할 문체적 장점 |
@@ -101,6 +102,7 @@
 | [extinction-timeline.md](proposals/extinction-timeline.md) | 환류종 멸종 이후 경과 시간 재검토: 300·500·800·1,000년 비교, 연호 대안, 영향 범위 (2026-10-20). B′안을 D-047로 채택 (국가별 병행 연호는 미채택·미정) |
 | [education-system.md](proposals/education-system.md) | 세계관 교육 체계 제안: 나라별 교육 구조, 밀바람 겨울 배움터, 리아·도아·니오의 교육 배경, 복원사 견습·자격, 나라별 대토벌 역사 교육과 편견, 충돌 점검 (Q-세계-10). 기본 원칙은 D-059로 [world/education.md](world/education.md)에 반영 |
 | [restoration-status.md](proposals/restoration-status.md) | 복원학의 성과와 멸종 인식의 정합성: A·B·C 비교(권장 B+C), 종별 다섯 칸 상태표, 대중 인식과 교육, 제1~9화 영향, '탈출한 복원 개체' 가설 (Q-생물-10). B+C는 D-068로 [creatures/restoration-status.md](creatures/restoration-status.md)에 반영 |
+| [aurel-disclosure-scope.md](proposals/aurel-disclosure-scope.md) | '아우렐' 후보명의 공개 범위: A(공개 유지)·B(제한) 비교, 정보 습득 시점, B의 수정안 (Q-원고-06, 권장 B) |
 
 ### 원고 — `manuscript/`
 | 파일 | 상태 |
@@ -114,7 +116,7 @@
 | [book1/ep07-가장-안전한-자리.md](../manuscript/book1/ep07-가장-안전한-자리.md) | 제7화 초안. 선택 퇴고 (D-057), 1차 승인 (`5675c59`, D-058). 니오 첫 등장, 문을 두드리다, 같은 장부 (D-056) |
 | [book1/ep08-똑바로-물어봐.md](../manuscript/book1/ep08-똑바로-물어봐.md) | 제8화 초안. 1차 승인 (D-063, 검수 반영). 도아와 리아의 직접 대화, 대리 경계, 두 등불, 미해결로 남는 서류와 명단 (D-061, D-062) |
 | [book1/ep09-원본.md](../manuscript/book1/ep09-원본.md) | 제9화 초안. 1차 승인 (`1a3ab06`, D-067, 권고와 현장 관리 구분 2곳, 인용부호 정리 D-070, 종 후보 판단 보강 D-071). 마르딘 첫 등장, 원본 기록장 검토와 반환, 임시 보호 판단 (D-065) |
-| [book1/ep10-기록에-없는-짐승.md](../manuscript/book1/ep10-기록에-없는-짐승.md) | 제10화 초안 (사용자 검토 전). 마르딘의 가설 수정, 산길의 바퀴 자국, '도망친 연구 개체' 소문, '물어볼 것' 칸 (D-070, D-071) |
+| [book1/ep10-기록에-없는-짐승.md](../manuscript/book1/ep10-기록에-없는-짐승.md) | 제10화 초안 (사용자 검토 전). 마르딘의 가설 수정, 산길의 바퀴 자국, '도망친 연구 개체' 소문, '물어볼 것' 칸 (D-070~D-072, 승인 방향) |
 
 ## 4. 핵심 확정 사항 요약
 
