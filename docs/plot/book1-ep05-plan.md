@@ -1,6 +1,7 @@
 # 제5화 〈떠내려온 물병〉 — 회차 기획 [초안]
 
-> 상태: **회차 기획 (1차) — D-048로 결정 반영, 원고 초안 작성됨 (2026-10-20).** 원고: [ep05-떠내려온-물병.md](../../manuscript/book1/ep05-떠내려온-물병.md) (사용자 검토 전)
+> 상태: **회차 기획 (1차) — 원고 1차 승인 (2026-10-20, `c75bc0d`, D-049).**
+> 편집 메모 (D-049, 이번에는 수정하지 않음): 마지막 부분의 설명이 다소 직접적이다. "비밀이 지키는 것은 리아 하나뿐이었다" 전후의 결산 문단을 다듬을 여지가 있다. 원고: [ep05-떠내려온-물병.md](../../manuscript/book1/ep05-떠내려온-물병.md) (사용자 검토 전)
 > 근거 결정: D-007, D-016~D-020, D-024, D-025, D-030, D-034, D-042~D-048
 > 관련 문서: [book1-outline.md](book1-outline.md) §4·§8, [book1-ep04-plan.md](book1-ep04-plan.md), [characters/book1-trackers.md](../characters/book1-trackers.md), [foreshadowing.md](foreshadowing.md) F11·F13·F17, [key-scenes.md](key-scenes.md) 장면 A
 > 표기: `[확정]` 승인된 결정 / `[지시]` 2026-10-20 제5화 기획 지시 / `[제안]` 이 기획의 제안(승인 전) / `작업 가정` [open-questions.md](../open-questions.md) '작업 가정'의 임시값
