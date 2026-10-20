@@ -106,6 +106,7 @@
 | Q-세계-06 | 복선 후보 F11~F16의 채택 여부, F14·F16 분리안 승인 | D-032 | P1 | 제안 있음 ([plot/foreshadowing.md](plot/foreshadowing.md) §4) |
 | Q-세계-07 | 환류기관 기준 보상금 제도의 시행 지역, 시기, 실제 지급 기준. 종별 충돌 사례 중 정본으로 쓸 것 | D-036, D-037 | P2 | 일부 해결 → D-036 (피해의 세 갈래, 첫 번째 침묵의 영향, 보호와 생계의 충돌), D-037 (보상금을 주요 요인으로 채택). 사례 유형: [proposals/great-hunt-and-naming.md](proposals/great-hunt-and-naming.md) §2 |
 | Q-세계-09 | 공식 멸종 선언의 주체(국가·기관)와 근거, 마지막 확인 목격 연도, 정치적 영향의 실체. 국가별 병행 연호(토벌력 등)를 쓸 것인가. 대토벌 이전 구간의 구체적 연대 | D-047 | P2 | 열림 (신규). 후보: [proposals/extinction-timeline.md](proposals/extinction-timeline.md) §6 |
+| Q-세계-10 | 세계관 교육 체계: 나라별 기초교육·문해·직업교육·학술기관, 밀바람 겨울 배움터, 리아·도아·니오의 교육 배경, 복원사 자격 체계, 나라별 대토벌 역사 교육과 명칭 사용 | 마스터 §9-7, §10-10, §11-3, §11-8 | P2 | 제안 있음: [proposals/education-system.md](proposals/education-system.md) (결정 사항 15개는 §8) |
 
 ## 8. 원고와 운영
 
