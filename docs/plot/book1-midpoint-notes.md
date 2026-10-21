@@ -2,6 +2,7 @@
 
 > 상태: **메모 (2026-10-21, D-080).** 제13화 기획이 아니다. 회차 번호, 새 사건, 새 설정을 확정하지 않는다. 아래 '후보'와 '방향'은 다음 구조 점검에서 검토할 재료다.
 > 기준: 제1~12화 원고(제12화 1차 승인 시점), [book1-outline.md](book1-outline.md) §5·§8, [foreshadowing.md](foreshadowing.md)
+> 후속: 구조 재점검 제안서 [proposals/book1-structure-review.md](../proposals/book1-structure-review.md) (Q-원고-07, 사용자 결정 대기)
 
 ## 1. 제1~12화에서 이미 해결된 갈등
 

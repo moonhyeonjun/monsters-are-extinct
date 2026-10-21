@@ -105,6 +105,7 @@
 | [education-system.md](proposals/education-system.md) | 세계관 교육 체계 제안: 나라별 교육 구조, 밀바람 겨울 배움터, 리아·도아·니오의 교육 배경, 복원사 견습·자격, 나라별 대토벌 역사 교육과 편견, 충돌 점검 (Q-세계-10). 기본 원칙은 D-059로 [world/education.md](world/education.md)에 반영 |
 | [restoration-status.md](proposals/restoration-status.md) | 복원학의 성과와 멸종 인식의 정합성: A·B·C 비교(권장 B+C), 종별 다섯 칸 상태표, 대중 인식과 교육, 제1~9화 영향, '탈출한 복원 개체' 가설 (Q-생물-10). B+C는 D-068로 [creatures/restoration-status.md](creatures/restoration-status.md)에 반영 |
 | [aurel-disclosure-scope.md](proposals/aurel-disclosure-scope.md) | '아우렐' 후보명의 공개 범위: A(공개 유지)·B(제한) 비교, 정보 습득 시점, B의 수정안 (B 채택, D-074) |
+| [book1-structure-review.md](proposals/book1-structure-review.md) | 제1권 서사 구조와 전개 속도 재점검: 제1~12화 평가, 반복 기능, 아웃라인 대비 진척, 밀바람 결말 대안, 이동 동기, 경이 회복, A·B·C 비교(권장 B 균형형), 사용자 결정 14건 (Q-원고-07) |
 
 ### 원고 — `manuscript/`
 | 파일 | 상태 |
