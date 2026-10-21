@@ -2,6 +2,7 @@
 
 > 상태: **회차 기획 초안 (2026-10-21). 승인 전.** 본문은 쓰지 않는다. 아래 [제안]은 모두 사용자 승인을 기다리며, 새 정본 결정은 만들지 않았다.
 > **갱신 (2026-10-21, D-090):** 집필 재개 지시에 따라 본문 초안을 썼다: [ep15-모래자루-벽.md](../../manuscript/book1/ep15-모래자루-벽.md). 집필 전 대조와 최소 조정은 §12, 원고의 새 세부는 §13.
+> **1차 편집 검토 (2026-10-21, D-091):** [book1-ep15-review.md](book1-ep15-review.md) — 소규모 수정 후 승인 가능 권고, 필수 수정 제안 M1~M6, 들것 넷째 사람 후보, 증거 처리 비교.
 > 근거 결정: D-019, D-020, D-022, D-027, D-039, D-059, D-074, D-077, D-081~D-085
 > 관련 문서: [book1-outline.md](book1-outline.md) §4(사건 3), [book1-ep13-plan.md](book1-ep13-plan.md), [book1-ep14-plan.md](book1-ep14-plan.md), [book1-ep11-plan.md](book1-ep11-plan.md) (들것 이동), [characters/book1-trackers.md](../characters/book1-trackers.md), [characters/family-village.md](../characters/family-village.md)
 > 표기: `[확정]` 승인된 결정 / `[결정 방향]` D-081 / `[제안]` 이 기획의 제안
