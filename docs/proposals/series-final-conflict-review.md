@@ -1,6 +1,7 @@
 # 최종 대립의 결정적 선택과 개연성 보완 [제안] `[작가 비밀]`
 
 > 상태: **검토 제안서 (2026-10-21). 승인 전이며 정본이 아니다.** 기준 커밋 `0c64b21`. 결말 방향 D-087(C+D′)을 전제로 한다.
+> 사용자 지시(2026-10-21): 세 단계 구조를 최종부의 우선 설계 방향으로 채택(결말 정본 확정은 보류, D 항목 미기록). 핵심 선택 검증: [series-final-choice-verification.md](series-final-choice-verification.md) — "사람만 나간다", 두 대가의 연결, 응결량, 찬 고리, 에드반의 원래 계획 등은 그 문서 §9로 고쳐 읽는다.
 > 이 문서는 [series-final-conflict.md](series-final-conflict.md)의 추천안(〈산이 노래하는 날〉을 최종 대립으로, 〈이슬밭〉을 직전 사건으로)을 보완하고 국소 검증한다. 결말·인물의 비밀·새 환류 법칙을 확정하지 않는다. 원고와 정본을 바꾸지 않는다.
 > 근거: [series-final-conflict.md](series-final-conflict.md), [character-design.md](character-design.md), [series-ending-causality-review.md](series-ending-causality-review.md), [creatures/aurel.md](../creatures/aurel.md) §2·§3, [creatures/index.md](../creatures/index.md), [world/restoration.md](../world/restoration.md) §6, [world/irvanel.md](../world/irvanel.md) §5·§8, [characters/family-village.md](../characters/family-village.md), [characters/mardin-lowell.md](../characters/mardin-lowell.md) §5, [characters/antagonists.md](../characters/antagonists.md), [characters/book1-trackers.md](../characters/book1-trackers.md), D-004, D-012, D-019, D-081, D-087
 > 표기: `[정본]` / `[원고]` / `[추론]` / `[제안]` / `[새 설정 필요]`. `[참고값]`은 현실 세계의 대략적인 물리·생물 수치이며, 작품 설정으로 확정하지 않는다.
