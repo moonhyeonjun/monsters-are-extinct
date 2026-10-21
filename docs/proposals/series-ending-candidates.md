@@ -1,5 +1,6 @@
 # 시리즈 최종 결말 후보 설계 [제안] `[작가 비밀]`
 
+> **처리 (2026-10-21):** C+D′를 시리즈 최종 결말의 우선 설계 방향으로 채택 → [D-087](../decisions.md) (채택한 방향 / 유력 가설 / 미결정 설정으로 구분, 최종 확정은 보류).
 > 상태: **제안서 (2026-10-21). 승인 전이며 정본이 아니다.** 기준 커밋 `4937bf1`. 장기 설계 단계 ① (D-086, Q-세계-12, Q-원고-08).
 > 이 문서는 결말의 **후보**를 비교한다. 어떤 결말, 역사의 진실, 인물의 비밀도 정본으로 확정하지 않는다. 제1~14화 원고, 제15화 기획, 기존 확정 설정은 바꾸지 않는다.
 > 근거: [plot/creative-principles.md](../plot/creative-principles.md), [plot/series-arc.md](../plot/series-arc.md), [world/history.md](../world/history.md), [world/history-secret.md](../world/history-secret.md), [world/irvanel.md](../world/irvanel.md), [world/restoration.md](../world/restoration.md), [world/factions.md](../world/factions.md), [creatures/index.md](../creatures/index.md), [creatures/restoration-status.md](../creatures/restoration-status.md), [creatures/aurel.md](../creatures/aurel.md), [characters/](../characters/), [plot/foreshadowing.md](../plot/foreshadowing.md), [plot/key-scenes.md](../plot/key-scenes.md), 제1~14화 원고
