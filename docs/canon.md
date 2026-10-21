@@ -95,6 +95,7 @@
 | [book1-midpoint-notes.md](plot/book1-midpoint-notes.md) | 제1권 중반 구조 점검 메모 [메모] (해결된 갈등, 당면 갈등, 리아가 마을 밖으로 나갈 이유 후보, 생물과의 감정적 연결, 재점검 구간. D-080) |
 | [key-scenes.md](plot/key-scenes.md) | 장기 명장면 후보 (기록장의 빈칸, 이르바넬의 첫 숨, 마지막 사냥의 진실). 미승인 후보, 검토 원칙 D-045 [초안] |
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙, 생물을 부르는 말, 원고 평가 기준(D-052), 인물별 대화 지침과 장기 원칙(D-053) |
+| [creative-principles.md](plot/creative-principles.md) | **장기 창작 원칙 [확정 원칙]** (D-086): 시작과 결말을 먼저, 그 사이는 인물에게. 참고 특성, 독자가 느껴야 할 것, 확정·유연·회피의 구분, 인물 설계 여덟 항목, 결말 설계 원칙과 평가 기준, 다음 네 단계 작업 (내용은 미확정) |
 | [style-diagnosis.md](plot/style-diagnosis.md) | 제1~6화 문체 진단서, 인물별 대화 설계(제안), 유지할 문체적 장점 |
 | [ep06-trial-edit.md](plot/ep06-trial-edit.md) | 제6화 장면 A·B 시범 편집안 (원본·수정안 비교). D-053으로 선택 적용 |
 | [style-edit-ep01-05.md](plot/style-edit-ep01-05.md) | 제1~5화 문체 선택 편집 기록 (D-054): 회차별 변경과 이유, 유지한 문장, 분량 |
