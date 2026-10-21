@@ -89,6 +89,7 @@
 | [book1-ep10-plan.md](plot/book1-ep10-plan.md) | 제10화 〈기록에 없는 짐승〉(가제) 회차 기획 [초안] ('도망친 복원 개체' 가설, 산길 재조사, 바퀴 자국, 마르딘의 정정, D-069·D-070) |
 | [book1-ep11-plan.md](plot/book1-ep11-plan.md) | 제11화 〈빌린 자리〉(가제) 회차 기획 [초안] (천막의 한계, 방앗간 아래 칸, 베르크의 사용료, 도아의 장터 조사, 협회 부서 업무 제안, D-073, 집필 전 최종 검토 D-075, 결정 D-076) |
 | [book1-ep12-plan.md](plot/book1-ep12-plan.md) | 제12화 〈보내온 서류〉(가제) 회차 기획 [초안] (방앗간 중단의 결과, 위임장 대조 A-2, 공식 조사 대상, 공개/숨김 정보, D-078). 전달 경로 논리 수정 §14, 집필 결정 §15 (D-079) |
+| [book1-ep13-plan.md](plot/book1-ep13-plan.md) | 제13화 〈바닥에 그은 금〉(가제) 회차 기획 [초안] (보호 조건 변화와 이송 준비, 리아의 밤 관찰, 세 다리로 선 개체, 마르딘의 판단 변화, D-081) |
 | [book1-midpoint-notes.md](plot/book1-midpoint-notes.md) | 제1권 중반 구조 점검 메모 [메모] (해결된 갈등, 당면 갈등, 리아가 마을 밖으로 나갈 이유 후보, 생물과의 감정적 연결, 재점검 구간. D-080) |
 | [key-scenes.md](plot/key-scenes.md) | 장기 명장면 후보 (기록장의 빈칸, 이르바넬의 첫 숨, 마지막 사냥의 진실). 미승인 후보, 검토 원칙 D-045 [초안] |
 | [style-guide.md](plot/style-guide.md) | 시점, 문체, 정보 노출 원칙, 생물을 부르는 말, 원고 평가 기준(D-052), 인물별 대화 지침과 장기 원칙(D-053) |
@@ -105,7 +106,7 @@
 | [education-system.md](proposals/education-system.md) | 세계관 교육 체계 제안: 나라별 교육 구조, 밀바람 겨울 배움터, 리아·도아·니오의 교육 배경, 복원사 견습·자격, 나라별 대토벌 역사 교육과 편견, 충돌 점검 (Q-세계-10). 기본 원칙은 D-059로 [world/education.md](world/education.md)에 반영 |
 | [restoration-status.md](proposals/restoration-status.md) | 복원학의 성과와 멸종 인식의 정합성: A·B·C 비교(권장 B+C), 종별 다섯 칸 상태표, 대중 인식과 교육, 제1~9화 영향, '탈출한 복원 개체' 가설 (Q-생물-10). B+C는 D-068로 [creatures/restoration-status.md](creatures/restoration-status.md)에 반영 |
 | [aurel-disclosure-scope.md](proposals/aurel-disclosure-scope.md) | '아우렐' 후보명의 공개 범위: A(공개 유지)·B(제한) 비교, 정보 습득 시점, B의 수정안 (B 채택, D-074) |
-| [book1-structure-review.md](proposals/book1-structure-review.md) | 제1권 서사 구조와 전개 속도 재점검: 제1~12화 평가, 반복 기능, 아웃라인 대비 진척, 밀바람 결말 대안, 이동 동기, 경이 회복, A·B·C 비교(권장 B 균형형), 사용자 결정 14건 (Q-원고-07) |
+| [book1-structure-review.md](proposals/book1-structure-review.md) | 제1권 서사 구조와 전개 속도 재점검: 제1~12화 평가, 반복 기능, 아웃라인 대비 진척, 밀바람 결말 대안, 이동 동기, 경이 회복, A·B·C 비교(권장 B 균형형), 사용자 결정 14건 (Q-원고-07). **B안 채택 → D-081** (수정 조건 반영) |
 
 ### 원고 — `manuscript/`
 | 파일 | 상태 |

@@ -1,6 +1,7 @@
 # 제1권 서사 구조와 전개 속도 재점검 [제안]
 
 > 상태: **제안서 (2026-10-21). 승인 전이며 정본이 아니다.** 기준 커밋 `5710c44`.
+> **처리: B안 채택 → [D-081](../decisions.md) (2026-10-21).** 다만 이 제안서의 사건을 그대로 확정하지 않았다. 달라진 점: 다친 앞다리의 첫 체중은 사건 6(이별)으로 옮김, 덮개와 섬유는 유사성까지(같은 수레의 증거 아님), 감찰국 회신은 조회한 기록의 범위 안에서만, 시설의 복원 개체는 외형·생태 결정 뒤(Q-생물-11), 견습 결심과 출발 사이에 준비 기간. 확정된 후반부 구조는 [book1-outline.md](../plot/book1-outline.md) §4를 따른다.
 > 이번 작업은 분석과 구조 제안만 한다. 제1~12화 원고, 기존 확정 플롯, 환류종 능력, 조직 설정은 바꾸지 않는다. 제13화의 기획과 본문은 쓰지 않는다.
 > 아래 [제안]과 '후보'는 모두 사용자 결정(§13)을 기다린다. 회차 번호와 분량은 추정이다.
 > 참고: [book1-outline.md](../plot/book1-outline.md), [book1-midpoint-notes.md](../plot/book1-midpoint-notes.md), [series-arc.md](../plot/series-arc.md), [foreshadowing.md](../plot/foreshadowing.md), [key-scenes.md](../plot/key-scenes.md), [characters/lia-veln.md](../characters/lia-veln.md), [creatures/aurel.md](../creatures/aurel.md), [creatures/restoration-status.md](../creatures/restoration-status.md), [world/irvanel.md](../world/irvanel.md)
