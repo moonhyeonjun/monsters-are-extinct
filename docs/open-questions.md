@@ -110,7 +110,7 @@
 | Q-세계-09 | 공식 멸종 선언의 주체(국가·기관)와 근거, 마지막 확인 목격 연도, 정치적 영향의 실체. 국가별 병행 연호(토벌력 등)를 쓸 것인가. 대토벌 이전 구간의 구체적 연대 | D-047 | P2 | 열림 (신규). 후보: [proposals/extinction-timeline.md](proposals/extinction-timeline.md) §6 |
 | Q-세계-10 | 세계관 교육 체계: 나라별 기초교육·문해·직업교육·학술기관, 밀바람 겨울 배움터, 리아·도아·니오의 교육 배경, 복원사 자격 체계, 나라별 대토벌 역사 교육과 명칭 사용 | 마스터 §9-7, §10-10, §11-3, §11-8 | P2 | 일부 해결 → D-059 (기본 원칙 9개 정본 반영, [world/education.md](world/education.md)). 남은 것: 학비·학생 수, 교사, 도아 집안 생업, 마렌의 교육 배경, 자격 명칭과 효력, 교과서 내용, 병행 연호, 장기 명장면. 제안서: [proposals/education-system.md](proposals/education-system.md) (결정 사항 15개는 §8) |
 | Q-세계-11 | 대륙복원협회 부서(탐사국·생육국·서식국·기록국·감찰국)의 업무 구분. 감찰국 조회가 할 수 있는 것의 범위 | restoration.md §5 [초안], 제9·10화 원고, D-072 | P2 | 제안 있음: [plot/book1-ep11-plan.md](plot/book1-ep11-plan.md) §10 (생육국 = 복원 개체 기록, 감찰국 = 협회 문서·인장·협력기관 조회, 법적 권한 없음). D-081: 감찰국 회신은 조회한 기록의 범위 안에서만 의미. "등록 기록 없음"을 위조·부존재의 입증으로 쓰지 않음 |
-| Q-세계-12 | 시리즈 최종 결말: 리아의 마지막 선택, 충돌하는 가치, 대가, 이르바넬의 비밀이 전체를 다시 읽게 하는 방식, 멸종·복원·보호·자유 주제의 완성 | D-086, [plot/creative-principles.md](plot/creative-principles.md) §5, series-arc §1~2 | P0 | 제안 있음: [proposals/series-ending-candidates.md](proposals/series-ending-candidates.md) — 후보 A·B·C·D, 추천 C+D 〈지우지 않고 긋는다〉(멸종 선언 = 보호의 거짓, 그 거짓 때문에 산의 물이 끌려감, 리아는 기록에 줄을 긋고 물을 돌려보냄). 사용자 결정 13건 대기 |
+| Q-세계-12 | 시리즈 최종 결말: 리아의 마지막 선택, 충돌하는 가치, 대가, 이르바넬의 비밀이 전체를 다시 읽게 하는 방식, 멸종·복원·보호·자유 주제의 완성 | D-086, [plot/creative-principles.md](plot/creative-principles.md) §5, series-arc §1~2 | P0 | 제안 있음: [proposals/series-ending-candidates.md](proposals/series-ending-candidates.md) — 후보 A·B·C·D, 추천 C+D 〈지우지 않고 긋는다〉(멸종 선언 = 보호의 거짓, 그 거짓 때문에 산의 물이 끌려감, 리아는 기록에 줄을 긋고 물을 돌려보냄). 사용자 결정 13건 대기. 검증: [proposals/series-ending-causality-review.md](proposals/series-ending-causality-review.md) — 원안 C+D의 두 연결(설계된 보호의 거짓, 밀바람 → 이르바넬의 물)은 성립 어려움. 권장 C+D′(정치적 종결 + 산의 침묵 / 산록의 큰 물길 사업 / 밀바람은 축소판 / 마지막 꽃은 밀바람의 결정의 결과), C 단독 후퇴 경로 유지. 결정 11건 대기 |
 
 ## 8. 원고와 운영
 
@@ -121,7 +121,7 @@
 | Q-원고-03 | PROJECT_RULES.md 처리 (AGENTS.md와 중복: 포인터만 남김 / 삭제) | 루트 문서 | P1 | 열림 |
 | Q-원고-04 | 장기 명장면 후보(기록장의 빈칸, 이르바넬의 첫 숨, 마지막 사냥의 진실)의 채택과 세부. 특히 장면 A의 '물문 개방을 늦춘다'는 정의 | D-044 | P1 | 제안 있음: [plot/key-scenes.md](plot/key-scenes.md) §F (신규) |
 | Q-원고-07 | 제1권 후반 구조: A 압축 / B 균형 / C 확장, 첫 모험의 끝, 리아의 이송 동행, 베르크의 마지막 수, 운송문서 조각의 강도, 감찰국 회신, 보상, 시설 묘사 등 | [proposals/book1-structure-review.md](proposals/book1-structure-review.md) §13 | P0 | **해결 → D-081** (2026-10-21, B 균형형 채택. 14항목 중 결정 10, 일부 보류: 출발 장면 위치, 베르크의 구체적 행동, 감찰국 회신 시점, 시설 명칭·거리, 복원 개체, 로안의 삯) |
-| Q-원고-08 | 장기 설계 네 단계의 진행과 승인: ① 결말 후보 ② 인물 설계 ③ 역방향 복선 ④ 제1~14화 정합성. 그동안 제15화 본문 집필 보류 | D-086, [plot/creative-principles.md](plot/creative-principles.md) §6 | P0 | 열림. 각 단계는 사용자 요청으로 시작. 단계 ① 제안서 작성 (2026-10-21, 승인 대기) |
+| Q-원고-08 | 장기 설계 네 단계의 진행과 승인: ① 결말 후보 ② 인물 설계 ③ 역방향 복선 ④ 제1~14화 정합성. 그동안 제15화 본문 집필 보류 | D-086, [plot/creative-principles.md](plot/creative-principles.md) §6 | P0 | 열림. 각 단계는 사용자 요청으로 시작. 단계 ① 제안서 작성 (2026-10-21, 승인 대기). 단계 ① 검증 제안서 작성 (2026-10-21) |
 
 ---
 
