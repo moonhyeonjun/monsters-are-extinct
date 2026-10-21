@@ -1,6 +1,7 @@
 # 최종 대립과 인물 선택의 사건화 [제안] `[작가 비밀]`
 
 > 상태: **제안서 (2026-10-21). 승인 전이며 정본이 아니다.** 기준 커밋 `04cadac`. 결말 방향 D-087(C+D′)을 전제로 한다.
+> 보완: [series-final-conflict-review.md](series-final-conflict-review.md) — 이슬밭 축소, 이웃 우물·수로 역류 안 폐기, 붕괴의 세 열쇠, 리아의 결정적 선택. 이 문서의 해당 부분은 그 검토로 고쳐 읽는다.
 > 이 문서는 인물들의 가치 충돌이 시리즈 마지막에 만드는 **사건**을 설계한다. 인물의 비밀, 최종 사건, 결말을 확정하지 않는다. 원고와 정본을 바꾸지 않는다.
 > 근거: [series-ending-candidates.md](series-ending-candidates.md), [series-ending-causality-review.md](series-ending-causality-review.md), [character-design.md](character-design.md), [world/irvanel.md](../world/irvanel.md), [world/restoration.md](../world/restoration.md) §6, [characters/antagonists.md](../characters/antagonists.md), [creatures/aurel.md](../creatures/aurel.md), [plot/key-scenes.md](../plot/key-scenes.md) B, [plot/series-arc.md](../plot/series-arc.md)
 > 표기: `[정본]` / `[원고]` / `[추론]` / `[제안]` / `[새 설정 필요]`
