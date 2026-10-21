@@ -109,6 +109,7 @@
 | [creature-terminology.md](proposals/creature-terminology.md) | '거생종' 명칭 변경 검토: 환류종·환수·괴물 체계, 18종 적합도, 등장 위치, 변경 범위 (2026-10-20). D-041로 채택(환수·옛 학술어안 불채택) |
 | [extinction-timeline.md](proposals/extinction-timeline.md) | 환류종 멸종 이후 경과 시간 재검토: 300·500·800·1,000년 비교, 연호 대안, 영향 범위 (2026-10-20). B′안을 D-047로 채택 (국가별 병행 연호는 미채택·미정) |
 | [education-system.md](proposals/education-system.md) | 세계관 교육 체계 제안: 나라별 교육 구조, 밀바람 겨울 배움터, 리아·도아·니오의 교육 배경, 복원사 견습·자격, 나라별 대토벌 역사 교육과 편견, 충돌 점검 (Q-세계-10). 기본 원칙은 D-059로 [world/education.md](world/education.md)에 반영 |
+| [return-species-beliefs.md](proposals/return-species-beliefs.md) | 환류종 신앙과 생활 문화 제안 [제안, 승인 전]: 네 유형 비교, 세 지역 문화(평원의 '몫' 풍습, 산의 '길 금기', 변경의 '문쇠' 기억) + 보조 '원년의 날', 역사 검증, 복원 활동별 태도, 인물 연결(마렌·다렌·도아·마르딘·에드반·리아), 서사 활용, 짧은 장면 예시, 결정 9건 (Q-세계-13) |
 | [restoration-status.md](proposals/restoration-status.md) | 복원학의 성과와 멸종 인식의 정합성: A·B·C 비교(권장 B+C), 종별 다섯 칸 상태표, 대중 인식과 교육, 제1~9화 영향, '탈출한 복원 개체' 가설 (Q-생물-10). B+C는 D-068로 [creatures/restoration-status.md](creatures/restoration-status.md)에 반영 |
 | [aurel-disclosure-scope.md](proposals/aurel-disclosure-scope.md) | '아우렐' 후보명의 공개 범위: A(공개 유지)·B(제한) 비교, 정보 습득 시점, B의 수정안 (B 채택, D-074) |
 | [book1-structure-review.md](proposals/book1-structure-review.md) | 제1권 서사 구조와 전개 속도 재점검: 제1~12화 평가, 반복 기능, 아웃라인 대비 진척, 밀바람 결말 대안, 이동 동기, 경이 회복, A·B·C 비교(권장 B 균형형), 사용자 결정 14건 (Q-원고-07). **B안 채택 → D-081** (수정 조건 반영) |
