@@ -2803,3 +2803,34 @@
   - [plot/book1-style-review.md](plot/book1-style-review.md) §7~§9
   - [plot/book1-continuity-check.md](plot/book1-continuity-check.md) §9
   - [canon.md](canon.md), [plot/book1-outline.md](plot/book1-outline.md), [plot/book1-restructure-map.md](plot/book1-restructure-map.md)
+
+## D-119. 제1권 통합 퇴고 13단계: 잔여 문체 정리와 최종 검수 준비
+
+- 상태: `승인` (2026-10-22) — 사용자 지시(기준 커밋 `fcc69c6`, 브랜치 `book1-restructure`).
+  - 시작 전에 확인한 것: 원격 `book1-restructure` = `fcc69c6`, 작업 트리 깨끗함.
+  - main = origin/main = 태그 `book1-draft1` = `ca0951d`. 바꾸지 않는다.
+- 결정 ('봄이 두 번'):
+  - 제16화 물길지기의 "옛짐승 몫이오." 뒤에, 리아가 제4화 농서의 그림과 문구를 떠올리는 한 문단을 넣었다. 짧은 문장 넷과 농서 문구 한 줄이다.
+  - 넣지 않은 것: 뜻풀이와 연결 문장. 아우렐·이슬밭·환류기관·강제환류와도 잇지 않았다.
+  - 제15화 평원 조망에는 넣지 않았다. 경이 장면을 보존하고, F01의 해답(관개의 수분 불균형, 중기 회수)이 드러나지 않게 하기 위해서다.
+- 결정 (제8~11화 리아): 현행을 유지한다. 결과에 영향을 주는 결함이 이미 있다(도아에 대한 불신, 기록의 빈 시각, 늦은 고백, 기억으로 쓴 기록, 이름이 남는 대가). 새 사건이나 실수는 넣지 않았다.
+- 결정 (제9·11화): 제9화는 같은 사실을 두 번 말하던 두 곳을 지웠다. 제11화는 그대로다.
+- 결정 (진흙 대사): 제8화 "무릎까지요"는 인물의 구어로 유지한다. 제10화의 "무릎 높이" 물 얼룩은 방앗간 아래 칸의 높이라, 저지대 마당과 충돌하지 않는다.
+- 결정 (수로 관리인): 정본 설정으로 올리지 않는다. 연속성 보고서에 참고 사항으로만 적는다. 새 조직·직책·인원 규칙은 만들지 않는다.
+- 결정 (문장 단위 9건, style-review §9-1):
+  - 수정 6건: 제12화 "오래" 1곳, 제10화 "틀렸다고 생각할 수 없었다", 제6화 "물론이지요" 1곳, 제12화 "소리 내어 읽지 않았다", 제9화 서술자 해설, 제19화 "리아는 그것을 알았다".
+  - 유지 3건: 제12화 침묵 꼬리, 제11화 카셀의 목록, 제3·8화 경미한 두 곳.
+  - 수정하지 않은 항목의 이유는 style-review §10-4에 있다.
+- 결정 (서술 습관): '부모의 짧은 한마디 → 그게 전부였다' 공식 네 번 가운데 제10화 하나를 덜었다. 마렌·다렌의 침묵, 리아가 도아 앞에서 막히는 순간, 베르크가 압박받을 때의 반응은 그대로 두었다.
+- 결정 (미정 설정):
+  - 시설 인계의 최종 권한, 강제 이송 절차, Q-감각-01은 계속 미정이다.
+  - 원고에서 이를 확정하는 문장이 없음을 검색으로 확인했다.
+  - 시설 인계가 소유권 확정과 다르다는 원칙(D-117·D-118)을 유지한다.
+- 분량: 원고 6편 합계 공백 제외 33자가 줄었다(제16화는 73자 늘어남).
+- 앞으로: 구조 개편을 더 넓히지 않고 최종 검수로 넘어간다. 검수 항목은 [plot/book1-style-review.md](plot/book1-style-review.md) §10-8에 있다.
+- 반영 위치:
+  - 원고 6편(머리 주석 포함)
+  - [plot/book1-style-review.md](plot/book1-style-review.md) §10
+  - [plot/book1-continuity-check.md](plot/book1-continuity-check.md) §9
+  - [plot/foreshadowing.md](plot/foreshadowing.md)(F01 진행 행)
+  - [canon.md](canon.md), [plot/book1-outline.md](plot/book1-outline.md), [plot/book1-restructure-map.md](plot/book1-restructure-map.md)
