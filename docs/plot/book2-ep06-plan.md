@@ -1,6 +1,6 @@
 # 제2권 제6화 〈아직이에요〉 — 집필 점검과 기록
 
-> 상태: **[초안 기록, 승인 전]** (2026-10-23). 제2권 제6화 초고를 쓰면서 남긴 점검 기록이다.
+> 상태: **[초안 기록, 장면 구성 1차 승인 (2026-10-23, 사용자)]**. 2026-10-23 작성. 채택 범위는 [book2-ep07-plan.md](book2-ep07-plan.md) §0. 제2권 제6화 초고를 쓰면서 남긴 점검 기록이다.
 > - 원고: [manuscript/book2/ep06-아직이에요.md](../../manuscript/book2/ep06-아직이에요.md)
 > - 장면 설계: [proposals/book2-scene-design.md](../proposals/book2-scene-design.md) §2 6화, §4 노출 순서 / [proposals/book2-episode-plot.md](../proposals/book2-episode-plot.md) 6화
 > - 앞 회차 기록: [book2-ep05-plan.md](book2-ep05-plan.md)
