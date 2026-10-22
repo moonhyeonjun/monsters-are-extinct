@@ -1,6 +1,6 @@
 # 제1권 통합 퇴고 2단계 — 전체 구조 개편 설계 [제안]
 
-> 상태: **개편 설계 제안 (2026-10-22). 승인 전.** 원고(제1~22화)와 정본을 고치지 않았다. 기준 커밋 `03cdec0`.
+> 상태: **설계 승인 (2026-10-22, D-108).** 구조 개편 원칙 채택. 감각 후보 1~3은 조건부(후보 2: 두통·졸음을 감각 부작용으로 정하지 않음), 후보 4는 쓰지 않음. 구1~6은 통합 퇴고 한정 예외. 진행 기록: [book1-restructure-map.md](book1-restructure-map.md). (설계 작성 기준 커밋 `03cdec0`)
 > 근거:
 > - [book1-revision-diagnosis.md](book1-revision-diagnosis.md) (1단계 진단)
 > - [book1-outline.md](book1-outline.md), [book1-revision-list.md](book1-revision-list.md) R1~R7

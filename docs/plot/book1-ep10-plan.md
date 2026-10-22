@@ -1,6 +1,6 @@
 # 제10화 〈기록에 없는 짐승〉 — 회차 기획 [초안]
 
-> 상태: **회차 기획 (1차) — D-070으로 결정 반영, 원고 초안 작성 (2026-10-21).** 원고: [ep10-기록에-없는-짐승.md](../../manuscript/book1/ep10-기록에-없는-짐승.md) (사용자 검토 전). 결정은 §14, 원고 세부는 §15를 따른다.
+> 상태: **회차 기획 (1차) — D-070으로 결정 반영, 원고 초안 작성 (2026-10-21).** 원고: ep10-기록에-없는-짐승.md (사용자 검토 전). **구조 개편(D-108)으로 신 제9화 [ep09-원본.md](../../manuscript/book1/ep09-원본.md)에 통합됨. 개편 전 원고는 태그 `book1-draft1`에 있다.** 결정은 §14, 원고 세부는 §15를 따른다.
 > 근거 결정: D-006, D-007, D-012, D-019, D-022, D-023, D-029, D-036, D-051, D-052~D-070
 > 관련 문서: [book1-outline.md](book1-outline.md) §4·§8(6장·8장·12장), [book1-ep09-plan.md](book1-ep09-plan.md), [creatures/restoration-status.md](../creatures/restoration-status.md), [foreshadowing.md](foreshadowing.md) F11·F13, [characters/mardin-lowell.md](../characters/mardin-lowell.md) §4, [characters/book1-trackers.md](../characters/book1-trackers.md)
 > 표기: `[확정]` 승인된 결정 / `[지시]` 2026-10-21 제10화 기획 지시 (D-069) / `[제안]` 이 기획의 제안(승인 전)

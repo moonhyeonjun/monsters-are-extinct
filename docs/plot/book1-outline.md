@@ -41,10 +41,10 @@
 | 제6화 | 일곱 글자 | D+5 새벽~오전 | **1차 승인** (커밋 `f954a69`, D-054). 최종 승인 전까지 초안. 검수 반영 시간 표현 1곳 (D-063). 기획: [book1-ep06-plan.md](book1-ep06-plan.md) | [ep06-일곱-글자.md](../../manuscript/book1/ep06-일곱-글자.md) |
 | 제7화 | 가장 안전한 자리 | D+5 정오~밤 | **1차 승인** (커밋 `5675c59`, D-058). 최종 승인 전까지 초안. 기획: [book1-ep07-plan.md](book1-ep07-plan.md) | [ep07-가장-안전한-자리.md](../../manuscript/book1/ep07-가장-안전한-자리.md) |
 | 제8화 | 똑바로 물어봐 | D+6 아침~밤 | **1차 승인** (D-063, 검수 반영). 최종 승인 전까지 초안. D-061, D-062. 기획: [book1-ep08-plan.md](book1-ep08-plan.md) | [ep08-똑바로-물어봐.md](../../manuscript/book1/ep08-똑바로-물어봐.md) |
-| 제9화 | 원본 | D+7 정오~밤 | **1차 승인** (커밋 `1a3ab06`, D-067). 최종 승인 전까지 초안. D-065. 기획: [book1-ep09-plan.md](book1-ep09-plan.md) | [ep09-원본.md](../../manuscript/book1/ep09-원본.md) |
-| 제10화 | 기록에 없는 짐승 | D+8 | 초안 (2026-10-21, 승인 방향, D-070~D-072). 기획: [book1-ep10-plan.md](book1-ep10-plan.md) | [ep10-기록에-없는-짐승.md](../../manuscript/book1/ep10-기록에-없는-짐승.md) |
+| 제9화 | 원본 | D+7 정오~D+8 밤 | **개편 원고** (브랜치 `book1-restructure`, D-108, 구9·10 통합, 사용자 검토 전). 개편 전: 1차 승인 (`1a3ab06`, D-067) — 태그 `book1-draft1`. 기획: [book1-ep09-plan.md](book1-ep09-plan.md), [book1-ep10-plan.md](book1-ep10-plan.md) | [ep09-원본.md](../../manuscript/book1/ep09-원본.md) |
+| 제10화 | 기록에 없는 짐승 | D+8 | **신 제9화로 통합** (D-108). 개편 전 원고는 태그 `book1-draft1`의 `manuscript/book1/ep10-기록에-없는-짐승.md`. 기획: [book1-ep10-plan.md](book1-ep10-plan.md) | (통합) |
 | 제11화 | 빌린 자리 | D+9 오후~밤 | **1차 승인** (D-077, 개연성 보완). 최종 승인 전까지 초안. D-076. 기획: [book1-ep11-plan.md](book1-ep11-plan.md) | [ep11-빌린-자리.md](../../manuscript/book1/ep11-빌린-자리.md) |
-| 제12화 | 보내온 서류 | D+10 아침~D+11 밤 | **1차 승인** (D-080, Codex 2차 검수 반영). 최종 승인 전까지 초안. D-079. 기획: [book1-ep12-plan.md](book1-ep12-plan.md) | [ep12-보내온-서류.md](../../manuscript/book1/ep12-보내온-서류.md) |
+| 제12화 | 보내온 서류 | D+10 아침~D+11 밤 | **개편 원고** (브랜치 `book1-restructure`, D-108, 압축·낭독 순서·엔딩, 사용자 검토 전). 개편 전: 1차 승인 (D-080) — 태그 `book1-draft1`. D-079. 기획: [book1-ep12-plan.md](book1-ep12-plan.md) | [ep12-보내온-서류.md](../../manuscript/book1/ep12-보내온-서류.md) |
 | 제13화 | 바닥에 그은 금 | D+12 새벽~D+13 밤 | **1차 승인** (D-083, 국소 검증). 최종 승인 전까지 초안. D-082. 기획: [book1-ep13-plan.md](book1-ep13-plan.md) | [ep13-바닥에-그은-금.md](../../manuscript/book1/ep13-바닥에-그은-금.md) |
 | 제14화 | 바위 처마 밑 | D+14 새벽~해 질 녘 | **1차 승인** (D-085, 국소 검증). 최종 승인 전까지 초안. D-084. 기획: [book1-ep14-plan.md](book1-ep14-plan.md) | [ep14-바위-처마-밑.md](../../manuscript/book1/ep14-바위-처마-밑.md) |
 | 제15화 | 모래자루 벽 | D+15 새벽~D+16 밤 (출발 D+17 새벽) | **초안** (2026-10-21, D-090). **1차 승인** (D-093, 1차 편집 수정 D-092 반영본). 최종 승인 전까지 초안. 1차 편집 검토·재평가: [book1-ep15-review.md](book1-ep15-review.md) §16. 기획: [book1-ep15-plan.md](book1-ep15-plan.md) §12~§13 | [ep15-모래자루-벽.md](../../manuscript/book1/ep15-모래자루-벽.md) |
