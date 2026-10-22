@@ -27,6 +27,7 @@ QUESTION_REF_RE = re.compile(r'Q-[가-힣]+-\d+')
 EPISODE_FILE_RE = re.compile(r'^ep(\d+)-.+\.md$')
 EPISODE_HEADING_RE = re.compile(r'^## 제(\d+)화', re.M)
 META_EPISODE_RE = re.compile(r'제\s?\d+\s?화')
+META_VOLUME_RE = re.compile(r'제\s?\d+\s?권')
 
 
 def read(path):
@@ -117,6 +118,8 @@ def check_manuscripts(root):
                     errors.append((where, f'본문에 기획 표기 {w}'))
             if META_EPISODE_RE.search(body):
                 errors.append((where, '본문에 회차 표기(제N화)'))
+            if META_VOLUME_RE.search(body):
+                errors.append((where, '본문에 권 표기(제N권)'))
             if '"' in body:
                 errors.append((where, '본문에 곧은 큰따옴표(")'))
         for n, paths in sorted(numbers.items()):
