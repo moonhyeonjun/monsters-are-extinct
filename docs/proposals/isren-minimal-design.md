@@ -3,7 +3,7 @@
 > **채택 범위 (2026-10-22, D-102):** §2·§3 가운데 제19화 시설 개체에게 관찰된 외형(낮고 납작한 몸, 짧은 털, 넓적한 주둥이, 반 물갈퀴 앞발, 납작해지는 긴 꼬리)과 행동(자갈을 뒤집어 먹이를 찾음, 시설 개체의 애벌레·조개, 시설에서 난 새끼가 어미를 따라 함)만 채택. 크기 범위, 필수 습성, 야생 먹이, 바닥 무늬의 종 규칙화, 환류 능력은 보류. **§4 마지막 행과 §7-6(제10화 목록 재해석)은 철회** — 근거 없음, Q-생물-12.
 > 상태: **제안서 [초안] (2026-10-22). 제19화 원고에서 쓰는 최소한만 다룬다.** 정본 확정이 아니다. 사용자 승인 전까지 [creatures/index.md](../creatures/index.md)와 [creatures/restoration-status.md](../creatures/restoration-status.md)를 바꾸지 않는다.
 > 근거: 사용자 지시(제19화 〈빈 수레〉 기획 보완 및 1차 원고 집필 §1, 이스렌 등장 방향 채택), D-036, D-039, D-041, D-068, D-070, D-081, Q-생물-04, Q-생물-10, Q-생물-11
-> 관련: [plot/book1-ep19-plan.md](../plot/book1-ep19-plan.md) §6·§14, [creatures/food-web.md](../creatures/food-web.md), [proposals/great-hunt-and-naming.md](great-hunt-and-naming.md) §4·§6-2 (제안, 미채택 부분 포함)
+> 관련: [plot/book1-ep19-plan.md](../plot/book1-ep18-plan.md) §6·§14, [creatures/food-web.md](../creatures/food-web.md), [proposals/great-hunt-and-naming.md](great-hunt-and-naming.md) §4·§6-2 (제안, 미채택 부분 포함)
 
 ## 1. 정본에서 이미 확정된 사실
 

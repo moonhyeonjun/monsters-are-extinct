@@ -1,5 +1,7 @@
 # 제1권 중반 구조 점검 메모 [메모]
 
+> **회차 번호 (D-116):** 본문의 회차 번호는 작성 당시(구 번호, 22화 체제) 기준이다. 현재 21화 번호와의 대응은 [book1-restructure-map.md](book1-restructure-map.md) §1.
+
 > 상태: **메모 (2026-10-21, D-080).** 제13화 기획이 아니다. 회차 번호, 새 사건, 새 설정을 확정하지 않는다. 아래 '후보'와 '방향'은 다음 구조 점검에서 검토할 재료다.
 > 기준: 제1~12화 원고(제12화 1차 승인 시점), [book1-outline.md](book1-outline.md) §5·§8, [foreshadowing.md](foreshadowing.md)
 > 후속: 구조 재점검 제안서 [proposals/book1-structure-review.md](../proposals/book1-structure-review.md) (Q-원고-07, 사용자 결정 대기)
