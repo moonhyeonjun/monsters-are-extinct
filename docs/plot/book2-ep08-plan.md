@@ -1,6 +1,6 @@
 # 제2권 제8화 〈서리 밭의 새벽〉 — 집필 점검과 기록
 
-> 상태: **[초안 기록, 승인 전]** (2026-10-23). 제7화 국소 점검과 제2권 제8화 초고를 쓰면서 남긴 기록이다.
+> 상태: **[초안 기록, 장면 구성 1차 승인 (2026-10-23, 사용자)]**. 2026-10-23 작성. 채택 기준은 [book2-ep09-plan.md](book2-ep09-plan.md) §0. §0의 7화 국소 수정 다섯 곳도 승인됨. 제7화 국소 점검과 제2권 제8화 초고를 쓰면서 남긴 기록이다.
 > - 원고: [manuscript/book2/ep08-서리-밭의-새벽.md](../../manuscript/book2/ep08-서리-밭의-새벽.md)
 > - 장면 설계: [proposals/book2-scene-design.md](../proposals/book2-scene-design.md) §2 8화 / [proposals/book2-episode-plot.md](../proposals/book2-episode-plot.md) 8화 / [proposals/book2-structure-design.md](../proposals/book2-structure-design.md) §6-5~§6-9
 > - 앞 회차 기록: [book2-ep07-plan.md](book2-ep07-plan.md)
