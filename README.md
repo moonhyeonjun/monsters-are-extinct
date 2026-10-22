@@ -7,6 +7,7 @@
 - 작업 규칙: [AGENTS.md](AGENTS.md)
 - 프로젝트 인계 문서: [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md)
 - 정본 색인: [docs/canon.md](docs/canon.md)
+- 검증: `python3 tools/verify.py` ([tools/README.md](tools/README.md))
 
 ## 구조
 
@@ -20,5 +21,6 @@
 | `docs/characters/` | 등장인물 |
 | `docs/plot/` | 시리즈 구조, 복선, 1권 플롯, 집필 기준 |
 | `manuscript/` | 원고 |
+| `tools/` | 저장소 검증 도구 (읽기 전용) |
 | `imports/chatgpt/` | ChatGPT 기획 원본 (수정 금지) |
 | `archive/`, `art/` | 보관 자료, 그림 자료 |
