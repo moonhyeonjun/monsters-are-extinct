@@ -1,6 +1,6 @@
 # 제2권 제18화 〈하루를 버리는 밤〉 — 집필 점검과 기록
 
-> 상태: **[초안 기록]**. 2026-10-23 작성. 제2권 제18화 초고를 쓰면서 남긴 기록이다. 제17화 승인과 국소 확인도 여기(§0)에 적는다.
+> 상태: **[초안 기록, 장면 구성 1차 승인 (2026-10-23, 사용자)]**. 2026-10-23 작성. 채택 기준과 국소 확인은 [book2-ep19-plan.md](book2-ep19-plan.md) §0. 제2권 제18화 초고를 쓰면서 남긴 기록이다. 제17화 승인과 국소 확인도 여기(§0)에 적는다.
 > - 원고: [manuscript/book2/ep18-하루를-버리는-밤.md](../../manuscript/book2/ep18-하루를-버리는-밤.md)
 > - 장면 설계: [proposals/book2-scene-design.md](../proposals/book2-scene-design.md) §2 18~20화 / [proposals/book2-episode-plot.md](../proposals/book2-episode-plot.md) 18화 / [proposals/book2-core-design.md](../proposals/book2-core-design.md) §8-2·§10-4 / [proposals/book2-structure-design.md](../proposals/book2-structure-design.md) §4-1·§4-4
 > - 앞 회차 기록: [book2-ep17-plan.md](book2-ep17-plan.md)
