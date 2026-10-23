@@ -1,6 +1,6 @@
 # 제2권 제15화 〈처음 조여진 덩이〉 — 집필 점검과 기록
 
-> 상태: **[초안 기록]**. 2026-10-23 작성. 제2권 제15화 초고를 쓰면서 남긴 기록이다. 제14화 승인과 국소 확인도 여기(§0)에 적는다.
+> 상태: **[초안 기록, 장면 구성 1차 승인 (2026-10-23, 사용자)]**. 2026-10-23 작성. 채택 기준과 국소 확인(실 온도계, 꽃가루 기록)은 [book2-ep16-plan.md](book2-ep16-plan.md) §0. 제2권 제15화 초고를 쓰면서 남긴 기록이다. 제14화 승인과 국소 확인도 여기(§0)에 적는다.
 > - 원고: [manuscript/book2/ep15-처음-조여진-덩이.md](../../manuscript/book2/ep15-처음-조여진-덩이.md)
 > - 장면 설계: [proposals/book2-scene-design.md](../proposals/book2-scene-design.md) §2 15~19화·§4 / [proposals/book2-episode-plot.md](../proposals/book2-episode-plot.md) 15화 / [proposals/book2-structure-design.md](../proposals/book2-structure-design.md) §4-4·§5-1
 > - 앞 회차 기록: [book2-ep14-plan.md](book2-ep14-plan.md)
