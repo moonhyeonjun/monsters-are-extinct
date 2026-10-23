@@ -79,7 +79,7 @@
 | Q-인물-05 | 카셀·베르크의 성(브린·하센) 확정과 세 추적자의 세부 이력 | §12-3, D-038 | P1 | 일부 해결 → D-038 (로안 스콜). 브린·하센은 [초안] |
 | Q-인물-06 | 마렌이 노르바 전승을 숨긴 동기와 과거의 내용 | §12-4, §13-8 | P2 | 열림. 제안: [proposals/character-design.md](proposals/character-design.md) §1-2 (안 A: 노래를 따라갔다가 밀렵꾼을 부른 죄책감 / 안 B: 침묵 때문에 가족을 잃음) |
 | Q-인물-07 | 마르딘의 '과거 복원 사고'(§9-1)는 무엇인가? 제4온실 사고(224년)와 같은 사건인가? | §9-1, §9-6 | P2 | 열림. Q-역사-01과 연동 |
-| Q-인물-09 | 이름과 성씨의 구체적 어원, 마렌의 친정 성, 출신 미정 인물(마르딘 로웰·베르크 하센·에드반 로케르 등)의 출신 지역 | D-038 | P2 | 일부 해결 → D-038 (성과 이름 부여, 국가별 작명 문화 기본 체계, 로안 스콜, 테오 미헨). 어원 후보: [proposals/great-hunt-and-naming.md](proposals/great-hunt-and-naming.md) §4 |
+| Q-인물-09 | 이름과 성씨의 구체적 어원, 마렌의 친정 성, 출신 미정 인물(마르딘 로웰·베르크 하센·에드반 로케르 등)의 출신 지역 | D-038 | P2 | 일부 해결 → D-038 (성과 이름 부여, 국가별 작명 문화 기본 체계, 로안 스콜, 테오 미헨). 어원 후보: [proposals/great-hunt-and-naming.md](proposals/great-hunt-and-naming.md) §4. D-127: 고람 에스펠(이름 확정, 성씨 어원은 제안) |
 | Q-인물-10 | 주요 인물별 겉 목표·내면의 욕망·가치·결함·비밀·변화와 대가·최종 귀결 (리아, 마렌, 다렌, 도아, 니오, 마르딘, 카셀, 베르크, 로안, 견습생들, 장기 인물) | D-086, [plot/creative-principles.md](plot/creative-principles.md) §4 | P0 | 제안 있음: [proposals/character-design.md](proposals/character-design.md) — 9인 상세 설계, 마렌 과거 안 A/B, 베르크·에드반의 철학, 리아의 중반 실수 두 개, C+D′와의 마찰(에드반의 선공개 → 두 겹의 줄 긋기 제안). 사용자 결정 11건 대기. 보완 제안(series-final-conflict §7): 마렌의 과거를 평범한 욕망 + 돌아갈 수 없는 사정으로, 베르크의 가문 배경 철회, 과거 실패는 마르딘·마렌만, 리아의 실수는 대칭 배치하지 않음. 9인의 최종 행동 제안: [proposals/series-final-conflict-review.md](proposals/series-final-conflict-review.md) §7 (마르딘의 실수는 과거가 아닌 현재의 조건부 서명) |
 
 ## 5. 역사
