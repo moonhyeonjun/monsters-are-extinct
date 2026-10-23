@@ -73,7 +73,7 @@
 | [mardin-lowell.md](characters/mardin-lowell.md) | 마르딘 로웰 |
 | [apprentices.md](characters/apprentices.md) | 테오 미헨, 세나 오르딘, 핀 아르소, 유진 카스트 |
 | [book1-trackers.md](characters/book1-trackers.md) | 카셀 브린, 베르크 하센, 로안 스콜. 인물별 행동 순서와 정보 습득 시점 |
-| [valley-people.md](characters/valley-people.md) | 고람 에스펠(제2·3권 골짜기의 숯가마 주인, 제2권 원고의 '형', D-127) |
+| [valley-people.md](characters/valley-people.md) | 고람 에스펠(제2·3권 골짜기의 숯가마 주인, 제2권 원고의 '형', D-127). 고람의 동생, '형네 막내'(관계 보류), 라니, 반장의 원고 확인 사항과 미정 |
 | [antagonists.md](characters/antagonists.md) | 에드반 로케르 |
 
 ### 플롯 — `docs/plot/`
