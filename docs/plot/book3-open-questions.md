@@ -6,6 +6,7 @@
 > - 시리즈 기획 [series-arc.md](series-arc.md) §2(초안)의 셋째 흐름(밀수, 복원 사고, 박물관 기록의 모순)과 어떻게 이을지는 정하지 않았다.
 > - 미래 사건의 성공을 미리 정하지 않는다. 새 장기 비밀, 배후 조직, 결정 번호는 만들지 않는다.
 > - 관련 기록: [book2-revision-1.md](book2-revision-1.md) §7·§10, [book2-ep20-plan.md](book2-ep20-plan.md) §14·§15
+> - 제3권 중심 설계(2026-10-23 방향 승인, 세부는 권고안): [book3-core-design.md](book3-core-design.md). 이 문서의 행은 그대로 두고, 채택 여부는 그 문서에서 다룬다.
 
 ## 0. 표시
 
