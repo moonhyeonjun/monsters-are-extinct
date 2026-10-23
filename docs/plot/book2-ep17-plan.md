@@ -1,6 +1,6 @@
 # 제2권 제17화 〈씨앗 값〉 — 집필 점검과 기록
 
-> 상태: **[초안 기록]**. 2026-10-23 작성. 제2권 제17화 초고를 쓰면서 남긴 기록이다. 제16화 승인과 국소 확인도 여기(§0)에 적는다.
+> 상태: **[초안 기록, 장면 구성 1차 승인 (2026-10-23, 사용자)]**. 2026-10-23 작성. 채택 기준과 국소 확인(씨앗, 꽃가루 봉투, 형, 붓질과 마르딘)은 [book2-ep18-plan.md](book2-ep18-plan.md) §0. 제2권 제17화 초고를 쓰면서 남긴 기록이다. 제16화 승인과 국소 확인도 여기(§0)에 적는다.
 > - 원고: [manuscript/book2/ep17-씨앗-값.md](../../manuscript/book2/ep17-씨앗-값.md)
 > - 장면 설계: [proposals/book2-scene-design.md](../proposals/book2-scene-design.md) §2 17~20화 / [proposals/book2-episode-plot.md](../proposals/book2-episode-plot.md) 17화 / [proposals/book2-structure-design.md](../proposals/book2-structure-design.md) §4-4·§4-5·§5-3·§5-5·§5-6 / [proposals/book2-core-design.md](../proposals/book2-core-design.md) §4-6·§6-4·§10-3
 > - 앞 회차 기록: [book2-ep16-plan.md](book2-ep16-plan.md)
