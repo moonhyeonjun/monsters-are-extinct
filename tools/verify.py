@@ -31,6 +31,9 @@ META_VOLUME_RE = re.compile(r'제\s?\d+\s?권')
 BOOK_DIR_RE = re.compile(r'^book(\d+)$')
 # 곧은 작은따옴표(')는 이 권 번호부터 오류로 본다. 앞 권은 개수만 알린다(제1권은 따로 정리할 과제).
 STRAIGHT_SINGLE_QUOTE_FROM_BOOK = 2
+# 리아의 기록장 블록 (docs/plot/style-guide.md §10). 블록 = '>'로 시작하는 줄이 이어진 묶음.
+NOTEBOOK_LABEL = '> **리아의 기록장**'
+NOTEBOOK_LABEL_TEXT = '**리아의 기록장**'
 
 
 def read(path):
@@ -87,9 +90,51 @@ def visible_body(text):
     return re.sub(r'^#.*$', '', body, flags=re.M)
 
 
+def check_notebook_blocks(body):
+    """기록장 블록의 형식을 본다. 기록 문구 자체는 보지 않는다. (블록 수, 오류 목록)을 돌려준다."""
+    lines = body.split('\n')
+    errs, count, i, n = [], 0, 0, len(lines)
+    while i < n:
+        if not lines[i].startswith('>'):
+            if NOTEBOOK_LABEL_TEXT in lines[i]:
+                errs.append('기록장 꼬리표가 블록 밖에 있음: ' + lines[i][:30])
+            i += 1
+            continue
+        j = i
+        while j < n and lines[j].startswith('>'):
+            j += 1
+        block, count = lines[i:j], count + 1
+        tag = f'기록장 블록 {count}({block[0][:20]})'
+        content = block[2:]
+        if block[0] != NOTEBOOK_LABEL:
+            errs.append(f'{tag}: 첫 줄이 꼬리표 “{NOTEBOOK_LABEL}”가 아님')
+        if len(block) < 2 or block[1] != '>':
+            errs.append(f'{tag}: 꼬리표 다음 줄이 빈 인용 줄(>)이 아님')
+        if not [l for l in content if l != '>']:
+            errs.append(f'{tag}: 기록 줄이 없음')
+        if content and content[-1] == '>':
+            errs.append(f'{tag}: 빈 인용 줄로 끝남')
+        for l in content:
+            if l == '>':
+                continue
+            if NOTEBOOK_LABEL_TEXT in l:
+                errs.append(f'{tag}: 꼬리표가 블록 안에서 되풀이됨')
+            elif not (l.startswith('> *') and l.endswith('*') and len(l) > 4):
+                errs.append(f'{tag}: 기록 줄이 “> *기록*” 형식이 아님: {l[:30]}')
+        for a, b in zip(content, content[1:]):
+            if a != '>' and b != '>':
+                errs.append(f'{tag}: 기록 줄 사이에 빈 인용 줄(>)이 없어 렌더링에서 합쳐짐')
+        if i > 0 and lines[i - 1].strip():
+            errs.append(f'{tag}: 블록 앞에 빈 줄이 없음')
+        if j < n and lines[j].strip():
+            errs.append(f'{tag}: 블록 뒤에 빈 줄이 없음(뒤 서술이 블록에 이어 붙음)')
+        i = j
+    return count, errs
+
+
 def check_manuscripts(root):
     """권마다 회차 파일을 검사한다. 회차 번호는 권 안에서만 겹치면 안 된다."""
-    errors, books, sq_notes = [], {}, {}
+    errors, books, sq_notes, notebooks = [], {}, {}, {}
     for book_dir in sorted(glob.glob(os.path.join(root, 'manuscript', 'book*'))):
         if not os.path.isdir(book_dir):
             continue
@@ -127,6 +172,9 @@ def check_manuscripts(root):
                 errors.append((where, '본문에 권 표기(제N권)'))
             if '"' in body:
                 errors.append((where, '본문에 곧은 큰따옴표(")'))
+            nb_count, nb_errs = check_notebook_blocks(body)
+            notebooks[book] = notebooks.get(book, 0) + nb_count
+            errors += [(where, e) for e in nb_errs]
             sq = body.count("'")
             if sq:
                 if sq_error:
@@ -139,7 +187,7 @@ def check_manuscripts(root):
         nums = sorted(numbers)
         gaps = sorted(set(range(1, nums[-1] + 1)) - set(nums)) if nums else []
         books[book] = (len(nums), nums, gaps)
-    return errors, books, sq_notes
+    return errors, books, sq_notes, notebooks
 
 
 def main():
@@ -166,13 +214,14 @@ def main():
         print(f'  - {f}: {ref}')
     failed |= bool(undefined)
 
-    errors, books, sq_notes = check_manuscripts(root)
+    errors, books, sq_notes, notebooks = check_manuscripts(root)
     for book, (count, nums, gaps) in books.items():
         span = f'{nums[0]}~{nums[-1]}화' if nums else '없음'
         note = f', 빠진 번호 {gaps} (오류 아님)' if gaps else ''
         print(f'원고 {book}: {count}편 ({span}){note}')
     for book, n in sq_notes.items():
         print(f"원고 {book}: 본문 곧은 작은따옴표(') {n}개 (이 권은 오류로 보지 않음, 따로 정리할 과제)")
+    print('기록장 블록: ' + ', '.join(f'{b} {n}개' for b, n in notebooks.items()))
     print(f'원고 본문 오류: {len(errors)}')
     for where, msg in errors:
         print(f'  - {where}: {msg}')
