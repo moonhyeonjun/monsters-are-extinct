@@ -35,6 +35,12 @@
 
 이 문서와 정본 문서가 다르면 `docs/decisions.md`의 최신 결정을 우선한다.
 
+2026-10-23 기준 상태 (자세한 것은 `docs/canon.md` §4):
+
+- 원고: `manuscript/book1/`(제1권 21화, 최종 승인 전, 독자 수정 마감), `manuscript/book2/`(제2권 20화, 초고 최종 승인)
+- 작업 기준: `main` 단일 브랜치. 운영 원칙은 `AGENTS.md`의 「작업 기준과 브랜치 운영」, 통합 기록은 `docs/plot/series-integration.md`
+- 제3권: 기획 검토 단계(`docs/plot/book3-open-questions.md`)
+
 ## 3. 핵심 세계관
 
 세계명: 아르벨리아

@@ -65,6 +65,40 @@ AI 대화 기록은 참고자료이며, 대화에서 논의한 아이디어가 �
 9. 완료 후 수정한 파일, 설정 충돌, 남은 문제를 보고한다.
 10. 명시적인 요청 없이 대규모 파일 재구성이나 삭제를 수행하지 않는다.
 
+## 작업 기준과 브랜치 운영
+
+2026-10-23 사용자 결정. 근거와 이력: [docs/plot/series-integration.md](docs/plot/series-integration.md)
+
+### 브랜치 운영
+
+- `main`이 시리즈 원고·정본·기획의 단일 기준이다.
+- `book1-restructure`, `book2-planning`, `series-integration`은 과거 이력 보존용으로 동결한다. 동결된 브랜치에는 원고·정본·기획을 고치는 새 커밋을 올리지 않는다.
+- 기준점은 태그로 찾는다. 태그를 옮기거나 지우지 않는다.
+  - `book1-draft1`: 개편 전 제1권
+  - `book1-reader-closed`: 제1권 독자 수정 마감본
+  - `book2-draft-approved`: 제2권 초고 최종 승인본
+- 필요하면 `main`에서 짧은 임시 브랜치를 만들 수 있다. 작업이 끝나는 대로 `main`에 되돌리고, 장기간 별도 기준본으로 운영하지 않는다. 임시 브랜치에서 다른 권의 원고 폴더를 고치지 않는다.
+- 사용자 승인 없이 브랜치 삭제, 강제 push, 과거 이력 재작성(rebase, squash, 커밋 수정)을 하지 않는다.
+
+### 집필 및 수정
+
+- 제1권(21화) 독자 관점 수정은 마감된 상태다([docs/plot/book1-reader-feedback.md](docs/plot/book1-reader-feedback.md) 3차). 제1권은 최종 승인 전이다.
+- 제1권 속도 개정 설계는 시리즈 완결 후 종합 편집 과제다([docs/plot/book1-style-review.md](docs/plot/book1-style-review.md) §11). 그 전에는 원고에 적용하지 않는다.
+- 제2권(20화) 초고는 최종 승인된 상태다([docs/plot/book2-revision-1.md](docs/plot/book2-revision-1.md) §10). 출판 전 교정 말고는 임의로 재작성하지 않는다.
+- 새로운 장기 설정을 다루기 전에 [docs/canon.md](docs/canon.md)와 [docs/decisions.md](docs/decisions.md)를 먼저 확인한다.
+- 작품의 열린 미스터리를 임의로 확정하지 않는다. 목록: [docs/plot/book1-continuity-check.md](docs/plot/book1-continuity-check.md) §7, [docs/plot/book3-open-questions.md](docs/plot/book3-open-questions.md)
+- 새 결정 번호(D-NNN)는 `docs/decisions.md`의 마지막 번호 다음 번호로 쓰고, 중복되지 않게 관리한다. 번호를 새로 쓸지는 사용자 결정을 따른다.
+
+### 기록장
+
+- [docs/plot/style-guide.md](docs/plot/style-guide.md) §10의 기록장 표기 규칙을 따른다.
+- 리아의 기록장에 실제로 적힌 독립 단락만 `> **리아의 기록장**` 기록장 블록으로 쓴다.
+- 편지, 생각·기억, 다른 사람의 장부·공책, 쪽지와 혼동하지 않는다. 이것들은 기록장 블록으로 쓰지 않는다.
+
+### 검증
+
+- 원고·기획·정본을 바꾼 뒤에는 바뀐 범위에 맞는 연속성 검증(앞뒤 회차, 정본, 결정 기록 대조)을 하고 `python3 tools/verify.py`를 실행한다.
+
 ## 작업 완료 보고
 
 - 작업 요약
