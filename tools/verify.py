@@ -28,6 +28,9 @@ EPISODE_FILE_RE = re.compile(r'^ep(\d+)-.+\.md$')
 EPISODE_HEADING_RE = re.compile(r'^## 제(\d+)화', re.M)
 META_EPISODE_RE = re.compile(r'제\s?\d+\s?화')
 META_VOLUME_RE = re.compile(r'제\s?\d+\s?권')
+BOOK_DIR_RE = re.compile(r'^book(\d+)$')
+# 곧은 작은따옴표(')는 이 권 번호부터 오류로 본다. 앞 권은 개수만 알린다(제1권은 따로 정리할 과제).
+STRAIGHT_SINGLE_QUOTE_FROM_BOOK = 2
 
 
 def read(path):
@@ -86,11 +89,13 @@ def visible_body(text):
 
 def check_manuscripts(root):
     """권마다 회차 파일을 검사한다. 회차 번호는 권 안에서만 겹치면 안 된다."""
-    errors, books = [], {}
+    errors, books, sq_notes = [], {}, {}
     for book_dir in sorted(glob.glob(os.path.join(root, 'manuscript', 'book*'))):
         if not os.path.isdir(book_dir):
             continue
         book = os.path.basename(book_dir)
+        bm = BOOK_DIR_RE.match(book)
+        sq_error = bool(bm) and int(bm.group(1)) >= STRAIGHT_SINGLE_QUOTE_FROM_BOOK
         numbers = collections.defaultdict(list)
         for p in sorted(glob.glob(os.path.join(book_dir, 'ep*.md'))):
             name = os.path.basename(p)
@@ -122,13 +127,19 @@ def check_manuscripts(root):
                 errors.append((where, '본문에 권 표기(제N권)'))
             if '"' in body:
                 errors.append((where, '본문에 곧은 큰따옴표(")'))
+            sq = body.count("'")
+            if sq:
+                if sq_error:
+                    errors.append((where, f"본문에 곧은 작은따옴표(') {sq}개"))
+                else:
+                    sq_notes[book] = sq_notes.get(book, 0) + sq
         for n, paths in sorted(numbers.items()):
             if len(paths) > 1:
                 errors.append((book, f'회차 번호 {n} 중복: ' + ', '.join(paths)))
         nums = sorted(numbers)
         gaps = sorted(set(range(1, nums[-1] + 1)) - set(nums)) if nums else []
         books[book] = (len(nums), nums, gaps)
-    return errors, books
+    return errors, books, sq_notes
 
 
 def main():
@@ -155,11 +166,13 @@ def main():
         print(f'  - {f}: {ref}')
     failed |= bool(undefined)
 
-    errors, books = check_manuscripts(root)
+    errors, books, sq_notes = check_manuscripts(root)
     for book, (count, nums, gaps) in books.items():
         span = f'{nums[0]}~{nums[-1]}화' if nums else '없음'
         note = f', 빠진 번호 {gaps} (오류 아님)' if gaps else ''
         print(f'원고 {book}: {count}편 ({span}){note}')
+    for book, n in sq_notes.items():
+        print(f"원고 {book}: 본문 곧은 작은따옴표(') {n}개 (이 권은 오류로 보지 않음, 따로 정리할 과제)")
     print(f'원고 본문 오류: {len(errors)}')
     for where, msg in errors:
         print(f'  - {where}: {msg}')
