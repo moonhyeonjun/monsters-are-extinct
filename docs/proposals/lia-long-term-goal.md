@@ -2,7 +2,7 @@
 
 > 상태: **사용자 채택 방향 (2026-10-24, 결정 번호 없음)과 후속 설계 후보.** 정본이 아니다. D-008을 비롯한 정본의 사실과 문구는 바꾸지 않는다. 제1~3권 원고는 고치지 않았다.
 > 근거: 2026-10-24 읽기 전용 분석 보고(장기 목표 후보 A '제일가는 복원사' / B '도망치지 않아도 되는 곳' / C 결합안의 비교). 이 문서는 그 가운데 사용자가 채택한 방향을 기록하고, 나머지는 후보로 남긴다.
-> 후속 결정 반영 (사용자 2026-10-24, 결정 번호 없음, 기준 커밋 `9f95bfa`): S1 조건부 채택(§4-1), K-08 가안 우선(§7), S2는 설계 후보 유지(§4-2), 장기 목표의 재미 요건(§5-1), 유진과의 차이의 기준(§2-4). E2+E3은 유망 후보로만 둔다(§6).
+> 후속 결정 반영 (사용자 2026-10-24, 결정 번호 없음, 기준 커밋 `9488fab`): S1 조건부 채택(§4-1), K-08 가안 우선(§7), S2는 설계 후보 유지(§4-2), 장기 목표의 재미 요건(§5-1), 유진과의 차이의 기준(§2-4). E2+E3은 유망 후보로만 둔다(§6).
 > 관련: [../characters/lia-veln.md](../characters/lia-veln.md) §4·§6, [character-design.md](character-design.md) §1-1·§4·§10, [core-character-scene-tests.md](core-character-scene-tests.md) §2, [series-ending-candidates.md](series-ending-candidates.md), [../plot/book3-episode-plot.md](../plot/book3-episode-plot.md) 제15화·§9, [../plot/adventure-engagement-design.md](../plot/adventure-engagement-design.md), [../plot/series-revision-backlog.md](../plot/series-revision-backlog.md) K-08
 > 표기: [정본] 결정·확정 설정 / [원고] (권·화:행) / [채택 방향] 사용자가 채택한 설계 방향, 정본 아님 / [후보] 검토 대상 / [미정]
 
