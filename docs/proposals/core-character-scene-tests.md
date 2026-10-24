@@ -1,6 +1,7 @@
 # 핵심 캐릭터 3인 매력 실험 — 설계 후보와 시험 장면 [제안]
 
 > 상태: **제안 (2026-10-24, 결정 번호 없음). 승인 전이며 정본이 아니다.** 대상은 유진 카스트, 로안 스콜, 신규 역참 말꾼(가칭 투스 포킨)이다.
+> 이름 안내 (2026-10-24): 유진의 성은 사용자 결정으로 **몬트**, 성별은 여성이 되었다(apprentices §2). 이 문서의 '카스트'는 실험 당시 표기이며 실험 원고는 고치지 않는다. 또 9-1의 "선생님도 소리 내서 읽고 맞냐고 물었어."가 기대던 3·5:221의 "맞아요?"는 제3권 1차 국소 퇴고(2026-10-24)에서 덜어 냈다. 지금 원고는 "마르딘이 새 종이를 처음부터 끝까지 읽었다."이다.
 > 이 문서의 시험 장면은 모두 **[실험 원고] [정본 아님] [본편 삽입 미확정]** 이다. 제1~3권 원고와 정본은 바꾸지 않았다.
 > 출처: 2026-10-24 읽기 전용 실험 두 건(세 인물의 심화 설계, 매력 검증 장면 실험)의 보고. 문서로 옮기며 사용자 지시(2026-10-24)의 채택 방향과 주의 사항을 반영했다.
 > 관련: [character-design.md](character-design.md) §1-8(로안)·§5(유진)·§10(승인 대기)·§12(이 문서 안내), [../characters/apprentices.md](../characters/apprentices.md), [../characters/book1-trackers.md](../characters/book1-trackers.md), [../plot/adventure-engagement-design.md](../plot/adventure-engagement-design.md) §6, [../plot/creative-principles.md](../plot/creative-principles.md) §4·§8
