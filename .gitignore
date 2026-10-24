@@ -1,1 +1,4 @@
 .DS_Store
+
+# Licensed reference texts - do not commit or distribute
+/references/harry-potter/
