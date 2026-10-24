@@ -87,6 +87,7 @@ AI 대화 기록은 참고자료이며, 대화에서 논의한 아이디어가 �
 - 제2권(20화) 초고는 최종 승인된 상태다([docs/plot/book2-revision-1.md](docs/plot/book2-revision-1.md) §10). 출판 전 교정 말고는 임의로 재작성하지 않는다.
 - 시리즈 퇴고 원칙(2026-10-24, 사용자 지시): 현재 집필 단계에서는 최소 수정, 퇴고 단계에서는 구조적 재설계를 허용한다. 지금 고치지 않는 구조 문제는 [docs/plot/series-revision-backlog.md](docs/plot/series-revision-backlog.md)에 이월한다.
 - 새로운 장기 설정을 다루기 전에 [docs/canon.md](docs/canon.md)와 [docs/decisions.md](docs/decisions.md)를 먼저 확인한다.
+- 기획·집필·퇴고 검수에서는 [docs/plot/creative-principles.md](docs/plot/creative-principles.md)(장기 창작 원칙, §8 서사적 재미와 비클리셰 원칙)와 [docs/plot/adventure-engagement-design.md](docs/plot/adventure-engagement-design.md)(비전투 모험의 재미 설계와 점검 질문)를 함께 본다.
 - 작품의 열린 미스터리를 임의로 확정하지 않는다. 목록: [docs/plot/book1-continuity-check.md](docs/plot/book1-continuity-check.md) §7, [docs/plot/book3-open-questions.md](docs/plot/book3-open-questions.md)
 - 새 결정 번호(D-NNN)는 `docs/decisions.md`의 마지막 번호 다음 번호로 쓰고, 중복되지 않게 관리한다. 번호를 새로 쓸지는 사용자 결정을 따른다.
 
