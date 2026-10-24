@@ -60,11 +60,14 @@
 
 - [초안] 수환탑(물 순환), 응무기(수분 포집), 지맥정(지반 관측·보강).
 - [초안] 시설은 자연 생태를 완전히 대체하지 못한다.
-- 연표상 멸종력 1~180년에 발달했다. ([history.md](history.md))
+- [초안] 연표상 멸종력 1~180년에 발달했다([history.md](history.md) §1, [초안]). 연대와 역사적 인과는 정하지 않았다.
+- 이름은 [초안] 그대로 둔다. 기능·역사·보급 지역·기술 수준·에너지 비용은 미정이다(Q-세계-17).
+  - 설계 후보(사용자 검토, 2026-10-24): 수환탑 = 물의 저장·분배 시설, 응무기 = 수분 응결 장치, 지맥정 = 지하 환경 관측·관리 시설. 지역마다 사람의 기술과 환류종의 관계, 발전 역사가 다를 수 있다. 상세: [../proposals/restorer-identity-and-reflux-civilization.md](../proposals/restorer-identity-and-reflux-civilization.md) §5
+  - 두지 않음: D-124·D-125와 충돌하는 초자연적 에너지와 적출 기관의 지속 작동. 만능 탐지 기능도 두지 않는다(사용자 결정 2026-10-24).
 
 ## 6. 관련 문서
 
-- 복원학과 협회: [restoration.md](restoration.md)
+- 복원학과 협회: [restoration.md](restoration.md) (복원사의 정체성 §7, 상징·장비·기록 §8)
 - 교육: [education.md](education.md) (D-059)
 - 역사: [history.md](history.md), [history-secret.md](history-secret.md) `[작가 비밀]`
 - 지리: [geography.md](geography.md), [milbaram.md](milbaram.md), [irvanel.md](irvanel.md) `[작가 비밀]`
