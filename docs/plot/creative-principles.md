@@ -1,7 +1,7 @@
 # 장기 창작 원칙 — 시작과 결말을 먼저, 그 사이는 인물에게
 
 > 상태: **편집 원칙 [확정] (2026-10-21, D-086).** 이 문서는 **창작 방식**을 정한다. 결말, 악역의 진실, 인물의 숨겨진 과거 같은 **내용**은 정하지 않는다. 내용은 §6의 단계별 작업을 거쳐 사용자 승인 뒤에만 정본이 된다.
-> 관련: [adventure-engagement-design.md](adventure-engagement-design.md) (서사적 재미와 비전투 모험의 설계, §8의 자세한 판), [style-guide.md](style-guide.md) (문체와 대화), [series-arc.md](series-arc.md) (장기 구조 [초안]), [foreshadowing.md](foreshadowing.md) (복선 공개 관리), [key-scenes.md](key-scenes.md) (장기 명장면 후보), [characters/](../characters/), AGENTS.md (공통 규칙)
+> 관련: [adventure-engagement-design.md](adventure-engagement-design.md) (서사적 재미와 비전투 모험의 설계, §8의 자세한 판), [style-guide.md](style-guide.md) (문체와 대화), [series-arc.md](series-arc.md) (장기 구조 [초안]), [foreshadowing.md](foreshadowing.md) (복선 공개 관리), [key-scenes.md](key-scenes.md) (장기 명장면 후보), [../proposals/memorable-lines.md](../proposals/memorable-lines.md) (명대사와 장기 감정 회수 [제안]), [characters/](../characters/), AGENTS.md (공통 규칙)
 
 ## 1. 창작 철학
 
