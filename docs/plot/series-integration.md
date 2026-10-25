@@ -100,6 +100,8 @@
 
 ## 7. 이후 운영 원칙 (단일 브랜치)
 
+> **[2026-10-25 표시]** 1번 절차는 완료되었다(`series-integration`은 `main`의 조상이며, 이후 작업은 `main`에서 한다). 4번의 'D-123'은 작성 당시의 마지막 번호다. 현재는 `docs/decisions.md`의 마지막 번호 다음 번호를 쓴다. 현행 공통 규칙은 [AGENTS.md](../../AGENTS.md) §3·§4·§8에 있다. 아래 문구는 당시 기록으로 보존한다.
+
 1. 사용자가 확인하면 `main`을 `series-integration`으로 fast-forward한다(`git merge --ff-only`). 그 전에는 `main`을 바꾸지 않는다.
 2. `main`에 반영한 뒤로는 모든 원고·기획·검증 작업을 `main` 한 곳에서 한다.
 3. `book1-restructure`, `book2-planning`은 지우지 않고 **동결**한다. 새 커밋을 올리지 않는다. 기준점은 위 태그로 찾는다. `series-integration`도 `main`에 반영한 뒤에는 새 작업에 쓰지 않는다.

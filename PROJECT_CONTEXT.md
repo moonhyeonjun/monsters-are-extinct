@@ -2,6 +2,13 @@
 
 # 《괴물은 멸종했습니다》 프로젝트 인계 문서
 
+> **역사적 인계 문서 (2026-10-25 표시).** 이 문서는 2026-10-19 정본 이관 무렵의 인계 내용이며, 2026-10-23에 일부만 갱신되었다. 원고 현황(§2), 향후 작업 목표(§11), AI 협업 원칙(§12)은 작성 당시의 것이다. 기록으로 보존하고 지우지 않는다.
+> 현행 기준은 다음 문서를 본다.
+> - 공통 규칙과 AI 역할: [AGENTS.md](AGENTS.md)
+> - 작업 단계별 절차: [docs/plot/workflow-guide.md](docs/plot/workflow-guide.md)
+> - 정본 색인, 권별 원고 상태, 핵심 확정 사항: [docs/canon.md](docs/canon.md)
+> - 결정과 미확정 사항: [docs/decisions.md](docs/decisions.md), [docs/open-questions.md](docs/open-questions.md)
+
 ## 1. 프로젝트 목표
 
 본 프로젝트는 어린이와 청소년뿐 아니라 성인도 몰입할 수 있는 오리지널 장편 판타지 소설 《괴물은 멸종했습니다》를 창작하는 프로젝트다.

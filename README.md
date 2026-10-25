@@ -5,7 +5,8 @@
 ## 시작하기
 
 - 작업 규칙: [AGENTS.md](AGENTS.md)
-- 프로젝트 인계 문서: [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md)
+- 작업 단계별 가이드: [docs/plot/workflow-guide.md](docs/plot/workflow-guide.md)
+- 프로젝트 인계 문서(역사적 기록): [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md)
 - 정본 색인: [docs/canon.md](docs/canon.md)
 - 검증: `python3 tools/verify.py` ([tools/README.md](tools/README.md))
 - 작업 기준과 제1·2권 통합 기록: [docs/plot/series-integration.md](docs/plot/series-integration.md)
