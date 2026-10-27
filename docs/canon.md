@@ -75,6 +75,8 @@
 | [book1-trackers.md](characters/book1-trackers.md) | 카셀 브린, 베르크 하센, 로안 스콜. 인물별 행동 순서와 정보 습득 시점 |
 | [valley-people.md](characters/valley-people.md) | 고람 에스펠(제2·3권 골짜기의 숯가마 주인, 제2권 원고의 '형', D-127). 고람의 자녀('형네 막내', D-129), 고람의 동생, 라니(여, 공방 주인의 딸, D-128), 반장의 원고 확인 사항과 미정 |
 | [antagonists.md](characters/antagonists.md) | 에드반 로케르 |
+| [coast-people.md](characters/coast-people.md) | 제4권 갯목 사람들과 세르딘 대조실(감시 기록원, 판정자, 말뚝 영감, 조개 받는 집 아주머니, 널배 형제, 길잡이, 짱뚱이, 늙은 서기). 원고 사실 기록 [원고, 정본 아님] (2026-10-27) |
+| [pass-people.md](characters/pass-people.md) | 제5권 고개 너머 마을(에사, 이모 네아, 할아버지)과 측량 조사단(단장, 짐꾼 반장, 막내). 원고 사실 기록 [원고, 초안, 정본 아님] (2026-10-27) |
 
 ### 플롯 — `docs/plot/`
 | 파일 | 내용 |
