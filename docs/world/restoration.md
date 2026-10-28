@@ -1,6 +1,6 @@
 # 복원학과 대륙복원협회
 
-> 출처: 마스터 §I-5, §I-9 · PROJECT_CONTEXT §3 · 관련 결정: D-012, D-041
+> 출처: 마스터 §I-5, §I-9 · PROJECT_CONTEXT §3 · 관련 결정: D-012, D-041, D-132
 > 미확정: Q-역사-01 (제4온실 사고 연대)
 > 표기 규칙은 [docs/canon.md](../canon.md) 참조
 
@@ -91,3 +91,9 @@
   - 테오의 환류계 개량([characters/apprentices.md](../characters/apprentices.md) §3의 [초안] 그대로)
   - '첫 번째 빈칸' 인정 의식
   - 표식끈. 제3권의 흰 노끈([plot/book3-episode-plot.md](../plot/book3-episode-plot.md) 제11화)과 별개의 공식 장비로 정하지 않는다.
+
+## 9. 복원의 생태적 득실 [확정] (D-132)
+
+- 환류종 복원이 언제나 기존 생태계를 회복시키는 것은 아니다. 과거의 생태 기능을 되살리는 동시에 현재의 자연과 인간 시설에 영향을 줄 수 있다.
+- 복원은 지역별 이익과 손실, 안전과 생계, 현재 생태계의 가치를 함께 고려해야 한다. ([overview.md](overview.md) §1 '생태 복원은 언제나 선이 아니다'의 구체화)
+- 확정하지 않음: 구체적인 복원 갈등 사례와 미래 사건. 작가용 후보: [../proposals/coexistence-civilization-integration.md](../proposals/coexistence-civilization-integration.md) §11
