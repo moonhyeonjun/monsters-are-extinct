@@ -34,19 +34,25 @@
 3. 승인되지 않은 후보는 다음 설계의 전제로 쓰지 않는다. 쓸 수밖에 없으면 ‘작업 가정’이라고 적는다.
 4. 바뀐 P결정은 지우지 않고 [대체됨]으로 표시한다.
 
-## 4. 영역별 위치
+## 4. 영역별 위치 (2026-10-30 단일 가문 구조로 개정, P결정-002)
 
-| 영역 | 후보 | 정본(승인 뒤) |
-|---|---|---|
-| 역사 인과 | [candidates/history.md](candidates/history.md) | p-canon/world.md |
-| 세력·권력·정보 | [candidates/factions.md](candidates/factions.md) | p-canon/factions.md |
-| 비밀 원장 | [candidates/secrets-ledger.md](candidates/secrets-ledger.md) | p-canon/secrets.md |
-| 작가 승인 권고안 | [candidates/recommendations.md](candidates/recommendations.md) | p-canon/decisions.md |
-| 환류종 생태 | candidates/creatures.md(다음 단계) | p-canon/creatures.md |
-| 감응·마녀 | candidates/sensing.md(다음 단계) | p-canon/sensing.md |
-| 인물·관계 | candidates/cast.md, relationships.md | p-canon/cast.md, relationships.md |
-| 전체 줄거리 | candidates/outline.md | p-canon/outline.md |
-| 권별·장별 구성 | candidates/volumes/ | p-canon/volumes/ |
+| 영역 | 현재 후보 | 대체된 이전 후보 | 정본(승인 뒤) |
+|---|---|---|---|
+| 단일 가문 세계관·정보 계층·생존지 | [candidates/house-world.md](candidates/house-world.md) | — | p-canon/world.md |
+| 은폐의 기원 | [candidates/concealment-origins.md](candidates/concealment-origins.md) | candidates/history.md | p-canon/world.md |
+| 첫 번째 침묵 | [candidates/first-silence-review.md](candidates/first-silence-review.md) | candidates/history.md §2-2 | p-canon/world.md |
+| 멸종 선언 | [candidates/extinction-declaration.md](candidates/extinction-declaration.md) | candidates/history.md §2-9 | p-canon/world.md |
+| 연표 | [candidates/timeline-options.md](candidates/timeline-options.md) | W 연표 | p-canon/world.md |
+| 세력 | [candidates/factions-v2.md](candidates/factions-v2.md) | [candidates/factions.md](candidates/factions.md) | p-canon/factions.md |
+| 비밀 원장 | [candidates/secrets-ledger-v2.md](candidates/secrets-ledger-v2.md) | [candidates/secrets-ledger.md](candidates/secrets-ledger.md) | p-canon/secrets.md |
+| 결정 대기·인과 구멍 | [candidates/decisions-pending-v2.md](candidates/decisions-pending-v2.md) | [candidates/recommendations.md](candidates/recommendations.md)(일부 대체) | p-canon/decisions.md |
+| 환류종 생태 | candidates/creatures.md(다음 단계) | — | p-canon/creatures.md |
+| 감응·마녀 | candidates/sensing.md(다음 단계) | — | p-canon/sensing.md |
+| 인물·관계 | candidates/cast.md, relationships.md | — | p-canon/cast.md, relationships.md |
+| 전체 줄거리 | candidates/outline.md | — | p-canon/outline.md |
+| 권별·장별 구성 | candidates/volumes/ | — | p-canon/volumes/ |
+
+- [대체됨] 표시가 있는 문서는 참고용이다. 현재 후보와 함께 유효한 것으로 읽지 않는다.
 
 ## 5. 작가용 설계 현황판
 

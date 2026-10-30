@@ -1,5 +1,6 @@
 # P 세력 설계안 — 자산·정보·권한·목표·한계 `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-30 · P결정-002]** 별개 은폐 조직을 전제로 한 이전 세력표다. 현재 후보는 [factions-v2.md](factions-v2.md)에 있다. 참고용으로만 남긴다.
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-30(1단계).
 > 적용 범위: P. W의 세력 문서(world/factions.md, characters/antagonists.md)와 제안서는 출발 자료로만 쓴다.
 > 작업 가정: [recommendations.md](recommendations.md) 권고안 1~4. 역사 근거: [history.md](history.md)

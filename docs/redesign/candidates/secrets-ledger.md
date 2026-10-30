@@ -1,5 +1,6 @@
 # P 비밀 원장 초안 `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-30 · P결정-002]** 이전 비밀 원장이다. 13개 비밀의 유지·수정·통합·삭제 판정과 새 원장은 [secrets-ledger-v2.md](secrets-ledger-v2.md)에 있다. 참고용으로만 남긴다.
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-30(1단계). 승인된 비밀은 p-canon/secrets.md로 옮긴다.
 > 적용 범위: P. 근거: [history.md](history.md), [factions.md](factions.md). 작업 가정: [recommendations.md](recommendations.md) 권고안 1~4.
 > **상태 표기**

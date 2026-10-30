@@ -1,5 +1,6 @@
 # P 역사 인과 설계안 `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-30 · P결정-002]** 이 문서는 ‘은폐 조직과 모계 가문은 별개’라는 구조와 W 연표를 전제로 한 이전 후보다. 작가가 이 구조를 채택하지 않았다. 〈닫힌 골의 겨울〉(§2-8)과 훈련권 계약은 **폐기**되었다. 첫 번째 침묵(§2-2)과 연표는 재검토 중이다. 현재 후보는 [house-world.md](house-world.md), [concealment-origins.md](concealment-origins.md), [first-silence-review.md](first-silence-review.md), [extinction-declaration.md](extinction-declaration.md), [timeline-options.md](timeline-options.md)에 있다. 이 문서는 참고용으로만 남긴다.
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-30(1단계). 기준 HEAD `7715343`.
 > 적용 범위: P. W의 정본(world/history.md, history-secret.md, D 결정)은 바꾸지 않는다. W 자료는 출발점으로만 쓴다.
 > 연도는 W의 큰 연표(대토벌 약 640~500년 전, 멸종력 원년의 공식 멸종 선언, 현재 멸종력 312년)를 **작업 가정**으로 빌렸다. P에서 그대로 쓸지는 작가가 정한다.
