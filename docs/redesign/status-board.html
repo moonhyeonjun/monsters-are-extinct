@@ -139,7 +139,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 
 <div class="stages" aria-label="재설계 단계">
   <div class="stage done"><b>0 완료</b><span>기반 정비</span></div>
-  <div class="stage now"><b>1 진행</b><span>세계관 설계 (4단계: 낙인·집결지·억류·정치·종교·시작)</span></div>
+  <div class="stage now"><b>1 진행</b><span>세계관 설계 (5단계: 기관 규칙·독점·생태·억류·세 번째 층)</span></div>
   <div class="stage"><b>2</b><span>모순 검증</span></div>
   <div class="stage"><b>3</b><span>인물·관계</span></div>
   <div class="stage"><b>4</b><span>결말 확정</span></div>
@@ -151,234 +151,215 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 </div>
 
 <div class="stats">
-  <div class="stat"><span class="n">6</span><span class="l">승인된 P결정</span></div>
+  <div class="stat"><span class="n">7</span><span class="l">승인된 P결정</span></div>
   <div class="stat"><span class="n">5</span><span class="l">지금 결정 대기</span></div>
-  <div class="stat"><span class="n">12</span><span class="l">비밀 원장 (작가도 모르는 것 표시)</span></div>
-  <div class="stat"><span class="n">4 / 6</span><span class="l">생존지 현상 선별(핵심 3 + 통합 1)</span></div>
+  <div class="stat"><span class="n">4</span><span class="l">세 번째 층 진실 후보</span></div>
+  <div class="stat"><span class="n">12</span><span class="l">비밀 원장 (의존·충돌 표시)</span></div>
   <div class="stat"><span class="n">중단</span><span class="l">원고 집필</span></div>
 </div>
 
 <nav class="tabs" role="tablist" aria-label="영역">
   <button role="tab" id="t-decide" aria-controls="decide" aria-selected="true">결정 대기</button>
+  <button role="tab" id="t-truth" aria-controls="truth" aria-selected="false">세 번째 층</button>
   <button role="tab" id="t-approved" aria-controls="approved" aria-selected="false">승인·거절</button>
-  <button role="tab" id="t-ident" aria-controls="ident" aria-selected="false">감응자의 낙인</button>
-  <button role="tab" id="t-arb" aria-controls="arb" aria-selected="false">마지막 집결지</button>
+  <button role="tab" id="t-organ" aria-controls="organ" aria-selected="false">기관 규칙</button>
+  <button role="tab" id="t-sense" aria-controls="sense" aria-selected="false">감응과 독점</button>
+  <button role="tab" id="t-eco" aria-controls="eco" aria-selected="false">집결지 생태</button>
   <button role="tab" id="t-hold" aria-controls="hold" aria-selected="false">억류</button>
-  <button role="tab" id="t-meet" aria-controls="meet" aria-selected="false">첫 만남</button>
-  <button role="tab" id="t-polity" aria-controls="polity" aria-selected="false">정치·가문</button>
-  <button role="tab" id="t-faith" aria-controls="faith" aria-selected="false">종교</button>
-  <button role="tab" id="t-name" aria-controls="name" aria-selected="false">이름</button>
+  <button role="tab" id="t-polity" aria-controls="polity" aria-selected="false">정치·종교</button>
   <button role="tab" id="t-secrets" aria-controls="secrets" aria-selected="false">비밀 원장</button>
-  <button role="tab" id="t-check" aria-controls="check" aria-selected="false">인과·모순</button>
+  <button role="tab" id="t-check" aria-controls="check" aria-selected="false">충돌·모순</button>
 </nav>
 
 <section class="tab" id="decide" role="tabpanel" aria-labelledby="t-decide">
   <h2>지금 작가가 승인할 것</h2>
   <div class="grid2">
-    <div class="card wait"><div class="head"><h3>1. 아동기 식별 기전</h3><span class="pill cand">추천</span></div>
-      <p><b>단계형 ‘물결 피’:</b> 아이의 심장과 혈관이 박동에 끌림. 한 개체 = 피부의 붉은 물결과 따라가는 숨 · 무리 = 온몸의 물결과 멈춤 · 집결기 = 죽은 듯한 <b>깊은 잠</b>. 감응은 그대로, 끌림만 자라며 줄어듦.</p></div>
-    <div class="card wait"><div class="head"><h3>2. 생존지 현상 선별</h3><span class="pill cand">추천</span></div>
-      <p>핵심 셋(<b>숨 쉬는 물 · 우는 땅 · 물든 박동</b>) + 통합 하나(<b>열의 골과 안개 지붕</b>). 물빛은 밤 장면이자 쇠약 지표로 축소.</p></div>
-    <div class="card wait"><div class="head"><h3>3. 억류 구조</h3><span class="pill cand">추천</span></div>
-      <p><b>‘떠나는 길을 지운다’:</b> 도는 물길(지하 수로로 물을 딴 골에) + 끊긴 쉼터 사슬(제염소·요양소·치유 성소). 길잡이의 죽음은 배경. 새 감응 기술 불필요.</p></div>
-    <div class="card wait"><div class="head"><h3>4. 첫 만남</h3><span class="pill cand">추천</span></div>
-      <p><b>‘돌아오는 도둑’:</b> 제염소 폐업 → 드러난 쉼터 → 밤마다 돌아오는 개체 → 누명을 벗기려 덫을 놓은 주인공의 선택. 대안: 사흘 밤샘의 성소.</p></div>
-    <div class="card wait"><div class="head"><h3>5. 정치·종교 구조</h3><span class="pill cand">추천</span></div>
-      <p><b>두 개의 권위</b>(왕권 + 국경을 넘는 교단), 가문 여섯, <b>층을 이룬 신앙</b>. 선언의 필요 = 토벌세 폐지 압력 + 교단의 끝맺음. 초자연은 실재하지 않음.</p></div>
-    <div class="card"><div class="head"><h3>함께 확인</h3><span class="pill wait">이름</span></div>
-      <p>한 곳에 여러 이름(옛말·교단·행정). 추천 후보 <b>울재 / 오세르</b>. 확정하지 않음.</p></div>
+    <div class="card wait"><div class="head"><h3>1. 기관과 집결의 규칙</h3><span class="pill cand">추천</span></div>
+      <p>기관은 <b>펌프</b> · 박동은 혼자 어긋나는 <b>생체 시계</b> · 진동은 젖은 땅과 물로 · 집결은 <b>시계의 재설정</b>(짝 알아보기, 새끼의 첫 맞춤) · 흩어질 때 <b>귀소 각인</b>.</p></div>
+    <div class="card wait"><div class="head"><h3>2. 소인·독점·생리</h3><span class="pill cand">추천</span></div>
+      <p><b>모델 C:</b> 소인은 어디서나 드물게, 가문에 짙은 건 강요된 내혼. 독점은 <b>접근·해석·법적 자격·기록</b>. 물결은 평형 감각 → 자율신경 반사, 깊은 잠은 데리고 나오면 깸.</p></div>
+    <div class="card wait"><div class="head"><h3>3. 생태 + 억류</h3><span class="pill cand">추천</span></div>
+      <p><b>얽힌 박자</b>(열·물·광물 종의 새 의존 고리, 땋은 강) + <b>안쪽 고향</b>(귀소 각인 통제)과 <b>볼모가 된 어른</b>. 장벽 없음. 해방은 세대를 건너는 일.</p></div>
+    <div class="card wait"><div class="head"><h3>4. 세 번째 층의 진실</h3><span class="pill cand">추천</span></div>
+      <p><b>B 바깥의 무리</b> — 사람이 지은 돌 구조물에서 작게 맞추고 번식해 온 바깥 무리. 가문이 ‘탈출 개체’로 처리한 일부. 보조로 A ‘틀어진 박자’.</p></div>
+    <div class="card wait"><div class="head"><h3>5. 정치·종교의 바탕</h3><span class="pill cand">추천</span></div>
+      <p>나라 셋 + 고원 자치령, 국경 가까운 마지막 집결지 · 가문 여섯과 경제적 권한 · 교단의 실권은 <b>신분 등록</b> · 분파 넷.</p></div>
+    <div class="card"><div class="head"><h3>함께 확인</h3><span class="pill wait">작명·뒤집기</span></div>
+      <p>다섯 언어 층위의 작명 규칙. 그리고 진실 B가 P결정-005의 ‘마지막 번식 집단’을 세 번째 층에서 뒤집어도 되는지.</p></div>
   </div>
+</section>
+
+<section class="tab" id="truth" role="tabpanel" aria-labelledby="t-truth" hidden>
+  <h2>가문조차 몰랐던 진실 <span class="pill cand">후보 · 결말 확정 아님</span></h2>
+  <div class="eras">
+    <div class="era"><span class="tag">첫 번째 층 · 공식</span><h3>괴물은 멸종했다</h3><p>영웅 가문의 마지막 원정이 끝냈다.</p></div>
+    <div class="era"><span class="tag">두 번째 층 · 가문의 비밀</span><h3>마지막 집결지</h3><p>숨기고 사유화했다. 보호이자 억류이자 독점.</p></div>
+    <div class="era"><span class="tag">세 번째 층 · 가문도 모름</span><h3>아래 네 후보</h3><p>앞선 사건을 다시 읽게 하고, 마지막 선택을 바꿈.</p></div>
+    <div class="era"><span class="tag">원칙</span><h3>새 신·흑막 없음</h3><p>기관·집결·번식·생태에서만 나옴. 혈통이 열쇠가 아님.</p></div>
+  </div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>후보</th><th>실제 진실</th><th>가문이 몰랐던 이유</th><th>마지막 선택</th></tr></thead>
+    <tbody>
+      <tr><td>A 박자가 틀려 있었다</td><td>쉬지 않는 울림과 돌 빗살이 공명을 바꿔, 지켜 온 무리가 다른 무엇으로 변해 감</td><td>비교할 바깥 표본 없음, 감응자가 집결지 박자로만 훈련됨</td><td>집결지를 쉬게 함 / 새 종으로 영원히 관리 / 사람이 공명을 되돌림</td></tr>
+      <tr class="rec"><td><b>B 바깥의 무리</b></td><td>떠돌던 개체의 후손이 다리·궁륭·터널·요새 우물에서 작게 맞추고 번식. 가문이 ‘탈출 개체’로 처리한 일부가 그들</td><td>‘바깥은 죽음’이 억류의 근거, 다른 박자를 ‘병든 박자’로 읽음, 장부 불일치를 세기 착오로</td><td>드러내 보호 / 몰래 구조물을 지킴 / 두 무리를 이음 / 바깥 무리를 집결지로(가문의 답)</td></tr>
+      <tr><td>C 물의 빚</td><td>불어난 물 운반 종의 물이 산 너머 평야의 샘·성소 온천·왕실 관개를 키움</td><td>다른 골, 느린 변화, 교단은 축복으로</td><td>해방(평야가 마름) / 유지 / 단계적 해방과 사람 쪽 공사</td></tr>
+      <tr><td>D 노출이 감응을 만든다</td><td>약한 소인은 흔하고, 어린 시절 박동에 노출되어야 감응이 자람</td><td>가문 아이는 늘 집결지 곁에서 자람, 피의 믿음이 정체성</td><td>해방(아이들의 위험과 낙인이 돌아옴) / 유지 / 거리의 법</td></tr>
+    </tbody></table></div>
+  <div class="note"><b>추천 B의 힘:</b> 모든 바깥 목격, 첫 개체, 처리 장부를 다시 읽게 합니다. 국가(철도·다리), 교단(성당 궁륭), 가문(유일한 수호자라는 정체성과 자기들이 죽여 온 것)이 모두 걸립니다. A를 보조로 쓰면 ‘두 무리를 합쳐 모두 구한다’는 해결이 마지막에 불가능해집니다.</div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>첫 만남에 필요한 조건(진실 B)</th><th></th></tr></thead>
+    <tbody>
+      <tr><td>독자가 오해할 것</td><td>마지막 집결지에서 도망친 개체다</td></tr>
+      <tr><td>기억해야 할 작은 행동</td><td>집결지 쪽이 아니라 사람이 지은 돌 구조물 쪽으로 거듭 향함</td></tr>
+      <tr><td>주인공의 생활권에 나타난 이유</td><td>바깥 무리의 맞춤 자리가 그곳에 있음</td></tr>
+    </tbody></table></div>
 </section>
 
 <section class="tab" id="approved" role="tabpanel" aria-labelledby="t-approved" hidden>
-  <h2>승인된 것 (P결정-001~006)</h2>
+  <h2>승인된 것 (P결정-001~007)</h2>
   <div class="grid2">
-    <div class="card ok"><h3>작업 방식 · 단일 가문 (001·002)</h3><p>W 보존, P를 처음부터. 가문이 은폐를 주도. 백지 연표. 인물 전면 재창조. 승인 전 집필 금지.</p></div>
-    <div class="card ok"><h3>영웅 가문의 역사 (003·004)</h3><p>차별받던 감응자 집안 → 대토벌의 실제 공로 → 영웅 명문 → 비밀 연구 → 봉인 구역 관리권. 첫 번째 침묵은 기록과 실제가 다름. 감응은 탐지와 해석까지.</p></div>
-    <div class="card ok"><h3>P결정-005</h3><ul><li>재동기화·번식 모델(원리 미정)</li><li>마지막 집결지 = 마지막 번식 집단</li><li>다른 집결지는 제공, 이곳만 숨김</li><li>봉인·관리권·면제·마지막 원정의 선언 구조</li><li>상시 집결은 비정상 상태</li></ul></div>
-    <div class="card ok"><h3>P결정-006</h3><ul><li>울림앓이 계열, 아동기가 더 강함, 성장하며 줄어듦</li><li>주인공은 아동기를 지난 인물일 수 있음</li><li>쉬지 못한 집결지 · 흩어짐의 충동</li><li><b>종교와 신앙을 주요 영역으로</b></li></ul></div>
-    <div class="card unk"><h3>이번에 거절</h3><p>억류 ‘겹친 관리’ · 첫 만남 결합안(발파 → 실무자 → 상자) · 정치 축 ‘비워진 땅’과 분할 조약 · ‘아르바넬’의 확정 지명화</p></div>
-    <div class="card unk"><h3>이전에 거절</h3><p>눈 떨림 식별 · 증거 경로 조작 + 죽은 개체 제출 · 영지 위 골짜기·일곱 층·덮개 이야기</p></div>
+    <div class="card ok"><h3>바탕 (001~004)</h3><p>W 보존, P를 처음부터. 차별받던 감응자 집안 → 대토벌의 공로 → 영웅 명문 → 비밀 연구 → 봉인 구역 관리권. 감응은 탐지와 해석까지.</p></div>
+    <div class="card ok"><h3>집결과 선언 (005)</h3><p>재동기화·번식 모델, 마지막 번식 집단, 다른 집결지 제공, 봉인·면제·마지막 원정, 상시 집결은 비정상.</p></div>
+    <div class="card ok"><h3>006</h3><p>울림앓이 계열, 쉬지 못한 집결지, 종교를 주요 영역으로.</p></div>
+    <div class="card ok"><h3>007</h3><ul><li>단계형 물결 피의 기본 방향</li><li>아동기에 강하고 자라며 신체 반응이 줄어듦</li><li>왕권과 종교 권위의 병존</li><li>여러 시대의 신앙이 겹친 구조</li><li><b>새 요구: 가문 밖 감응자와 독점, 세 번째 층의 진실</b></li></ul></div>
+    <div class="card unk"><h3>거절·미승인·보류</h3><p>억류 ‘겹친 관리’·‘떠나는 길을 지운다’ · 첫 만남 결합안 · ‘돌아오는 도둑’(보류) · 4단계 생태 선별안(미승인) · 비워진 땅 · 눈 떨림 · 지명 후보(우선권 없음)</p></div>
+    <div class="card unk"><h3>보류</h3><p>지명 · 연표(약 200년 가설) · 위상 맞춤·압력 몰이·이익 추출 · 주인공 · 첫 개체의 종 · 결말과 권수</p></div>
   </div>
 </section>
 
-<section class="tab" id="ident" role="tabpanel" aria-labelledby="t-ident" hidden>
-  <h2>감응자의 낙인 — 물결 피 <span class="pill ok">계열 승인</span> <span class="pill cand">기전 후보</span></h2>
-  <div class="eras">
-    <div class="era"><span class="tag">1단계 · 한 개체 가까이</span><h3>붉은 물결</h3><p>박자 맞춘 물결이 목에서 얼굴과 팔로 번졌다 빠짐. 숨이 따라감. 아이 여럿이 함께 물듦.</p></div>
-    <div class="era"><span class="tag">2단계 · 무리</span><h3>멈춤</h3><p>온몸의 물결, 박자 사이 파래지는 입술과 손끝. 그 자리에 서서 박동 쪽을 향함.</p></div>
-    <div class="era"><span class="tag">3단계 · 집결기</span><h3>깊은 잠</h3><p>맥과 숨이 끝까지 느려져 몸이 식고 깨지 않음. 하루~사흘. 죽은 것과 같아 보임.</p></div>
-    <div class="era"><span class="tag">어른</span><h3>두 번째 박동</h3><p>가슴 안의 어긋난 박동, 달아오르는 얼굴, 집결지 곁의 졸음. 일상을 막지 않음.</p></div>
-  </div>
+<section class="tab" id="organ" role="tabpanel" aria-labelledby="t-organ" hidden>
+  <h2>환류기관과 집결 — 다섯 줄 규칙 <span class="pill cand">후보</span></h2>
   <div class="table-wrap"><table>
-    <thead><tr><th>안</th><th>장면</th><th>판단</th></tr></thead>
+    <thead><tr><th>규칙</th><th>내용</th></tr></thead>
     <tbody>
-      <tr class="rec"><td><b>1 물결 피</b></td><td>박자에 맞춰 물드는 피부와 따라가는 숨</td><td><span class="pill cand">추천의 바탕</span></td></tr>
-      <tr><td>2 깊은 잠</td><td>죽은 듯 잠든 아이가 깨어남</td><td><span class="pill cand">3단계로 결합</span></td></tr>
-      <tr><td>3 땅 붙음</td><td>땅에 엎드려 박동 쪽으로 기어감</td><td><span class="pill unk">장면 재료로만</span></td></tr>
-      <tr><td>4 굳음</td><td>밀랍 인형처럼 굳음</td><td><span class="pill cand">짧은 멈춤으로 2단계에 흡수</span></td></tr>
+      <tr><td class="mono">1</td><td><b>기관은 펌프.</b> 층판 조직이 체액을 밀어 열·물·광물을 옮김. 먹이로 값을 치름</td></tr>
+      <tr><td class="mono">2</td><td><b>박동은 생체 시계.</b> 기관 속 조율 조직이 스스로 뜀. 혼자 두면 조금씩 어긋남</td></tr>
+      <tr><td class="mono">3</td><td><b>진동은 매질로.</b> 젖은 땅·바위·물로 퍼지고 공기로는 거의 안 퍼짐. 한 개체 수십 걸음, 무리 수백 걸음, 집결지 수 리</td></tr>
+      <tr><td class="mono">4</td><td><b>집결은 시계의 재설정.</b> 울리는 지형 + 많은 동족 → 하나의 큰 박자 → 어긋난 시계를 되돌림. 맞춘 개체끼리 짝을 알아보고, 새끼는 그 박자로 첫 시계를 굳힘</td></tr>
+      <tr><td class="mono">5</td><td><b>흩어질 때 귀소 각인.</b> 맞춤이 끝나면 겹친 박자가 괴롭고 먹이가 바닥남. 어린 개체는 처음 흩어진 곳을 고향으로 새김</td></tr>
     </tbody></table></div>
   <div class="grid2">
-    <div class="card"><h3>왜 아이만 심한가</h3><p>받는 감각은 그대로. 심장과 혈관을 다잡는 조절이 자라 <b>끌림</b>만 줄어듦. 그래서 대토벌의 어른 감응자가 쓸모 있었음.</p></div>
-    <div class="card"><h3>발현 조건</h3><p>살아 있는 박동만. 한 개체 수십 걸음, 무리 수백 걸음, 집결기 수 리. 잔류 신호는 <b>갓 적출한 기관</b>뿐. 어릴수록 약한 신호에도 끌림.</p></div>
-    <div class="card"><h3>누가 피했나</h3><p>무리 철에 아이를 도시로 보낼 수 있던 집(<b>철 피난</b>). 차별은 무리 길목의 가난한 집에 몰림 → ‘가난한 시골의 대물림 병’.</p></div>
-    <div class="card"><h3>대토벌과 그 뒤</h3><p>물결 드는 아이를 수레에 태운 살아 있는 측정기 → 깊은 잠의 지도로 집결지 발견 → 어른 감응자의 수색. 멸종 뒤엔 신호가 없어 아무도 모름. 가문만 ‘선조의 밤’으로 선별.</p></div>
+    <div class="card"><h3>종마다 다름</h3><p>박동 없는 기관 · 박동하지만 혼자 버티는 기관 · <b>어긋나면 기능이 떨어지는 기관(집결형)</b>. 집결형은 일부 종만.</p></div>
+    <div class="card"><h3>집결 실패</h3><p>시계가 어긋나 극한기를 못 버팀 → 짝을 못 알아봄 → 맞추지 못한 새끼는 살기 어려움 → 한두 세대 안에 기능적 멸종.</p></div>
+    <div class="card"><h3>성립하지 않는다면</h3><p>대안 1: 박자는 짝 알아보기 신호만. 대안 2: 새끼의 발달 조건만. 추천은 세 기능을 한 조직에 묶는 규칙.</p></div>
+    <div class="card"><h3>잴 수 있나</h3><p>가까운 무리는 물그릇의 잔물결, 박은 막대의 떨림. 먼 박자는 예민한 흔들림 기록 장치(막 가능해지는 수준).</p></div>
   </div>
 </section>
 
-<section class="tab" id="arb" role="tabpanel" aria-labelledby="t-arb" hidden>
-  <h2>마지막 집결지 — 현상 선별 <span class="pill ok">쉬지 못한 집결지 승인</span> <span class="pill cand">선별 후보</span></h2>
-  <div class="table-wrap"><table>
-    <thead><tr><th>현상</th><th>판정</th><th>이유</th></tr></thead>
-    <tbody>
-      <tr class="rec"><td><b>① 숨 쉬는 샘과 강</b></td><td><span class="pill cand">유지(핵심)</span></td><td>가장 직접적인 장면. 지하 수로로 딴 골의 ‘숨샘’이 됨 → 바깥이 잇지 못한 단서</td></tr>
-      <tr><td>② 계절이 나란히 + ③ 층층 안개</td><td><span class="pill cand">통합</span></td><td>같은 원인(열의 들고남) → ‘열의 골과 안개 지붕’</td></tr>
-      <tr class="rec"><td><b>④ 무늬 모래와 우는 돌</b></td><td><span class="pill cand">유지(핵심)</span></td><td>집결지인 이유 자체. 감응자가 깊은 잠에 드는 곳, 선별 의례의 자리</td></tr>
-      <tr><td>⑤ 깜박이는 물빛</td><td><span class="pill unk">축소</span></td><td>①의 밤 장면, 쇠약의 지표로만</td></tr>
-      <tr class="rec"><td><b>⑥ 박동에 물든 종들</b></td><td><span class="pill cand">유지(핵심)</span></td><td>열어도 바깥 동족과 못 맞추는 세대 → 해방의 위험</td></tr>
-    </tbody></table></div>
-  <div class="note">10개 기준(작용의 설명, 원리의 반복, 이익과 피해, 관찰 가능성, 바깥 영향, 쉬지 못해 생긴 것인지, 원래 집결지에도 있었는지, 떠나면 어떻게 되는지, 경이, 갈등)으로 평가했습니다. 경이는 넷이면 충분합니다.</div>
-</section>
-
-<section class="tab" id="hold" role="tabpanel" aria-labelledby="t-hold" hidden>
-  <h2>억류 — 떠나는 길을 지운다 <span class="pill cand">후보</span></h2>
-  <div class="flip">
-    <div class="side"><b>떠나는 방식(작업 가정)</b><p class="muted">밖으로 흐르는 물을 따라 첫 방향 → 먼 길은 쉼터의 사슬(따뜻한 샘·소금 바위·광물)을 디딤 → 길은 늙은 개체에게서 배움</p></div>
-    <div class="arrow" aria-hidden="true">→</div>
-    <div class="side"><b>가문이 지운 것</b><p class="muted">물은 지하 수로로 딴 골에 빼고 땅 위 물길은 안으로 돌림 · 쉼터는 제염소·요양소·치유 성소로 바꿈 · 길잡이는 대토벌 말기에 먼저 쏨</p></div>
-  </div>
-  <div class="table-wrap"><table>
-    <thead><tr><th>안</th><th>요지</th><th>판단</th></tr></thead>
-    <tbody>
-      <tr class="rec"><td><b>1 도는 물길</b></td><td>물을 따라 나가려는 개체가 분지 안을 돎</td><td><span class="pill cand">추천</span></td></tr>
-      <tr class="rec"><td><b>2 끊긴 쉼터 사슬</b></td><td>나가도 디딜 곳이 없어 지쳐 돌아오거나 죽음</td><td><span class="pill cand">추천</span></td></tr>
-      <tr><td>3 길잡이의 부재</td><td>길을 아는 늙은 개체를 먼저 죽임</td><td><span class="pill cand">역사적 배경</span></td></tr>
-      <tr><td>4 번식 고리</td><td>알·새끼를 거둬 떠날 때가 오지 않게 함</td><td><span class="pill wait">작가 판단</span></td></tr>
-    </tbody></table></div>
-  <div class="grid2">
-    <div class="card"><h3>틈</h3><p>큰물의 해 · 쉼터의 재개(제염소 폐업, 복원 회사의 온천) · 작은 종 · 길을 익힌 개체. 탈출은 대개 <b>가문이 통제하지 못하는 바깥 세계의 변화</b>에서 생김.</p></div>
-    <div class="card"><h3>외부인이 보는 것</h3><p>옛 관개 수로와 홍수 방지 시설 · 신기한 자연 샘 ‘숨샘’ · 온천 요양소 · 치유 성소 · 제염소.</p></div>
-    <div class="card"><h3>나가려는 행동이 만드는 사건</h3><p>물길 둑을 깎는 무리 · 성소 샘가의 밤 짐승(기적인가 저주인가) · 큰물의 해의 출구 행렬 · 모르는 채 그물을 끊는 복원 사업.</p></div>
-    <div class="card"><h3>해방의 순서</h3><p>물길을 먼저 풀면 한꺼번에 쏟아져 재난. 쉼터를 먼저 되살리면 단계적 해방. <b>순서가 이야기의 선택</b>이 됨.</p></div>
-  </div>
-</section>
-
-<section class="tab" id="meet" role="tabpanel" aria-labelledby="t-meet" hidden>
-  <h2>첫 만남 <span class="pill cand">후보 · 주인공은 미정</span></h2>
-  <div class="table-wrap"><table>
-    <thead><tr><th></th><th>1 되살아난 온천</th><th>2 사흘 밤샘의 성소</th><th>3 현상금의 강</th><th>4 돌아오는 도둑</th></tr></thead>
-    <tbody>
-      <tr><td>개체가 온 인과</td><td>복원이 쉼터를 이음</td><td>사슬을 더듬다 성소의 샘에</td><td>큰물에 옛 물길이 열림</td><td>제염소 폐업 → 소금 바위 노출</td></tr>
-      <tr><td>주인공의 목표</td><td>개장을 성공시키기</td><td>장례의 밤샘 지키기</td><td>빚 갚기(사냥 길잡이)</td><td>누명 쓴 사람 구하기</td></tr>
-      <tr><td>선택</td><td>알릴까 숨길까</td><td>밤샘을 버리고 숨길까</td><td>사냥꾼이냐 개체냐</td><td>보여 줄까 놓아줄까</td></tr>
-      <tr><td>손실</td><td>일자리, 동료의 부상</td><td>밤샘을 깬 죄</td><td>목숨이나 부상, 빚</td><td>누명 쓴 사람이 벌을 받음</td></tr>
-      <tr><td>개체의 행동</td><td>한 번의 도착</td><td>한 번의 도착</td><td>도망</td><td><b>밤마다 돌아옴</b></td></tr>
-      <tr><td>다시 읽힐 사실</td><td>복원이 그물을 끊었다</td><td>밤샘의 기원은 깊은 잠</td><td>처리 규정은 살아 있다</td><td>제염소는 억류 장치였다</td></tr>
-      <tr><td>판단</td><td><span class="pill cand">후보</span></td><td><span class="pill cand">강한 대안</span></td><td><span class="pill cand">후보</span></td><td><span class="pill cand">추천</span></td></tr>
-    </tbody></table></div>
-  <div class="note"><b>혈통 증명이 아닙니다.</b> 주인공이 개체를 만나는 이유는 누명입니다. 덫 앞에서 느끼는 어긋난 박동과 얼굴의 열기는 놀람과 추위 탓으로 오해됩니다.</div>
-</section>
-
-<section class="tab" id="polity" role="tabpanel" aria-labelledby="t-polity" hidden>
-  <h2>정치 질서와 가문 <span class="pill cand">후보 · 이름은 모두 임시</span></h2>
+<section class="tab" id="sense" role="tabpanel" aria-labelledby="t-sense" hidden>
+  <h2>감응 소인과 가문의 독점 <span class="pill cand">후보</span></h2>
   <div class="table-wrap"><table>
     <thead><tr><th>모델</th><th>요지</th><th>판단</th></tr></thead>
     <tbody>
-      <tr><td>1 경쟁 왕국들</td><td>대등한 왕국 셋 이상</td><td><span class="pill unk">초점이 흩어짐</span></td></tr>
-      <tr><td>2 중심 왕국 + 자치 지역</td><td>한 왕국이 우세</td><td><span class="pill cand">4의 바탕</span></td></tr>
-      <tr><td>3 귀족·상업 과두</td><td>왕은 상징</td><td><span class="pill unk">국가 봉인의 무게가 약함</span></td></tr>
-      <tr class="rec"><td><b>4 두 개의 권위</b></td><td>왕권 + 국경을 넘는 교단. 대토벌은 왕권의 군과 교단의 ‘정화’. 선언도 둘(법적 선언 + 끝맺음 의례)</td><td><span class="pill cand">추천</span></td></tr>
+      <tr><td>A 가계 집중형</td><td>영웅 가문에 크게 몰림</td><td><span class="pill unk">혈통 판타지 위험</span></td></tr>
+      <tr><td>B 보편적 희소형</td><td>고루 드묾, 가문은 훈련·접근·법만</td><td><span class="pill unk">가문이 짙은 이유 없음</span></td></tr>
+      <tr class="rec"><td><b>C 복합형</b></td><td>어디서나 드묾. 가문에 짙은 이유는 <b>차별 시대의 강요된 내혼</b></td><td><span class="pill cand">추천</span></td></tr>
+      <tr><td>D 발달 창형</td><td>어린 시절 박동에 노출되어야 감응이 자람</td><td><span class="pill cand">진실 D와 짝</span></td></tr>
     </tbody></table></div>
-  <div class="table-wrap"><table>
-    <thead><tr><th>가문(임시)</th><th>유형</th><th>아는 것</th><th>독립 목표</th></tr></thead>
-    <tbody>
-      <tr><td>영웅 가문</td><td>감응자 명문</td><td>전부(핵심 일부만)</td><td>독점과 생존</td></tr>
-      <tr><td>수로 가문</td><td>대토벌로 성장</td><td>수로가 물을 딴 골로 보냄(이유 모름)</td><td>철도망</td></tr>
-      <tr><td>샘 영주 가문</td><td>대토벌로 몰락</td><td>자기 땅의 샘이 멎었다는 것</td><td>영지의 물 되살리기</td></tr>
-      <tr><td>무공 가문</td><td>경쟁</td><td>대토벌 초기 아이 징발의 실상</td><td>군의 위상, 처리 사무소의 존속</td></tr>
-      <tr><td>철 피난 가문</td><td>진실의 일부</td><td>귀족에도 감응자가 있음, 순결한 피는 거짓</td><td>자기 혈통의 침묵</td></tr>
-      <tr><td>학교 가문</td><td>독립 목표</td><td>거의 없음</td><td>교단 밖의 교육</td></tr>
-    </tbody></table></div>
-  <h3>가문 없이도 일어나는 갈등</h3>
-  <p>소금과 철도 · 복원 온천과 치유 성소의 경쟁 · 교육권 · 고원 자치령의 자치와 옛 신앙 · 처리 사무소 폐지 논쟁</p>
-  <h3>공개가 곧 보호가 아닌 이유</h3>
-  <div class="cant"><span>괴물 처리 규정이 아직 유효</span><span>시장 가치</span><span>정화파의 교리</span><span>깊은 잠의 공포</span><span>물길을 먼저 풀면 재난</span><span>보호할 법과 기관 없음</span></div>
-</section>
-
-<section class="tab" id="faith" role="tabpanel" aria-labelledby="t-faith" hidden>
-  <h2>종교와 신앙 — 층을 이룬 신앙 <span class="pill ok">주요 영역 승인</span> <span class="pill cand">구조 후보</span></h2>
   <div class="grid2">
-    <div class="card"><h3>옛 흐름 신앙</h3><p>공존 시대 길목 마을. 무리가 땅의 숨(물과 열)을 옮긴다 — 절반쯤 맞는 관찰. 문간의 소금, 돌무더기. 물결 든 아이는 ‘숨 듣는 아이’이자 두려움. <b>영웅 가문의 뿌리.</b></p></div>
-    <div class="card"><h3>교단 (정화파 · 개혁파)</h3><p>땅의 고요와 질서. 공존의 계율 → 첫 번째 침묵 뒤 정화의 교리. 출생·혼인·장례 등록, <b>사흘 밤샘</b>, 치유 성소. 아이를 살렸고, 등록부로 징발에 넘겼다. 멸종을 함께 선포(끝맺음).</p></div>
-    <div class="card"><h3>애도파</h3><p>대토벌은 ‘숨을 끊은 죄’. 마른 샘에 물을 붓는 추모. <b>숨은 연대기</b>: 사라진 집결지들과 ‘물결 집 길잡이’ 증언. 생존은 모름.</p></div>
-    <div class="card"><h3>영웅 의례</h3><p>왕실의 ‘끝맺음의 날’, 교단이 축복. 영웅 가문의 흰 옷. 왕권의 정당성.</p></div>
+    <div class="card"><h3>가문이 독점하는 넷</h3><p><b>접근</b>(살아 있는 개체) · <b>해석</b>(결을 읽는 말과 교본) · <b>법적 자격</b>(청취자 지위) · <b>기록</b>(징집 명부와 등록부 사본). 소인은 독점하지 못함.</p></div>
+    <div class="card"><h3>가문 밖 감응자가 사라진 이유</h3><p>흩어진 가난한 집, 등록부 낙인, 징집과 흡수, 전후 해산과 입양, 그리고 <b>해석은 살아 있는 개체 곁에서만 전해짐</b>.</p></div>
+    <div class="card"><h3>물결 피의 생리(보강)</h3><p>평형 감각과 몸 깊은 곳의 진동 감각 → 자율신경 반사(멀미와 같은 길). 푸른 입술은 산소 부족이 아님. 깊은 잠은 보호적 잠, <b>데리고 나오면 몇 시간 안에 깸</b>. 위험은 추위·물·방치·매장 오인.</p></div>
+    <div class="card"><h3>아직 아무도 모르는 가능성</h3><p>같은 박자의 인공 진동이면 환류종 없이도 아이에게 물결이 나옴. 흔들림 기록 기술이 발전하면 누군가 우연히 만들 수 있음.</p></div>
   </div>
-  <div class="table-wrap"><table>
-    <thead><tr><th>신앙이 말하는 것</th><th>작가가 아는 실제(초자연 없음)</th></tr></thead>
-    <tbody>
-      <tr><td>깊은 잠에서 깨어난 아이</td><td>신호가 멀어지자 몸이 돌아옴</td></tr>
-      <tr><td>숨 쉬는 샘</td><td>겹친 박동이 지하수층을 누름</td></tr>
-      <tr><td>성소의 밤 짐승</td><td>쉼터를 찾아온 탈출 개체</td></tr>
-      <tr><td>종을 치면 흔들림이 물러감</td><td>효과 없음</td></tr>
-    </tbody></table></div>
-  <p class="muted">닿는 곳: 교단 학교와 장학 · 혼인 등록과 영웅 가문의 ‘특면’ · 사흘 밤샘 · 고원의 옛 신앙 부흥 · 환류종의 처분(정화파)과 보호(개혁파) · ‘정화의 왕’ 칭호.</p>
 </section>
 
-<section class="tab" id="name" role="tabpanel" aria-labelledby="t-name" hidden>
-  <h2>마지막 집결지의 이름 <span class="pill wait">확정하지 않음</span></h2>
-  <div class="note"><b>한 곳에 여러 이름.</b> 옛말(길목 마을), 교단 기록, 행정 이름이 따로 있었습니다. 사람마다 다른 이름을 쓰는 것 자체가 역사의 단서가 됩니다.</div>
+<section class="tab" id="eco" role="tabpanel" aria-labelledby="t-eco" hidden>
+  <h2>마지막 집결지의 생태계 <span class="pill ok">쉬지 못함 승인</span> <span class="pill cand">구성 후보</span></h2>
   <div class="table-wrap"><table>
-    <thead><tr><th>후보</th><th>층위</th><th>인상과 맥락</th><th>판단</th></tr></thead>
+    <thead><tr><th>안</th><th>가장 인상적인 현상</th><th>붕괴 때</th><th>판단</th></tr></thead>
     <tbody>
-      <tr class="rec"><td><b>울재</b></td><td>옛말</td><td>‘우는 고개’ — ‘울타리’로도 들림. 짧고 선명</td><td><span class="pill cand">일상 이름 추천</span></td></tr>
-      <tr class="rec"><td><b>오세르</b></td><td>교단 기록</td><td>맑고 차분함. 공식 문서에 어울림</td><td><span class="pill cand">기록 이름 추천</span></td></tr>
-      <tr><td>숨골</td><td>옛말</td><td>숨 쉬는 골</td><td><span class="pill unk">현상을 너무 설명</span></td></tr>
-      <tr><td>흰덮개</td><td>별칭</td><td>늘 안개 덮인 분지</td><td><span class="pill cand">별칭으로</span></td></tr>
-      <tr><td>헤른</td><td>행정</td><td>옛 영지의 이름</td><td><span class="pill cand">후보</span></td></tr>
-      <tr><td>가람목</td><td>옛말</td><td>물길이 갈라지는 길목</td><td><span class="pill cand">후보</span></td></tr>
-      <tr><td>아르바넬 · 이르바넬</td><td>비교</td><td>작업명 · W 지명</td><td><span class="pill unk">우선권 없음</span></td></tr>
+      <tr><td>1 물의 분지</td><td>한 시간마다 차오르고 빠지는 호수, 떠도는 풀섬</td><td>분지가 마르고 하류 샘이 약해짐</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td>2 열의 섬</td><td>눈 덮인 산속 김 서린 초록 골짜기</td><td>하룻밤 서리로 골 전체가 죽음</td><td><span class="pill cand">후보</span></td></tr>
+      <tr class="rec"><td><b>3 얽힌 박자</b></td><td><b>땋은 강</b>(더운 물과 찬 물이 섞이지 않고 나란히), 서리꽃과 김 오르는 이끼, 물살에 우는 돌 빗살</td><td><b>순서에 따라 다름</b> — 어느 종이 먼저 떠나느냐로 다른 종이 무너짐</td><td><span class="pill cand">추천</span></td></tr>
     </tbody></table></div>
+  <div class="note"><b>예상 밖의 고리:</b> 열 운반 종이 데운 웅덩이에서 물 운반 종이 철 없이 번식해 불어남 → 불어난 물이 광물 쌓는 종의 돌 빗살을 키움 → 빗살이 울림을 키워 모두를 더 세게 묶음. 안쪽 사람은 물 운반 종의 증가를 보호의 성과로, 열 운반 종의 감소를 늙음으로 봅니다.</div>
+</section>
+
+<section class="tab" id="hold" role="tabpanel" aria-labelledby="t-hold" hidden>
+  <h2>억류 — 이동 생태에서 출발 <span class="pill cand">후보</span></h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>안</th><th>가문의 행동</th><th>틈</th><th>판단</th></tr></thead>
+    <tbody>
+      <tr class="rec"><td><b>1 안쪽 고향</b></td><td>각인 철마다 어린 개체를 안쪽 관리 골짜기로 이끌어 고향으로 새기게 함. 장벽 없음</td><td>놓친 어린 개체는 바깥을 고향으로 새기고 평생 그리 감</td><td><span class="pill cand">추천(축)</span></td></tr>
+      <tr class="rec"><td><b>2 볼모가 된 어른</b></td><td>어른을 따르는 종의 우두머리 몇만 우리에 둠</td><td>우두머리의 죽음</td><td><span class="pill cand">추천(보조)</span></td></tr>
+      <tr><td>3 끝나지 않는 맞춤</td><td>울림 웅덩이의 수위로 맞춤이 끝나지 않게 함</td><td>큰물·가뭄</td><td><span class="pill wait">별도 승인</span> 위상 기술 경계</td></tr>
+    </tbody></table></div>
+  <div class="grid2">
+    <div class="card"><h3>나가려는 몸과 끌리는 각인</h3><p>고향이 너무 가깝고 좁아 흩어짐의 충동이 풀리지 않음. 무리는 고향과 집결지 사이를 오가며 가장자리를 맴돎.</p></div>
+    <div class="card"><h3>풀어도 해방이 아님</h3><p>지금 무리의 고향은 안쪽. 문을 열어도 대부분 나가지 않음. 새 세대가 바깥의 새 고향을 새겨야 함 → 수십 년, 그리고 그 땅은 누구의 것인가.</p></div>
+    <div class="card"><h3>보호와 억류가 같은 행동</h3><p>시작은 구조였다. 바깥 고향이 모두 사라져, 내보내면 죽을 어린 개체를 안쪽에 머물게 한 것.</p></div>
+    <div class="card unk"><h3>새 감응 기술</h3><p>필요 없음. 감응자는 어린 개체의 채비를 읽어 각인 철의 때를 맞출 뿐(탐지·해석).</p></div>
+  </div>
+</section>
+
+<section class="tab" id="polity" role="tabpanel" aria-labelledby="t-polity" hidden>
+  <h2>정치와 종교 <span class="pill ok">두 권위·겹친 신앙 승인</span> <span class="pill cand">세부 후보</span></h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>나라·지역(임시)</th><th>위치</th><th>지금의 목표</th></tr></thead>
+    <tbody>
+      <tr><td>중심 왕국</td><td>산맥 남쪽 평야와 강 중류 (봉인 구역 소유)</td><td>토벌세 없는 재정, 철도, 교단과의 균형</td></tr>
+      <tr><td>이웃 왕국</td><td>산맥 북쪽 고원과 상류</td><td>마른 습지 회복, 물 권리</td></tr>
+      <tr><td>자유시 동맹</td><td>강 하구</td><td>교역, 복원 산업, 학문의 자유</td></tr>
+      <tr><td>고원 자치령</td><td>중심 왕국 안, 산맥 남사면</td><td>자치, 샘 회복, 옛 신앙의 인정</td></tr>
+    </tbody></table></div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>가문(임시)</th><th>경제적 권한</th><th>진실 B일 때의 맞춤 자리</th></tr></thead>
+    <tbody>
+      <tr><td>영웅</td><td>봉인 관리 예산, 의례 권위</td><td>(마지막 집결지)</td></tr>
+      <tr><td>무공</td><td>군 납품, 치안대, 처리 사무소 감독</td><td>옛 요새의 우물</td></tr>
+      <tr><td>수로</td><td>운하·철도·다리 특허</td><td>돌다리와 수로 터널</td></tr>
+      <tr><td>은행</td><td>왕실 대부, 자유시 금융 (감응자 혈통을 숨겨 옴)</td><td>—</td></tr>
+      <tr><td>국경 영주(이웃 왕국)</td><td>마른 영지, 물 권리</td><td>—</td></tr>
+      <tr><td>학교</td><td>세속 학교 특허, 장학</td><td>—</td></tr>
+    </tbody></table></div>
+  <div class="grid2">
+    <div class="card"><h3>교단의 실권 = 신분</h3><p>출생·혼인·사망 등록이 곧 법적 신분. 초등 교육, 구호와 고아원, 혼인 특면, 장례와 묘지, 교회 법정. 왕권과 늘 경계를 다툼.</p></div>
+    <div class="card"><h3>분파와 원인</h3><p>정화파(침묵의 공포와 헌금 체제) · 개혁파(전후 기근과 고아 구호) · 애도파(학살 목격) · 고원 교구 · 이웃 왕국 교구.</p></div>
+    <div class="card"><h3>보호와 억압이 같은 제도</h3><p>사흘 밤샘과 고아원은 아이를 살렸고, 등록부는 아이를 징발에 넘겼다. 가문은 교단 고아원에서 소인이 보이는 아이를 입양해 왔다.</p></div>
+    <div class="card"><h3>작명 규칙</h3><p>평야말 · 산말 · 옛말 · 교단 말 · 상인말. 한 곳에 층위별 여러 이름 허용. 이름은 아직 정하지 않음.</p></div>
+  </div>
 </section>
 
 <section class="tab" id="secrets" role="tabpanel" aria-labelledby="t-secrets" hidden>
-  <h2>비밀 원장 v6</h2>
+  <h2>비밀 원장 v7 <span class="pill cand">세 층 · 의존 관계 · 충돌 표시</span></h2>
   <div class="table-wrap"><table>
-    <thead><tr><th>#</th><th>비밀</th><th>상태</th><th>작가도 아직 모르는 것</th></tr></thead>
+    <thead><tr><th>#</th><th>비밀</th><th>층</th><th>상태</th><th>기대는 비밀</th></tr></thead>
     <tbody>
-      <tr><td class="mono">01</td><td>감응자 식별의 실제 원리</td><td><span class="pill ok">계열 승인</span> <span class="pill cand">기전 후보</span></td><td>받는 기관, 유전, 빈도</td></tr>
-      <tr><td class="mono">02</td><td>아동기 증상이 사라지는 이유</td><td><span class="pill ok">방향 승인</span></td><td>개인차 분포, 깊은 잠의 사망률</td></tr>
-      <tr><td class="mono">03</td><td>감응자 차별의 역사</td><td><span class="pill ok">방향 승인</span></td><td>징발된 아이의 수와 운명</td></tr>
-      <tr><td class="mono">04</td><td>첫 번째 침묵의 진실</td><td><span class="pill ok">구조 승인</span></td><td>겹친 종의 수, 피해 규모</td></tr>
-      <tr><td class="mono">05</td><td>집결지의 진짜 생태</td><td><span class="pill ok">쉬지 못함 승인</span></td><td>재동기화 원리, 종과 주기, 섞인 세대의 회복</td></tr>
-      <tr><td class="mono">06</td><td>탈출 방지 구조의 진실</td><td><span class="pill cand">정답 후보</span></td><td>번식 고리 여부, 수로의 지형</td></tr>
-      <tr><td class="mono">07</td><td>첫 탈출 개체의 이동 경로</td><td><span class="pill cand">후보 · 줄거리</span></td><td>종, 시점, 거친 곳</td></tr>
-      <tr><td class="mono">08</td><td>가문이 감춘 대토벌 기록</td><td><span class="pill ok">방향 승인</span></td><td>깊은 잠 지도의 주인</td></tr>
-      <tr><td class="mono">09</td><td>멸종 선언의 허위</td><td><span class="pill ok">구조 승인</span></td><td>서두름을 묵인한 사람</td></tr>
-      <tr><td class="mono">10</td><td>종교가 보존·왜곡한 역사</td><td><span class="pill cand">정답 후보</span></td><td>교단의 중심, 공존의 계율 원문</td></tr>
-      <tr><td class="mono">11</td><td>국가와 다른 가문의 독립된 비밀</td><td><span class="pill cand">정답 후보</span></td><td>이웃 왕국·고원 자치령의 숨은 사정</td></tr>
-      <tr><td class="mono">12</td><td>봉인 구역과 감사</td><td><span class="pill ok">구조 승인</span></td><td>새 억류안에 맞춘 감사 세부</td></tr>
+      <tr><td class="mono">01</td><td>환류기관과 박동의 규칙</td><td>바탕</td><td><span class="pill cand">후보</span></td><td>—</td></tr>
+      <tr><td class="mono">02</td><td>감응 소인의 발생과 독점</td><td>2</td><td><span class="pill cand">후보(C)</span></td><td>01</td></tr>
+      <tr><td class="mono">03</td><td>물결 피의 생리</td><td>바탕</td><td><span class="pill ok">방향 승인</span></td><td>01</td></tr>
+      <tr><td class="mono">04</td><td>감응자 차별과 교단</td><td>2</td><td><span class="pill ok">방향 승인</span></td><td>03</td></tr>
+      <tr><td class="mono">05</td><td>첫 번째 침묵</td><td>2</td><td><span class="pill ok">구조 승인</span></td><td>01, 03</td></tr>
+      <tr><td class="mono">06</td><td>대토벌과 가문의 책임</td><td>2</td><td><span class="pill ok">승인</span></td><td>02, 05</td></tr>
+      <tr><td class="mono">07</td><td>마지막 집결지의 생태</td><td>2</td><td><span class="pill cand">얽힌 박자</span></td><td>01</td></tr>
+      <tr><td class="mono">08</td><td>억류</td><td>2</td><td><span class="pill cand">안쪽 고향</span></td><td>01, 07</td></tr>
+      <tr><td class="mono">09</td><td>멸종 선언의 허위</td><td>2</td><td><span class="pill ok">구조 승인</span></td><td>06</td></tr>
+      <tr><td class="mono">10</td><td>다른 가문의 독립된 비밀</td><td>2</td><td><span class="pill cand">후보</span></td><td>06</td></tr>
+      <tr><td class="mono">11</td><td><b>가문도 모른 진실</b></td><td><b>3</b></td><td><span class="pill cand">B 추천</span></td><td>01, 07, 08</td></tr>
+      <tr><td class="mono">12</td><td>첫 개체의 정체와 경로</td><td>2·3</td><td><span class="pill unk">대기</span></td><td>08, 11</td></tr>
     </tbody></table></div>
+  <p class="muted">01이 무너지면 03·05·07·08·11이 함께 흔들립니다. 11에서 D를 고르면 02가 모델 D로 바뀝니다.</p>
 </section>
 
 <section class="tab" id="check" role="tabpanel" aria-labelledby="t-check" hidden>
-  <h2>연결 검증과 남은 문제</h2>
-  <div class="note"><b>한 사슬로 이어집니다.</b> 물결 피와 깊은 잠 → 교단의 사흘 밤샘과 등록부 → 대토벌의 아이 징발과 깊은 잠 지도 → 가문의 선조의 밤 → 주인공의 오해되는 작은 감각. 억류의 물길과 쉼터 → 치유 성소와 제염소 → 제염소 폐업이 쉼터를 엶 → 첫 만남 → 해방의 순서.</div>
+  <h2>충돌과 모순</h2>
   <div class="table-wrap"><table>
-    <thead><tr><th>문제</th><th>상태</th></tr></thead>
+    <thead><tr><th>충돌·모순</th><th>처리</th></tr></thead>
     <tbody>
-      <tr><td>강렬한 아동기 vs 주인공의 일상</td><td><span class="pill cand">해결 후보</span></td></tr>
-      <tr><td>차별의 지역·계층 편중</td><td><span class="pill cand">해결 후보</span> 철 피난</td></tr>
-      <tr><td>억류가 완벽한 감옥이 되지 않는가</td><td><span class="pill cand">해결 후보</span> 바깥 세계의 변화가 틈</td></tr>
-      <tr><td>숨 쉬는 강을 왜 몰랐나</td><td><span class="pill cand">해결 후보</span> 딴 골의 숨샘</td></tr>
-      <tr><td>한 가문의 전능한 조작</td><td><span class="pill cand">해결 후보</span> 왕실과 교단도 ‘끝’이 필요</td></tr>
-      <tr><td>종교의 악역화</td><td><span class="pill cand">해결 후보</span> 같은 교단의 구원과 징발</td></tr>
-      <tr><td>받는 기관의 생리 · 재동기화 원리 · 감사 세부 · 이웃 왕국과 교단 중심의 역사 · 주인공의 욕망</td><td><span class="pill unk">남음</span></td></tr>
+      <tr><td><b>진실 B vs P결정-005 ‘마지막 번식 집단’</b></td><td><span class="pill wait">작가 확인</span> 세 번째 층에서 뒤집어도 되는지. 안 되면 바깥 무리를 ‘홀로 버틸 수 없는 작은 무리’로 낮춤</td></tr>
+      <tr><td>사람이 지은 구조물의 공명</td><td>‘작은 규모, 적은 개체의 맞춤만’으로 한정</td></tr>
+      <tr><td>첫 개체 = 바깥 무리인가, 놓친 각인 개체인가</td><td>최종 진실을 고른 뒤 정함</td></tr>
+      <tr><td>깊은 잠 ‘하루~사흘’ (4단계)</td><td>‘데리고 나오면 몇 시간’으로 고침</td></tr>
+      <tr><td>숨샘·치유 성소 쉼터·제염소 (4단계)</td><td>억류안 거절로 폐기</td></tr>
+      <tr><td>돌 빗살이 공명을 바꾸는 속도</td><td>연표와 맞춰야 함</td></tr>
+      <tr><td>가문이 등록부 사본을 얻은 경로</td><td>역사 설계에서</td></tr>
     </tbody></table></div>
 </section>
 
 <footer>
-  <span>마지막 갱신: 2026-10-30 · P결정-006(낙인·마지막 집결지·억류·첫 만남·정치·종교·이름) 반영</span>
-  <span>원본: docs/redesign/README.md · p-canon/decisions.md · candidates/sensing-identification-v3.md · gathering-wonders-review.md · containment-v2.md · first-encounter-v2.md · polity.md · faith.md · site-naming.md · world-causality.md · secrets-ledger-v6.md · decisions-pending-v6.md</span>
+  <span>마지막 갱신: 2026-10-31 · P결정-007(기관 규칙·소인과 독점·생태·억류·세 번째 층·정치 종교) 반영</span>
+  <span>원본: docs/redesign/README.md · p-canon/decisions.md · candidates/organ-and-gathering.md · sensing-incidence.md · sensing-physiology.md · gathering-ecosystems.md · containment-v3.md · final-truths.md · polity-faith-v2.md · naming-rules.md · secrets-ledger-v7.md · decisions-pending-v7.md</span>
   <span>이 현황판은 요약입니다. 내용이 다르면 저장소 문서가 맞습니다.</span>
 </footer>
 </div>

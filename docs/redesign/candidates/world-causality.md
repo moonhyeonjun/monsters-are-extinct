@@ -1,5 +1,7 @@
 # 역사·생태·정치·종교의 연결 검증 `[P 후보]` `[작가 전용]`
 
+> **[일부 무효 · 2026-10-31 · P결정-007]** 억류안 ‘떠나는 길을 지운다’와 4단계 첫 만남에 기댄 연결(숨샘, 치유 성소의 쉼터, 제염소)은 무효다. 새 연결과 충돌 목록은 [decisions-pending-v7.md](decisions-pending-v7.md) §2.
+
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-30(4단계).
 > 목적: 각 분야가 따로 노는 백과사전이 되지 않게, 지시서 §10의 열 질문에 4단계 후보들로 답한다. 모든 세력이 하나의 음모를 공유하지 않는다.
 > 근거 후보: [sensing-identification-v3.md](sensing-identification-v3.md), [gathering-wonders-review.md](gathering-wonders-review.md), [containment-v2.md](containment-v2.md), [first-encounter-v2.md](first-encounter-v2.md), [polity.md](polity.md), [faith.md](faith.md)

@@ -1,5 +1,7 @@
 # P 비밀 원장 v6 `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-31 · P결정-007]** 새 원장은 [secrets-ledger-v7.md](secrets-ledger-v7.md).
+
 > 상태: **P 설계 후보 · 정본 아님.** 작성 2026-10-30(4단계). 이전 원장 [secrets-ledger-v5.md](secrets-ledger-v5.md)는 [대체됨].
 > 근거: [P결정-002~006](../p-canon/decisions.md), [sensing-identification-v3.md](sensing-identification-v3.md), [gathering-wonders-review.md](gathering-wonders-review.md), [containment-v2.md](containment-v2.md), [first-encounter-v2.md](first-encounter-v2.md), [polity.md](polity.md), [faith.md](faith.md), [world-causality.md](world-causality.md), [seal-declaration-v4.md](seal-declaration-v4.md)
 > 구분: **방향 승인**(P결정) / **정답 후보**(작가 승인 대기) / **작가도 아직 모름**
