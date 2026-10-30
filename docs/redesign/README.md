@@ -47,3 +47,9 @@
 | 인물·관계 | candidates/cast.md, relationships.md | p-canon/cast.md, relationships.md |
 | 전체 줄거리 | candidates/outline.md | p-canon/outline.md |
 | 권별·장별 구성 | candidates/volumes/ | p-canon/volumes/ |
+
+## 5. 작가용 설계 현황판
+
+- 승인·후보·결정 대기·역사·세력·비밀·인물을 한눈에 보는 요약 페이지: https://claude.ai/artifact/TaTynvorHi7Pbb95G6qpVR (비공개, 작가 계정)
+- 원본 파일: [status-board.html](status-board.html). 설계 문서가 바뀔 때마다 이 파일을 고치고 같은 주소로 다시 게시한다.
+- 현황판은 요약이다. 내용이 다르면 저장소의 문서가 맞다.

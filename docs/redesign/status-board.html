@@ -1,0 +1,361 @@
+<title>괴물은 멸종했습니다 설계 현황판</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* 레이아웃: 상단 단계 띠 + 탭으로 나눈 설계 장부. 한 탭이 한 영역. 카드는 상태(승인/후보/미정)를 왼쪽 표지로 구분 */
+:root{
+  --bg:#f2f4f0; --panel:#fbfcfa; --ink:#1d2a28; --muted:#5d6b67; --line:#d5ddd8;
+  --accent:#1f6f69; --accent-soft:#dcebe8;
+  --ok:#2f7d3b; --ok-soft:#e1efe1; --cand:#9a6512; --cand-soft:#f4ead6; --unk:#a6364a; --unk-soft:#f5e1e5;
+  --display:"Gowun Batang", "Nanum Myeongjo", serif;
+  --body:"IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121816; --panel:#19211f; --ink:#e3e9e5; --muted:#9aa8a3; --line:#2c3835;
+  --accent:#62c0b6; --accent-soft:#1d3532;
+  --ok:#7cc488; --ok-soft:#1d3122; --cand:#e0ad5a; --cand-soft:#3a2f1b; --unk:#ef8a9b; --unk-soft:#3d2228; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121816; --panel:#19211f; --ink:#e3e9e5; --muted:#9aa8a3; --line:#2c3835;
+  --accent:#62c0b6; --accent-soft:#1d3532;
+  --ok:#7cc488; --ok-soft:#1d3122; --cand:#e0ad5a; --cand-soft:#3a2f1b; --unk:#ef8a9b; --unk-soft:#3d2228; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.65;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.3}
+h1{font-size:clamp(26px,4vw,36px)}
+h2{font-size:22px}
+h3{font-size:17px}
+p{margin:0}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono);font-size:12.5px}
+header{display:flex;flex-direction:column;gap:8px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:500;white-space:nowrap}
+.pill.ok{background:var(--ok-soft);color:var(--ok)}
+.pill.cand{background:var(--cand-soft);color:var(--cand)}
+.pill.unk{background:var(--unk-soft);color:var(--unk)}
+.pill.wait{background:var(--accent-soft);color:var(--accent)}
+/* 단계 띠 */
+.stages{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px}
+.stage{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:8px 8px 10px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stage b{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.stage span{font-size:12.5px;line-height:1.35}
+.stage.done{border-color:var(--ok)}
+.stage.done b{color:var(--ok)}
+.stage.now{border-color:var(--accent);background:var(--accent-soft)}
+.stage.now b{color:var(--accent)}
+@media (max-width:760px){.stages{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media (max-width:420px){.stages{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* 요약 숫자 */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.stat .n{font-family:var(--display);font-size:28px;font-variant-numeric:tabular-nums}
+.stat .l{font-size:13px;color:var(--muted)}
+/* 탭 */
+nav.tabs{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--line);padding-bottom:8px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:2;padding-top:8px}
+nav.tabs button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
+nav.tabs button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+nav.tabs button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section.tab{display:flex;flex-direction:column;gap:14px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0;border-left-width:4px}
+.card.ok{border-left-color:var(--ok)}
+.card.cand{border-left-color:var(--cand)}
+.card.unk{border-left-color:var(--unk)}
+.card.wait{border-left-color:var(--accent)}
+.card .head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}
+ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:3px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+details[open]{padding-bottom:14px}
+summary{cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:10px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸";color:var(--accent);font-size:12px}
+details[open] summary::before{content:"▾"}
+summary .code{font-family:var(--mono);font-size:12px;color:var(--muted)}
+summary .t{font-weight:600}
+dl{display:grid;grid-template-columns:8.5em 1fr;gap:6px 14px;margin:12px 0 0}
+dt{color:var(--muted);font-size:13.5px}
+dd{margin:0;min-width:0}
+@media (max-width:520px){dl{grid-template-columns:1fr}dt{margin-top:6px}}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--muted);font-size:13px;background:var(--bg)}
+tr:last-child td{border-bottom:none}
+.chain{display:flex;flex-direction:column;gap:0}
+.link{display:grid;grid-template-columns:3.2em 1fr;gap:12px;align-items:start}
+.link .dot{font-family:var(--mono);font-size:12px;color:var(--accent);border:1px solid var(--accent);border-radius:999px;text-align:center;padding:1px 0;background:var(--panel)}
+.link .body{border-left:2px solid var(--line);padding:0 0 14px 14px;margin-left:-26px;padding-left:38px}
+.note{background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:14px}
+.cant{display:flex;flex-wrap:wrap;gap:6px}
+.cant span{border:1px dashed var(--unk);color:var(--unk);border-radius:6px;padding:1px 8px;font-size:12.5px}
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;display:flex;flex-direction:column;gap:4px}
+@media (prefers-reduced-motion:no-preference){nav.tabs button{transition:background .15s}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">P 출간본 재설계 · 작가용</div>
+  <h1>《괴물은 멸종했습니다》 설계 현황판</h1>
+  <p class="muted">무엇이 승인되었고, 무엇이 후보이고, 무엇이 아직 아무도 모르는지 한눈에 보는 장부입니다. 원본 문서는 저장소 <span class="mono">docs/redesign/</span>에 있습니다.</p>
+  <div class="legend">
+    <span class="pill ok">● 작가 승인</span>
+    <span class="pill cand">● 후보 (승인 대기)</span>
+    <span class="pill unk">● 작가도 모름 (정해야 함)</span>
+    <span class="pill wait">● 작가 결정 필요</span>
+  </div>
+</header>
+
+<div>
+  <div class="stages" aria-label="재설계 단계">
+    <div class="stage done"><b>0 완료</b><span>기반 정비</span></div>
+    <div class="stage now"><b>1 진행</b><span>세계관 설계</span></div>
+    <div class="stage"><b>2</b><span>모순 검증</span></div>
+    <div class="stage"><b>3</b><span>인물·관계</span></div>
+    <div class="stage"><b>4</b><span>결말 확정</span></div>
+    <div class="stage"><b>5</b><span>전체 줄거리</span></div>
+    <div class="stage"><b>6</b><span>권·장 배치</span></div>
+    <div class="stage"><b>7</b><span>재미 검증</span></div>
+    <div class="stage"><b>8</b><span>작가 승인</span></div>
+    <div class="stage"><b>9</b><span>집필</span></div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><span class="n">1</span><span class="l">승인된 P결정 (작업 방식)</span></div>
+  <div class="stat"><span class="n">0</span><span class="l">승인된 세계관 사실</span></div>
+  <div class="stat"><span class="n">5</span><span class="l">작가 결정 대기</span></div>
+  <div class="stat"><span class="n">11 / 13</span><span class="l">정답 후보가 있는 비밀</span></div>
+  <div class="stat"><span class="n">중단</span><span class="l">원고 집필 (설계 승인 전까지)</span></div>
+</div>
+
+<nav class="tabs" role="tablist" aria-label="영역">
+  <button role="tab" id="t-decide" aria-controls="decide" aria-selected="true">결정 대기</button>
+  <button role="tab" id="t-approved" aria-controls="approved" aria-selected="false">승인된 것</button>
+  <button role="tab" id="t-history" aria-controls="history" aria-selected="false">역사 인과</button>
+  <button role="tab" id="t-factions" aria-controls="factions" aria-selected="false">세력</button>
+  <button role="tab" id="t-secrets" aria-controls="secrets" aria-selected="false">비밀 원장</button>
+  <button role="tab" id="t-people" aria-controls="people" aria-selected="false">인물</button>
+  <button role="tab" id="t-next" aria-controls="next" aria-selected="false">다음 단계</button>
+</nav>
+
+<!-- 결정 대기 -->
+<section class="tab" id="decide" role="tabpanel" aria-labelledby="t-decide">
+  <h2>지금 작가가 정할 것</h2>
+  <p class="muted">아래가 정해져야 역사·세력·비밀 원장의 ‘작업 가정’이 풀리고 생태 설계로 넘어갈 수 있습니다.</p>
+  <div class="grid2">
+    <div class="card wait"><div class="head"><h3>1. 권고안 1~4 채택</h3><span class="pill wait">최우선</span></div>
+      <ul>
+        <li><b>감응 소인</b>은 드물게 가족 안에서 이어지지만, 가문 밖과 남성에게도 있다</li>
+        <li><b>보호자 한 사람</b>(W의 마렌 자리)은 감응자 가문에서 선별·통제에 반대해 탈출했다</li>
+        <li><b>은폐 조직과 가문은 별개</b>이고, 제한적인 훈련권 거래를 해 왔다</li>
+        <li>생태·복원과 마녀·가문은 <b>공동 주축</b>, 서로를 단일 원인으로 환원하지 않는다</li>
+      </ul></div>
+    <div class="card wait"><div class="head"><h3>2. 첫 번째 침묵의 원인</h3><span class="pill cand">추천 있음</span></div>
+      <ul>
+        <li>가. 자연의 장기 변화만 (지하수·기후·바닥 환경)</li>
+        <li><b>나. 자연 변화 + 일부 지역의 사람 물길 사업이 거듦 (추천)</b> — 한 악당이 없고, 현재의 산록 물길 사업과 거울이 됨</li>
+      </ul></div>
+    <div class="card wait"><div class="head"><h3>3. 훈련권이 생긴 사건</h3><span class="pill cand">후보 있음</span></div>
+      <p>〈닫힌 골의 겨울〉(임시 이름)을 쓸지. 그리고 토벌을 거부한 감응자가 길 폐쇄에 섞였는지(섞였다면 이 사건이 자연스러움).</p></div>
+    <div class="card wait"><div class="head"><h3>4. 연표</h3><span class="pill wait">결정</span></div>
+      <p>W의 큰 연표(대토벌 약 640~500년 전, 멸종력 원년의 공식 멸종 선언, 현재 멸종력 312년)를 P에서도 쓸지.</p></div>
+    <div class="card wait"><div class="head"><h3>5. 인물 재창조의 범위</h3><span class="pill wait">결정</span></div>
+      <p>주인공(이름과 성격의 핵심)까지 다시 검토 대상에 넣을지. 판정은 유지 / 핵심 매력만 보존 / 통합 / 삭제 / 대체.</p></div>
+  </div>
+</section>
+
+<!-- 승인된 것 -->
+<section class="tab" id="approved" role="tabpanel" aria-labelledby="t-approved" hidden>
+  <h2>작가가 승인한 것</h2>
+  <div class="card ok"><div class="head"><h3>P결정-001 · P 재설계의 작업 방식</h3><span class="pill ok">승인 2026-10-30</span></div>
+    <ul>
+      <li>기존 W 원고(W1~W6)를 보존한다</li>
+      <li>새 P 원고를 처음부터 쓴다</li>
+      <li>기존 등장인물과 이름을 유지할 의무가 없다</li>
+      <li>세계관과 모든 핵심 비밀을 집필 전에 완성한다</li>
+      <li>시작부터 결말까지 전체 줄거리를 미리 설계한다</li>
+      <li>권수와 권별·장별 사건 배치를 집필 전에 확정한다</li>
+      <li>재미와 속도 검증을 통과한 뒤에 쓴다</li>
+      <li>학생 인물의 남녀 균형, 여러 관계와 로맨스를 설계한다</li>
+      <li>독특하면서 자연스러운 이름의 작명 체계를 만든다</li>
+      <li>따뜻하고 서정적인 문체를 더 일관되게 다듬는다</li>
+    </ul>
+  </div>
+  <div class="note">세계관, 생물, 감응, 세력, 비밀, 인물, 관계, 줄거리, 권수, 결말 가운데 <b>승인된 사실은 아직 없습니다.</b> 모두 후보입니다. W의 정본(D 결정)은 W에 그대로 유효하고, P에는 따로 P결정을 둡니다.</div>
+</section>
+
+<!-- 역사 인과 -->
+<section class="tab" id="history" role="tabpanel" aria-labelledby="t-history" hidden>
+  <h2>역사 인과 사슬 <span class="pill cand">후보</span></h2>
+  <p class="muted">어느 한 집단이 사슬 전체를 움직이지 않습니다. 각 고리를 펼치면 원인, 결과, 이득과 피해, 남은 흔적이 나옵니다. 연도는 W 연표를 빌린 작업 가정입니다.</p>
+  <div class="chain">
+    <details><summary><span class="code">E1</span><span class="t">공존 시대</span><span class="muted">대토벌 수백 년 전까지</span></summary>
+      <dl><dt>원인</dt><dd>환류종의 기관 작용이 땅·물·온도를 바꿔 사람이 장소와 시기를 맞춰 삶. 박동을 읽는 드문 사람(감응자)이 철과 무리를 알려 주는 직능이 됨</dd>
+      <dt>결과</dt><dd>노르바 산록의 몇 집이 혼인으로 묶여 <b>모계 가문</b>이 됨(처음부터 한 핏줄 아님). 감응 지식이 한 가문에 쏠림. 민간의 ‘마녀’ 호칭</dd>
+      <dt>이득 / 피해</dt><dd>공존 마을, 가문 / 값을 못 낸 마을, 가문 밖 감응 아이들</dd>
+      <dt>흔적</dt><dd>지명, 민속, 옛 농서의 그림, 옛 계약 조각</dd></dl></details>
+    <details><summary><span class="code">E2</span><span class="t">첫 번째 침묵</span><span class="muted">대토벌 80~120년 전부터</span></summary>
+      <dl><dt>원인</dt><dd>자연의 장기 변화 + (추천) 일부 지역의 사람 물길 사업</dd>
+      <dt>결과</dt><dd>이동 이탈, 번식지 포기, 기관 불안정, 충돌과 실제 피해. 감응자는 먼저 느꼈지만 ‘짐승이 미쳐 간다’로 잘못 읽음</dd>
+      <dt>이득 / 피해</dt><dd>경고를 판 가문, 개간 세력 / 환류종, 공존 마을</dd>
+      <dt>흔적</dt><dd>관찰 수첩, 수위표, 가문의 경고 장부(뒤에 말살)</dd></dl></details>
+    <details><summary><span class="code">E4</span><span class="t">대토벌의 시작과 확산</span><span class="muted">약 640~500년 전</span></summary>
+      <dl><dt>원인</dt><dd>실제 피해, 개간, 환류기관 기준 보상금, 왕국의 통합 정치, 공포. ‘찾는 이’로 고용된 감응자가 몰이를 빠르게 함(가속 요인일 뿐)</dd>
+      <dt>결과</dt><dd>급감과 지역 멸종, 생태 기능 상실. 가문 분열(고용파 / 거부하고 떠난 딸들)</dd>
+      <dt>이득 / 피해</dt><dd>왕국·영주, 사냥꾼·상인, 고용된 가문 / 환류종, 떠난 감응자, 생태</dd>
+      <dt>흔적</dt><dd>보상금 장부, 원정 보급 장부, 병사의 편지, 영웅담</dd></dl></details>
+    <details><summary><span class="code">E5</span><span class="t">대토벌 말기의 길 폐쇄</span><span class="muted">약 500년 전</span></summary>
+      <dl><dt>원인</dt><dd>마지막 무리가 산으로 몰림. 지휘관·기록자·변경 주민이 서로 다른 이유로 추격을 멈추게 함(후보: 토벌을 거부한 감응자도 섞임)</dd>
+      <dt>결과</dt><dd>계절길 폐쇄, 거짓 승전 보고. <b>바깥에 처진 무리의 희생.</b> 이르바넬 피난처의 성립과 고립. 길 지기 집들(은폐 조직의 씨앗)</dd>
+      <dt>흔적</dt><dd>전투일지의 모순, 미사용 보급품, 무명 병사의 편지, ‘닫는 날’ 결정 기록</dd></dl></details>
+    <details><summary><span class="code">E6</span><span class="t">은폐와 기록 말살</span><span class="muted">500년 전~잔존기</span></summary>
+      <dl><dt>누가</dt><dd>네 집단이 공모 없이 각자 다른 이유로 같은 방향으로 지움 — 왕국(영웅담), 보상 사무소(거짓 신고), 길 지기(피난처), 가문(‘찾는 이’ 공모·신변·재산·기술 독점)</dd>
+      <dt>결과</dt><dd>공식 기록에서 감응자와 피난처가 사라짐. 복원 시대의 ‘출처 빈칸’. 마녀 이야기의 미신화</dd>
+      <dt>흔적</dt><dd>기관마다 다른 장부의 어긋남, 쪽 번호 빈칸, 은폐 조직 자료, 가문 훈련 자료</dd></dl></details>
+    <details><summary><span class="code">E7</span><span class="t">이르바넬의 생존 개체군</span><span class="muted">500년 전~현재</span></summary>
+      <dl><dt>원인</dt><dd>안정된 수원, 다양한 고도, 오래된 바닥 환경(자연의 피난 조건)</dd>
+      <dt>결과</dt><dd>몇몇 종 생존. 몰림에 따른 국지적 되먹임 위험, 고립의 비용, 바깥 물길 변화에 취약</dd>
+      <dt>미정</dt><dd><span class="pill unk">종 목록·개체 수·환경 → 생태 설계</span></dd></dl></details>
+    <details><summary><span class="code">E8</span><span class="t">훈련권 타협 〈닫힌 골의 겨울〉</span><span class="muted">잔존기 · 후보</span></summary>
+      <dl><dt>1</dt><dd>토벌을 거부하고 떠난 감응자의 후손이 길 지기 집과 혼인해 피난처 곁에 삶</dd>
+      <dt>2</dt><dd>겨울, 밀렵꾼이 계절길로 들어옴</dd>
+      <dt>3</dt><dd>그 후손이 무리의 박동이 흐트러진 걸 가까이에서 읽고 “지금 흔들면 무너진다”고 말림 → 정면 대신 유인 → 무리가 무너지지 않음(감응이 피난처를 지킨 첫 사례)</dd>
+      <dt>4</dt><dd>본가가 떠난 딸들의 자녀를 지켜보다 피난처를 알아챔 → 바깥에 알릴 수 있는 위치</dd>
+      <dt>5</dt><dd>타협: 가문은 침묵과 감응 경보를, 은폐 조직은 제한 구역·정해진 철·길잡이 동반 훈련을 내줌. 떠난 딸 후손은 본가로 흡수</dd>
+      <dt>6</dt><dd>서로의 비밀을 일부만 앎. 가문은 길과 핵심 샘을 모름</dd></dl></details>
+    <details><summary><span class="code">E9</span><span class="t">공식 멸종 판정</span><span class="muted">멸종력 원년</span></summary>
+      <dl><dt>원인</dt><dd>목격 감소, 조사 종결, 정치적 종결. 은폐 조직의 목격담 흐림과 가문의 침묵이 판정을 쉽게 함. 설계된 거짓이 아님</dd>
+      <dt>결과</dt><dd>‘멸종’이 상식이 됨 → 이르바넬의 가장 두꺼운 보호막</dd></dl></details>
+    <details><summary><span class="code">E10–11</span><span class="t">대체 시설 시대 → 복원 시대</span><span class="muted">원년~현재</span></summary>
+      <dl><dt>흐름</dt><dd>사람이 탑·수로·시설로 생태 기능을 메움. 산록 물길 사업이 커짐. 협회·시설·공모가 생기며 재료 수요 증가</dd>
+      <dt>결과</dt><dd>은폐 조직이 가장자리 샘에서 ‘오래된 보존분’을 소량 공급 → <b>사업파</b> 성장. 가문은 비공식 자문으로 다시 쓸모를 얻음</dd></dl></details>
+    <details open><summary><span class="code">E12</span><span class="t">〈마지막 채취〉가 일어나는 조건</span><span class="muted">현재~몇 해 안</span></summary>
+      <dl><dt>여섯 조건</dt><dd>재료 쇠퇴 · 공모 요건 · 가장자리 샘이 마름(산록 물길과 가뭄) · 핵심 샘은 이동철에만 닿음 · 투자자 기한 · 감응자 확보(훈련권이 거래 대상)</dd>
+      <dt>위험</dt><dd>몰린 무리를 흔들어 국지적 붕괴. 감응자의 ‘괜찮다’가 거짓 안심이 될 수 있음. 가문 없이도 채취는 진행됨</dd></dl></details>
+  </div>
+  <div class="note"><b>거울 구조:</b> 첫 번째 침묵 때 사람의 물길 사업이 거든 변화(E2)가, 지금 산록 물길 사업으로 되풀이된다(E12). 한 악당이 아니라 같은 실수의 반복입니다.</div>
+</section>
+
+<!-- 세력 -->
+<section class="tab" id="factions" role="tabpanel" aria-labelledby="t-factions" hidden>
+  <h2>세력 <span class="pill cand">후보</span></h2>
+  <p class="muted">조직명과 가문명은 아직 정하지 않았습니다. 은폐 조직과 모계 가문은 <b>같은 조직이 아닙니다.</b></p>
+  <div class="grid2">
+    <div class="card cand"><h3>이르바넬 은폐 조직</h3>
+      <p>길을 맡은 몇몇 집의 연합(혈통형 아님). 접근로와 출입을 통제.</p>
+      <p class="muted">안다: 위치와 길, 계절 날짜(집마다 쪼개짐), 가문의 대토벌 협력 · 모른다: 교란의 문턱, 가문의 훈련 체계</p>
+      <ul><li><b>사업파</b> — 생육 체계 표준화와 공모. 공개해 보호구역으로 만들 계획도 진심</li><li><b>수호파</b> — 흔들지 마라. 계절 날짜를 쥠. 그들도 공급 돈을 받아 왔음</li><li><b>현장 일꾼</b> — 삯과 생계, 결정권 없음</li></ul>
+      <div class="cant"><span>생물을 통제 못 함</span><span>물길 변화를 못 막음</span><span>법적 권한 없음</span><span>누구도 지식 전체를 모름</span></div></div>
+    <div class="card cand"><h3>모계 가문</h3>
+      <p>노르바 산록, 혼인으로 묶인 몇 집. 제한 구역의 독점적 감응 훈련권.</p>
+      <p class="muted">안다: 피난처의 존재와 훈련 구역, 박자 분류 · 모른다: 길과 핵심 샘, 자기들의 고용 기록 전모</p>
+      <ul><li><b>쓸모를 되찾자</b> — 감응자를 공급해 지위 회복</li><li><b>닫아 두자</b> — 바깥 거래 반대(그것도 통제)</li><li><b>풀어 주자</b> — 구성원의 자유와 공개</li><li><b>아는 사람</b>(자리) — 역사적 책임을 조각으로 앎</li></ul>
+      <div class="cant"><span>왕국·학교 조종 못 함</span><span>기록 열람 못 함</span><span>감각으로 원격 탐지 못 함</span><span>길잡이 없이 못 들어감</span></div></div>
+    <div class="card cand"><h3>국가·공공 기관</h3>
+      <p>왕국, 서식국, 대륙복원협회, 학교·시설. 법과 판정, 등록과 공모, 교육과 돌봄.</p>
+      <div class="cant"><span>산 안의 사정을 모름</span><span>판정을 뒤집으면 권위가 흔들림</span><span>재료 출처를 끝까지 못 따짐</span></div></div>
+    <div class="card cand"><h3>연구·상업</h3>
+      <p>독립 연구자(W의 에드반 자리, 목적은 P에서 다시 정함), 사설 연구소, 투자자, 운송 중개, 밀렵·불법 거래.</p>
+      <div class="cant"><span>피난처의 길을 모름</span><span>재료를 스스로 못 구함</span><span>현장을 모름</span></div></div>
+  </div>
+  <h3>배신이 일어날 조건</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>관계</th><th>지금</th><th>배신 조건</th></tr></thead>
+    <tbody>
+      <tr><td>은폐 조직 ↔ 가문</td><td>불편한 공존(훈련권 약속)</td><td>사업파가 훈련 구역 확대를 대가로 감응자를 요구 / 가문 ‘쓸모파’의 약속 밖 거래</td></tr>
+      <tr><td>사업파 ↔ 수호파</td><td>한 조직 안의 대립</td><td>수호파가 계절 날짜를 끝까지 안 내줌 / 사업파가 몰래 날짜를 구함</td></tr>
+      <tr><td>가문 쓸모파 ↔ 사업파</td><td>거래 후보</td><td>가문이 바깥 감응자(주인공 후보)를 끌어들이려 할 때</td></tr>
+      <tr><td>독립 연구자 ↔ 사업파</td><td>옛 고객, 지금 경쟁</td><td>연구자가 따로 피난처에 들어가려 할 때</td></tr>
+      <tr><td>운송 중개 ↔ 양쪽</td><td>이중 거래</td><td>더 큰 값을 부르는 쪽으로 정보를 넘길 때</td></tr>
+    </tbody></table></div>
+</section>
+
+<!-- 비밀 원장 -->
+<section class="tab" id="secrets" role="tabpanel" aria-labelledby="t-secrets" hidden>
+  <h2>비밀 원장</h2>
+  <p class="muted">‘작가도 모름’인 비밀이 남아 있으면 집필을 시작하지 않습니다. 각 비밀의 여덟 칸(진실, 원인, 최초 사건, 아는 쪽, 잘못 아는 쪽, 증거, 공개 시 갈등, 필요한 이유)은 원장 문서에 있습니다.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>번호</th><th>비밀</th><th>후보 진실(요지)</th><th>상태</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">01</td><td>첫 번째 침묵의 원인</td><td>자연 변화 + 일부 사람 물길 사업</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">02</td><td>마지막 토벌의 실체</td><td>추격 중지와 거짓 승전</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">03</td><td>바깥에 처진 무리</td><td>길을 닫으며 버린 무리, 일부가 ‘승리’로 기념됨</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">04</td><td>공식 멸종 판정</td><td>정치적 종결과 불완전한 조사</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">05</td><td>이르바넬</td><td>노르바 쪽 고산 수계 뒤의 피난 계곡군(위치 세부는 생태 단계)</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">06</td><td>가문의 ‘찾는 이’ 협력과 말살</td><td>말살을 이끈 사람도 감응자 여성, 보호에서 통제로</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">07</td><td>훈련권 타협</td><td>〈닫힌 골의 겨울〉 뒤 침묵·경보 ↔ 제한 구역 훈련</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">08</td><td>보존 재료 출처 위조</td><td>‘오래된 보존분’의 일부는 최근 채집분(범위 미정)</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">09</td><td>〈마지막 채취〉</td><td>이동철 핵심 샘의 대규모 채취(일정·결과 미정)</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">10</td><td>‘피가 아니었다’</td><td>소인은 가문 밖과 남성에게도. 가문의 힘은 훈련·선별·두려움</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">11</td><td>보호자의 탈출과 반대</td><td>역할 단위로만. 맡을 인물은 인물 단계에서</td><td><span class="pill cand">후보</span></td></tr>
+      <tr><td class="mono">12</td><td>독립 연구자의 진짜 목적</td><td>—</td><td><span class="pill unk">작가도 모름</span></td></tr>
+      <tr><td class="mono">13</td><td>주인공이 처음 만나는 개체</td><td>—</td><td><span class="pill unk">작가도 모름</span></td></tr>
+    </tbody></table></div>
+</section>
+
+<!-- 인물 -->
+<section class="tab" id="people" role="tabpanel" aria-labelledby="t-people" hidden>
+  <h2>인물 <span class="pill unk">아직 시작 전 (3단계)</span></h2>
+  <p class="muted">기존 인물을 유지할 의무는 없습니다. 아래는 W에 있던 인물이며, 모두 판정 대기입니다. 이름은 바꾸지도 새로 만들지도 않았습니다.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>W 인물</th><th>W에서의 자리</th><th>P 판정</th></tr></thead>
+    <tbody>
+      <tr><td>리아</td><td>주인공, 환류 감각</td><td><span class="pill wait">대기 (권고안 5)</span></td></tr>
+      <tr><td>마렌</td><td>어머니, 숨긴 과거</td><td><span class="pill wait">대기 (보호자 역할은 권고안 2)</span></td></tr>
+      <tr><td>다렌 · 니오</td><td>아버지(수문) · 동생</td><td><span class="pill wait">대기</span></td></tr>
+      <tr><td>마르딘</td><td>멘토 복원사</td><td><span class="pill wait">대기</span></td></tr>
+      <tr><td>유진 · 테오 · 핀 · 도아</td><td>경쟁자·동료(기록·기계·바다)·친구</td><td><span class="pill wait">대기</span></td></tr>
+      <tr><td>에드반 · 카델 · 밤 관리인</td><td>적대 연구자 · 교수 · 생육동 관리인</td><td><span class="pill wait">대기</span></td></tr>
+    </tbody></table></div>
+  <div class="grid2">
+    <div class="card"><h3>설계 순서</h3><p>서사적 역할 → 욕망과 결함 → 결정적 선택 → 관계망 → 출신 문화 → 이름 후보 → 작가 승인</p></div>
+    <div class="card"><h3>판정 다섯 가지</h3><p>유지 · 핵심 매력만 보존하고 재설계 · 통합 · 삭제 · 새 인물로 대체</p></div>
+    <div class="card"><h3>관계와 로맨스</h3><p>우정에서 감정으로, 경쟁하며 끌림, 짝사랑, 서로 좋아하지만 이해관계 충돌, 예상과 다른 상대, 연애가 아닌 깊은 우정. 학생 집단은 남녀 균형(W는 여성 셋, 남성 하나).</p></div>
+    <div class="card"><h3>작명</h3><p>지역 작명 규칙 먼저 → 인물마다 후보 여럿 비교 → 첫소리·음절·어미 겹침과 발음 혼동 검사 → 뜻으로 운명을 노골적으로 암시하지 않기</p></div>
+  </div>
+</section>
+
+<!-- 다음 단계 -->
+<section class="tab" id="next" role="tabpanel" aria-labelledby="t-next" hidden>
+  <h2>다음 단계: 환류종 생태 설계</h2>
+  <p class="muted">결정 대기 탭의 항목이 정해지면 시작합니다. 선행 조건은 이렇습니다.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>선행 조건</th><th>왜 필요한가</th></tr></thead>
+    <tbody>
+      <tr><td>첫 번째 침묵의 원인</td><td>어떤 종이 어떤 변화에 민감했는지가 원인에 달림</td></tr>
+      <tr><td>감응 권고안 채택 여부</td><td>감응자가 무엇을 느끼는지(박동의 성질)를 생태에서 정해야 함</td></tr>
+      <tr><td>이르바넬 환경의 큰 틀</td><td>남은 종과 그 생활을 정하는 바탕</td></tr>
+      <tr><td>등장 종을 고르는 기준</td><td>추천: 첫 경이의 종 / 피난처의 핵심 무리 / 복원 시설의 종 / 위험을 만드는 종 / 상징 종으로 묶은 뒤 깊이를 정함</td></tr>
+      <tr><td>환류기관 원리의 깊이</td><td>작가만 알 원리와 독자가 끝까지 모를 정보의 경계</td></tr>
+      <tr><td>연표</td><td>종별 멸종·생존 시기를 맞추려면 필요</td></tr>
+    </tbody></table></div>
+</section>
+
+<footer>
+  <span>마지막 갱신: 2026-10-30 · 저장소 커밋 98d5d5c 기준 · 1단계(세계관 설계) 진행 중</span>
+  <span>원본: docs/redesign/README.md(문서 지도) · p-canon/decisions.md(승인) · candidates/history.md · factions.md · secrets-ledger.md · recommendations.md</span>
+  <span>이 현황판은 요약입니다. 내용이 다르면 저장소 문서가 맞습니다.</span>
+</footer>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('nav.tabs [role="tab"]'));
+  function show(id){
+    tabs.forEach(function(b){var on=b.getAttribute('aria-controls')===id;b.setAttribute('aria-selected',on?'true':'false');
+      var p=document.getElementById(b.getAttribute('aria-controls'));if(p)p.hidden=!on;});
+    try{localStorage.setItem('board-tab',id);}catch(e){}
+  }
+  tabs.forEach(function(b){b.addEventListener('click',function(){show(b.getAttribute('aria-controls'));});});
+  var start=null;
+  var h=(location.hash||'').replace('#','');
+  if(h&&document.getElementById(h))start=h;
+  if(!start){try{start=localStorage.getItem('board-tab');}catch(e){}}
+  if(start&&document.getElementById(start))show(start);
+})();
+</script>
