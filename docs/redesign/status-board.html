@@ -102,7 +102,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 .layer{display:grid;grid-template-columns:minmax(0,12em) 1fr 1fr;gap:10px;align-items:start;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:14px}
 .layer .who{font-weight:600}
 .layer .k::before{content:"안다 · ";color:var(--ok);font-size:12px}
-.layer .u::before{content:"모른다 · ";color:var(--unk);font-size:12px}
+.layer .u::before{content:"믿는 설명 · ";color:var(--cand);font-size:12px}
 @media (max-width:640px){.layer{grid-template-columns:1fr}}
 .rec{outline:2px solid var(--accent);outline-offset:-2px}
 .rec-tag{font-family:var(--mono);font-size:11px;color:var(--accent)}
@@ -116,6 +116,12 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 .flip .side{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
 .flip .arrow{font-family:var(--display);font-size:22px;color:var(--accent)}
 @media (max-width:560px){.flip{grid-template-columns:1fr}.flip .arrow{text-align:center;transform:rotate(90deg)}}
+.pulse{display:block;width:100%;height:auto;max-width:100%}
+.pulse .axis{stroke:var(--line);stroke-width:1}
+.pulse .lbl{fill:var(--muted);font-size:11px;font-family:var(--mono)}
+.pulse .a{stroke:var(--accent);fill:none;stroke-width:2}
+.pulse .b{stroke:var(--cand);fill:none;stroke-width:2}
+.pulse .c{stroke:var(--unk);fill:none;stroke-width:2}
 </style>
 
 <div class="wrap">
@@ -126,14 +132,14 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
   <div class="legend">
     <span class="pill ok">● 작가 승인</span>
     <span class="pill cand">● 후보 (승인 대기)</span>
-    <span class="pill unk">● 미결정 · 거절</span>
+    <span class="pill unk">● 미결정 · 보류 · 거절</span>
     <span class="pill wait">● 작가 결정 필요</span>
   </div>
 </header>
 
 <div class="stages" aria-label="재설계 단계">
   <div class="stage done"><b>0 완료</b><span>기반 정비</span></div>
-  <div class="stage now"><b>1 진행</b><span>세계관 설계 (영웅 가문 역사)</span></div>
+  <div class="stage now"><b>1 진행</b><span>세계관 설계 (2단계: 식별·집결·아르바넬)</span></div>
   <div class="stage"><b>2</b><span>모순 검증</span></div>
   <div class="stage"><b>3</b><span>인물·관계</span></div>
   <div class="stage"><b>4</b><span>결말 확정</span></div>
@@ -145,259 +151,241 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 </div>
 
 <div class="stats">
-  <div class="stat"><span class="n">3</span><span class="l">승인된 P결정</span></div>
-  <div class="stat"><span class="n">12</span><span class="l">승인된 역사 방향(P결정-003)</span></div>
+  <div class="stat"><span class="n">4</span><span class="l">승인된 P결정</span></div>
   <div class="stat"><span class="n">5</span><span class="l">지금 결정 대기</span></div>
-  <div class="stat"><span class="n">17</span><span class="l">비밀 원장 (미결정 6)</span></div>
+  <div class="stat"><span class="n">21</span><span class="l">비밀 원장 (미결정·보류 5)</span></div>
+  <div class="stat"><span class="n">6 / 10</span><span class="l">이전 인과 구멍 중 해결 후보</span></div>
   <div class="stat"><span class="n">중단</span><span class="l">원고 집필</span></div>
 </div>
 
 <nav class="tabs" role="tablist" aria-label="영역">
   <button role="tab" id="t-decide" aria-controls="decide" aria-selected="true">결정 대기</button>
-  <button role="tab" id="t-approved" aria-controls="approved" aria-selected="false">승인·거절</button>
-  <button role="tab" id="t-history" aria-controls="history" aria-selected="false">가문의 역사</button>
-  <button role="tab" id="t-gather" aria-controls="gather" aria-selected="false">집결과 침묵</button>
-  <button role="tab" id="t-decl" aria-controls="decl" aria-selected="false">멸종 선언</button>
-  <button role="tab" id="t-sense" aria-controls="sense" aria-selected="false">감응 기술</button>
-  <button role="tab" id="t-refuge" aria-controls="refuge" aria-selected="false">생존지·비밀</button>
-  <button role="tab" id="t-time" aria-controls="time" aria-selected="false">연표</button>
+  <button role="tab" id="t-approved" aria-controls="approved" aria-selected="false">승인·보류</button>
+  <button role="tab" id="t-ident" aria-controls="ident" aria-selected="false">감응자 식별</button>
+  <button role="tab" id="t-gather" aria-controls="gather" aria-selected="false">집결 생태</button>
+  <button role="tab" id="t-arb" aria-controls="arb" aria-selected="false">아르바넬</button>
+  <button role="tab" id="t-seal" aria-controls="seal" aria-selected="false">봉인·선언</button>
+  <button role="tab" id="t-history" aria-controls="history" aria-selected="false">가문과 사회</button>
   <button role="tab" id="t-secrets" aria-controls="secrets" aria-selected="false">비밀 원장</button>
-  <button role="tab" id="t-holes" aria-controls="holes" aria-selected="false">인과 구멍</button>
+  <button role="tab" id="t-check" aria-controls="check" aria-selected="false">검증·구멍</button>
   <button role="tab" id="t-people" aria-controls="people" aria-selected="false">인물 역할</button>
 </nav>
 
 <section class="tab" id="decide" role="tabpanel" aria-labelledby="t-decide">
   <h2>지금 작가가 승인할 것</h2>
   <div class="grid2">
-    <div class="card wait"><div class="head"><h3>1. 가문 역사의 인과 구조</h3><span class="pill cand">추천</span></div>
-      <p>‘병든 피’ 낙인 → 사슬 수색의 실제 공로 → ‘순결’로 뒤집힌 명문 → 포획 연구와 집결지 발견 → 흰 골의 참사와 봉인 구역 관리권 → 멸종 뒤 위상 맞춤 기술과 독점.</p></div>
-    <div class="card wait"><div class="head"><h3>2. 이상 현상과 집결의 원인</h3><span class="pill cand">추천 안 3</span></div>
-      <p><b>긴 주기의 집결</b>: 무리들이 사람의 기억보다 긴 주기로 한 곳에 모이는 생애 사건. 가문은 발견자이자 그것을 숨기고 이용한 자. 대안: 환경 변화, 사람의 개발. 가문의 실험은 보조로만.</p></div>
-    <div class="card wait"><div class="head"><h3>3. 멸종 선언의 작동 원리</h3><span class="pill cand">추천 조합</span></div>
-      <p><b>제도의 빈틈</b>(봉인 구역은 관리자 보고로 갈음하는 규정) + <b>영웅의 마지막 원정</b> 서사, 배경은 모두가 끝을 원했던 이해의 일치.</p></div>
-    <div class="card wait"><div class="head"><h3>4. 생존지와 비밀 관리</h3><span class="pill cand">후보</span></div>
-      <p>국가 봉인 구역(관리권 가문) + 감시소 위장 + 실무자에게 <b>‘영웅적 비밀’</b>을 주는 두 겹의 거짓.</p></div>
-    <div class="card wait"><div class="head"><h3>5. 감응 기술과 이점의 방향</h3><span class="pill cand">후보</span></div>
-      <p>상한은 <b>위상 맞춤과 압력 몰이</b>까지. 이점의 방향: 약재·시약 / 땅을 살리는 기술 / 복원 재료.</p></div>
-    <div class="card"><div class="head"><h3>뒤로 미룬 것</h3><span class="pill wait">생태 뒤</span></div>
-      <p>연표(‘약 200년’을 선언으로 읽을지 대토벌로 읽을지), 환류종의 수명·주기</p></div>
+    <div class="card wait"><div class="head"><h3>1. 감응자 식별</h3><span class="pill cand">추천</span></div>
+      <p>환류종 가까이에서 <b>눈이 박동에 맞춰 저절로 떨리고 균형이 흔들림</b>(평형 기관 가설) + 보는 관습·징집 검사 + 기록과 계보. 신체 표식은 쓰지 않음. 귀결: 멸종 뒤엔 가문만 감응자를 가려낼 수 있음.</p></div>
+    <div class="card wait"><div class="head"><h3>2. 집결의 목적</h3><span class="pill cand">추천</span></div>
+      <p><b>박동의 재동기화와 번식.</b> 혼자 지내면 박동이 어긋나고, 진동을 모으는 지형에 모여 다시 맞춘 뒤 번식. 대안: 번식만 / 기관의 갱신 / 극한기의 피난.</p></div>
+    <div class="card wait"><div class="head"><h3>3. ‘아르바넬만 살아남았다’의 범위</h3><span class="pill cand">추천</span></div>
+      <p><b>마지막으로 기능하는 집결지 + 그곳을 쓰는 집결형 종의 마지막 번식 집단.</b> 떠도는 개체와 비집결형 종은 따로. ‘모든 종이 이곳에만’은 쓰지 않음.</p></div>
+    <div class="card wait"><div class="head"><h3>4. 아르바넬 생존의 인과</h3><span class="pill cand">추천</span></div>
+      <p>가문 조상의 <b>‘조용한 땅’ 곁 집결지</b> + <b>다른 집결지는 군에 넘기고 이곳만 숨김</b>(보호이자 계산) + 갈 곳 잃은 무리가 <b>머물러 위험이 상시</b>.</p></div>
+    <div class="card wait"><div class="head"><h3>5. 봉인·선언 제도 보강</h3><span class="pill cand">추천</span></div>
+      <p>봉인령과 관리 위임, 면제 규정, 고요한 철의 바깥 점검, <b>마지막 원정 = 다른 집결지의 실제 학살 + ‘세상의 마지막’이라는 허위</b>, 실무자가 손수 쓰는 거짓 보고.</p></div>
+    <div class="card"><div class="head"><h3>함께 확인</h3><span class="pill wait">이름</span></div>
+      <p>‘아르바넬’(지시서 표기)을 공식 명칭으로 쓸지. W 자료는 ‘이르바넬’.</p></div>
   </div>
 </section>
 
 <section class="tab" id="approved" role="tabpanel" aria-labelledby="t-approved" hidden>
-  <h2>승인된 것과 거절된 것</h2>
+  <h2>승인된 것 (P결정-001~004)</h2>
   <div class="grid2">
-    <div class="card ok"><div class="head"><h3>P결정-001 · 작업 방식</h3><span class="pill ok">승인</span></div>
-      <p>W 보존, P를 처음부터, 인물 유지 의무 없음, 세계관·비밀·줄거리·권수를 집필 전에 확정, 재미 검증 뒤 집필.</p></div>
-    <div class="card ok"><div class="head"><h3>P결정-002 · 단일 가문</h3><span class="pill ok">승인</span></div>
-      <p>가문이 은폐·기록 말살·멸종 선언 조작을 주도. 아는 사람은 극소수. 백지 연표. 별개 은폐 조직 없음.</p></div>
-    <div class="card ok"><div class="head"><h3>P결정-003 · 영웅 가문의 역사</h3><span class="pill ok">승인</span></div>
-      <ul><li>감응이 유전병처럼 취급되어 차별받음(사회의 인식)</li><li>대토벌에서 실용성이 인정되어 힘이 커짐, <b>실제로 기여</b></li><li>영웅·순결의 명문</li><li>내부의 잔혹한 연구 → 특정 지역으로의 집결 발견</li><li>위험지역 선포와 접근 차단</li><li>멸종 선언 뒤에도 연구·훈련, 이점과 기술의 독점</li><li>감응 훈련이 이점을 얻는 방향으로 발전</li><li>첫 번째 침묵 = 공식 기록과 실제 역사가 다른 구조</li></ul></div>
+    <div class="card ok"><h3>작업 방식 · 단일 가문</h3><p>W 보존, P를 처음부터. 가문이 은폐·기록 말살·선언 조작을 주도. 아는 사람은 극소수. 백지 연표. 인물 전면 재창조.</p></div>
+    <div class="card ok"><h3>영웅 가문의 역사</h3><p>유전병처럼 차별받던 감응자 집안 → 대토벌의 실제 공로 → 영웅·순결의 명문 → 비밀 연구와 집결지 → 위험지역 → 멸종 뒤의 연구·훈련·독점.</p></div>
+    <div class="card ok"><h3>P결정-004 채택</h3><ul><li>가문 성장 구조</li><li>첫 번째 침묵 = 기록과 실제가 다름</li><li>선언 = 제도의 빈틈 + 마지막 원정</li><li>국가 봉인 구역, 가문은 관리권</li><li>두 겹 비밀(핵심 진실 / 영웅적 보호 활동)</li><li>감응 기술은 탐지와 해석까지</li></ul></div>
+    <div class="card ok"><h3>P결정-004 새 요구</h3><ul><li>감응자가 자기 뜻과 관계없이 드러나는 식별 구조</li><li>집결지는 원래 여러 곳, 대토벌로 사라짐</li><li><b>아르바넬은 가문이 숨겨 살아남은 마지막 온전한 집결지</b></li></ul></div>
   </div>
-  <h3>거절·대체·보류</h3>
+  <h3>보류와 한정</h3>
   <div class="table-wrap"><table>
-    <thead><tr><th>이전 후보</th><th>상태</th></tr></thead>
+    <thead><tr><th>항목</th><th>상태</th></tr></thead>
     <tbody>
-      <tr><td>멸종 선언 구조 나(증거 경로 조작 + 죽은 개체 제출)</td><td><span class="pill unk">거절</span></td></tr>
-      <tr><td>가문 영지 위쪽 골짜기, 일곱 층 비밀 계층, 덮개 이야기</td><td><span class="pill unk">거절</span></td></tr>
-      <tr><td>은폐 기원안 A~E</td><td><span class="pill unk">대체</span> 작가의 역사 방향으로</td></tr>
-      <tr><td>첫 번째 침묵 안 3의 세부(거래 사냥)</td><td><span class="pill cand">구조만 채택</span></td></tr>
-      <tr><td>연표 후보 1~3</td><td><span class="pill cand">‘약 200년’만 가설로 보류</span></td></tr>
-      <tr><td>은폐 조직 분리, 〈닫힌 골의 겨울〉, 훈련권 계약</td><td><span class="pill unk">폐기(P결정-002)</span></td></tr>
+      <tr><td>긴 주기의 집결</td><td><span class="pill cand">일부 종에만</span></td></tr>
+      <tr><td>위상 맞춤, 압력 몰이, 경제적 이익</td><td><span class="pill unk">생태 검증 전 보류</span></td></tr>
+      <tr><td>‘약 200년’</td><td><span class="pill unk">검토 가설</span></td></tr>
+      <tr><td>세력표</td><td><span class="pill unk">생존지·선언 확정 뒤 다시 정리</span></td></tr>
     </tbody></table></div>
 </section>
 
-<section class="tab" id="history" role="tabpanel" aria-labelledby="t-history" hidden>
-  <h2>감응자 가문의 네 시대 <span class="pill ok">방향 승인</span> <span class="pill cand">세부 후보</span></h2>
-  <div class="eras">
-    <div class="era"><span class="tag">시대 A</span><h3>차별과 은둔</h3><p>공존 사회는 이미 무리를 알았기에 감응은 쓸모없었고, 무리 곁의 과부하만 ‘울림병’(임시 이름)처럼 보였다. 혼인 거부 → 감응자 집들끼리의 강요된 내혼 → ‘조용한 땅’으로 물러남.</p></div>
-    <div class="era"><span class="tag">시대 B</span><h3>대토벌과 영웅</h3><p>‘안개의 밤’(임시 이름)에 한 감응자가 숨은 무리를 찾아 실제로 마을을 구함. 한 사람의 거리는 수십 걸음뿐이지만 사람을 줄로 세운 <b>사슬 수색</b>으로 토벌이 몇 배 빨라짐. 땅·작위·권한.</p></div>
-    <div class="era"><span class="tag">시대 C</span><h3>비밀 연구와 금지 구역</h3><p>포획 개체의 생체 실험 → 무리들이 한 곳으로 향한다는 발견 → 원정대를 잃은 ‘흰 골의 참사’ → 왕실이 봉인 구역을 지정하고 관리권을 가문에 맡김. 위험은 일부 진짜.</p></div>
-    <div class="era"><span class="tag">시대 D</span><h3>멸종 뒤의 독점</h3><p>국가가 비용을 대는 감시소가 곧 연구 시설. 감응 훈련은 탐지에서 <b>이점을 얻는 기술</b>로. 가문의 이름으로 나가는 약·기술·재료·후원.</p></div>
-  </div>
-  <h3>‘병든 피’가 ‘순결한 피’로 뒤집히다</h3>
+<section class="tab" id="ident" role="tabpanel" aria-labelledby="t-ident" hidden>
+  <h2>감응자는 어떻게 드러나는가 <span class="pill cand">후보</span></h2>
   <div class="flip">
-    <div class="side"><b>낙인</b><p class="muted">유전되는 병, 발작, 혼인 거부, 숨겨진 아이들</p></div>
+    <div class="side"><b>공존 시대 · 떨리는 눈</b><p class="muted">무리가 지나는 철, 아이의 눈이 저절로 떨리고 휘청거림 → 병, 낙인, 혼인 거부</p></div>
     <div class="arrow" aria-hidden="true">→</div>
-    <div class="side"><b>명예</b><p class="muted">흰 옷, 엄격한 혼인, 공개 의례, 자선 — ‘순결한 혈통의 증거’</p></div>
+    <div class="side"><b>대토벌 시대 · 보는 눈</b><p class="muted">같은 떨림이 숨은 무리를 가리키는 바늘 → 징집, 수색, 공로</p></div>
   </div>
-  <p class="muted">다시는 병자로 불리지 않으려는 다짐이, 이번엔 자기 구성원과 생물을 통제하는 규율이 됩니다. 피해자가 억압 구조를 만드는 인과입니다.</p>
-  <h3>대토벌 — 공적 역사와 실제</h3>
+  <p class="muted"><b>하나의 현상, 두 개의 해석.</b> 차별받은 이유와 쓸모 있어진 이유가 같은 몸의 반응입니다.</p>
   <div class="table-wrap"><table>
-    <thead><tr><th>항목</th><th>공적 역사</th><th>실제(후보)</th></tr></thead>
+    <thead><tr><th>유형</th><th>요지</th><th>판단</th></tr></thead>
     <tbody>
-      <tr><td>명분</td><td>‘첫 번째 침묵’ 뒤 병들고 미친 괴물이 사람을 덮쳤다</td><td>피해는 실제였지만 원인은 광기가 아니었다. 왕실은 땅·통합·값 때문에 토벌을 넓혔다</td></tr>
-      <tr><td>‘안개의 밤’</td><td>감응자가 마을을 구했다</td><td>실제로 구했다. 그 감응자는 무리가 어딘가로 가려 했다는 것을 느꼈지만 말하지 않았다</td></tr>
-      <tr><td>대표 구조 사건</td><td>강가 도시를 덮칠 무리를 미리 찾아 피신시켰다</td><td>실제 구조. 그러나 토벌이 집결의 길목을 막아 충돌을 키웠을 수 있다</td></tr>
-      <tr><td>같은 시기</td><td>—</td><td>포획 개체의 생체 실험, 어린 감응자의 동원, 반대한 감응자의 추방, 공존 마을 땅의 몰수</td></tr>
-      <tr><td>결과</td><td>괴물을 몰아내고 나라를 지켰다</td><td>바깥 무리 대부분이 사라지고, 집결지에 닿은 무리만 남았다</td></tr>
+      <tr class="rec"><td><b>A 비자발적 생리 반응</b></td><td>평형 기관이 박동에 흔들려 눈이 박자에 맞춰 떨리고 균형이 흔들림. 본인 협조 없이 보임. 다른 어지럼과 헷갈려 누명도 생김</td><td><span class="pill cand">핵심 추천</span></td></tr>
+      <tr><td>B 선천적 신체 특징</td><td>태어날 때 보이는 표식</td><td><span class="pill unk">제외</span> 혈통 표식처럼 됨</td></tr>
+      <tr class="rec"><td><b>C 환경 반응과 사회적 판별</b></td><td>무리 철의 ‘떨림 보기’ 관습, 대토벌의 징집 검사</td><td><span class="pill cand">추천(제도)</span></td></tr>
+      <tr class="rec"><td><b>D 가족·공동체 기록</b></td><td>떨림 아이의 기록과 계보 → 낙인이 대를 넘음 → 뒤에 명문의 족보로</td><td><span class="pill cand">추천(지속)</span></td></tr>
     </tbody></table></div>
-  <h3>두 얼굴, 다섯 종류의 구성원</h3>
   <div class="grid2">
-    <div class="card"><p><b>공적 이상을 믿는 후손</b> · <b>가문의 이익을 우선하는 사람</b> · <b>내부 연구에 반대하는 사람</b> · <b>사실을 모르는 구성원</b> · <b>과거의 공로에 자부심을 가진 사람</b></p></div>
-    <div class="card"><p class="muted">이미지가 유지되는 이유: 공로는 실제였고, 왕실의 정당성이 그 이미지에 기대며, 가문은 지금도 자선과 공헌을 하고, 감시소가 국가 기관이라 의심이 국가로 향합니다.</p></div>
+    <div class="card"><h3>신호와 기관의 가설</h3><p>기관의 주기적 수축 → 매질의 낮은 진동 → 감응자의 예민한 평형 기관 → 박자의 지각과 저절로 일어나는 눈 떨림. 훈련으로 해석이 정확해지고, 눈을 고정해 떨림을 줄일 수 있음(완전히 감추진 못함).</p></div>
+    <div class="card unk"><h3>할 수 없는 것</h3><div class="cant"><span>생물에 영향 주기</span><span>멀리서 부르기</span><span>집결지 바꾸기</span><span>마음 읽기</span></div></div>
+    <div class="card cand"><h3>멸종 뒤의 귀결</h3><p>환류종이 없으면 떨림도 없음 → <b>누가 감응자인지 아무도 모름.</b> 살아 있는 개체를 가진 가문만 가려낼 수 있음(식별의 독점). 지금의 감응자는 처음 살아 있는 개체 곁에 설 때 비로소 드러남.</p></div>
   </div>
 </section>
 
 <section class="tab" id="gather" role="tabpanel" aria-labelledby="t-gather" hidden>
-  <h2>이상 현상, 집결, 첫 번째 침묵 <span class="pill unk">원인 미결정</span></h2>
-  <div class="grid2">
-    <div class="card cand"><h3>1. 환경 변화</h3><p>물·땅·기후의 변화로 피난. W와 비슷해 새로움이 적음.</p></div>
-    <div class="card cand"><h3>2. 사람의 개발</h3><p>물길·개간·광산을 피해 피난. 사람만 나쁜 이야기로 기울 위험.</p></div>
-    <div class="card cand rec"><div class="head"><h3>3. 긴 주기의 집결</h3><span class="rec-tag">추천</span></div><p>무리들이 사람의 기억보다 긴 주기로 한 곳에 모이는 생애 사건(번식·기관 갱신 등은 생태에서). 떠나는 동안 긴장하고 기관 작용이 커져 낯선 땅에서 충돌. <b>그 시기가 무리에게 가장 약한 때.</b></p></div>
-    <div class="card cand"><h3>4. 가문의 실험</h3><p>단독은 비추천. 3에 ‘악화 요인’으로만.</p></div>
-  </div>
+  <h2>다중 집결지와 긴 주기의 집결 <span class="pill cand">후보</span></h2>
+  <figure>
+    <svg class="pulse" viewBox="0 0 640 170" role="img" aria-label="두 무리의 박동이 시간이 지나며 어긋났다가 집결지에서 다시 맞춰지는 모습">
+      <line class="axis" x1="20" y1="150" x2="620" y2="150"/>
+      <text class="lbl" x="20" y="166">혼자 지내는 시간</text>
+      <text class="lbl" x="420" y="166">집결지에서</text>
+      <line class="axis" x1="410" y1="20" x2="410" y2="150" stroke-dasharray="4 4"/>
+      <path class="a" d="M20 60 Q40 30 60 60 T100 60 T140 60 T180 60 T220 60 T260 60 T300 60 T340 60 T380 60 T420 60 Q440 30 460 60 T500 60 T540 60 T580 60 T620 60"/>
+      <path class="b" d="M20 110 Q40 80 60 110 T100 110 Q122 82 145 110 T190 110 Q214 86 238 110 T286 110 Q311 92 336 110 T386 110 Q408 96 420 110 Q440 80 460 110 T500 110 T540 110 T580 110 T620 110"/>
+      <text class="lbl" x="22" y="36">무리 1</text>
+      <text class="lbl" x="22" y="86">무리 2 · 박자가 늘어나고 약해짐(‘침묵’)</text>
+      <text class="lbl" x="430" y="140">다시 맞춰져 번식</text>
+    </svg>
+    <figcaption class="muted mono">그림은 개념도입니다. 실제 주기와 진폭은 생태 설계에서 정합니다.</figcaption>
+  </figure>
   <div class="table-wrap"><table>
-    <thead><tr><th>첫 번째 침묵</th><th>공식 기록</th><th>실제(안 3 기준)</th></tr></thead>
+    <thead><tr><th>모델</th><th>집결의 목적</th><th>판단</th></tr></thead>
     <tbody>
-      <tr><td>무엇</td><td>환류종이 조용해지고 사라졌다가 병들고 미쳐 돌아온 시기</td><td>무리들이 집결을 위해 원래의 땅을 떠난 시기. ‘조용해졌다’는 감응자들의 말이 기록에 들어감</td></tr>
-      <tr><td>가문이 안 것</td><td>—</td><td>한 방향, 한 시기의 이동. 가장 약한 때. 집결지의 위치</td></tr>
-      <tr><td>가문이 왜곡한 것</td><td>—</td><td>집결의 의미(‘광기’로 둠), 위치, 옛 민속의 ‘짐승들의 큰 길’ 이야기를 미신으로</td></tr>
-    </tbody></table></div>
-  <div class="note">반전: ‘미친 괴물’ → ‘어딘가로 가던 무리’ → ‘그곳에 가야만 하는 이유’. 결말에서 생물의 자율적 움직임이 다시 사건을 만들 수 있습니다.</div>
-</section>
-
-<section class="tab" id="decl" role="tabpanel" aria-labelledby="t-decl" hidden>
-  <h2>멸종 선언은 어떻게 성립했나 <span class="pill cand">후보 넷</span></h2>
-  <div class="table-wrap"><table>
-    <thead><tr><th>안</th><th>작동 원리</th><th>판단</th></tr></thead>
-    <tbody>
-      <tr><td>1 기관 장악</td><td>가문 사람이 판정 기구를 이끔</td><td><span class="pill unk">비추천</span> 가문이 전능해짐</td></tr>
-      <tr class="rec"><td><b>2 제도의 빈틈</b></td><td>‘위험한 봉인 구역은 관리 기관의 보고로 갈음한다’는 규정. 그 관리자가 가문. 규정대로 ‘전역에 없음’</td><td><span class="pill cand">추천(핵심)</span></td></tr>
-      <tr class="rec"><td><b>3 영웅의 마지막 원정</b></td><td>가문이 이끈 원정이 끝을 알리고 왕실이 기념. 실제 마지막 날엔 싸움이 없었다</td><td><span class="pill cand">추천(겉모습)</span></td></tr>
-      <tr><td>4 이해의 일치</td><td>모두가 끝을 원했고 가문은 필요한 정보만 골라 냄</td><td><span class="pill cand">배경</span></td></tr>
+      <tr><td>1</td><td>번식과 유전 교류</td><td><span class="pill cand">4와 결합</span></td></tr>
+      <tr><td>2</td><td>기관의 갱신</td><td><span class="pill cand">대안</span></td></tr>
+      <tr><td>3</td><td>극한기의 피난과 회복</td><td><span class="pill cand">대안</span></td></tr>
+      <tr class="rec"><td><b>4</b></td><td><b>박동의 재동기화</b>: 혼자 지내면 박동이 어긋남 → 진동을 모으는 지형과 많은 동족이 있어야 다시 맞음 → 맞춰진 상태에서 번식</td><td><span class="pill cand">추천</span></td></tr>
     </tbody></table></div>
   <div class="grid2">
-    <div class="card"><h3>왜 받아들여졌나</h3><p>참사 직후였고 위험은 실제였다. 위험 징후를 읽는 것은 감응자뿐, 감응자를 가진 것은 가문뿐. 규정을 지킨 정상 절차였다.</p></div>
-    <div class="card"><h3>남은 흔적</h3><p>해마다 거의 같은 문장의 연례 보고 · 보고에 비해 너무 많은 보급과 인원 · 면제 규정에 반대한 학자의 의견서 · ‘마지막 날엔 싸움이 없었다’는 병사의 편지</p></div>
-  </div>
-</section>
-
-<section class="tab" id="sense" role="tabpanel" aria-labelledby="t-sense" hidden>
-  <h2>감응 기술의 발전 <span class="pill cand">후보</span></h2>
-  <div class="table-wrap"><table>
-    <thead><tr><th>단계</th><th>할 수 있는 것</th><th>필요한 것</th></tr></thead>
-    <tbody>
-      <tr><td>1 훈련 안 된 감각</td><td>가까우면 ‘무언가 있다’, 과부하와 혼동</td><td>—</td></tr>
-      <tr><td>2 구별</td><td>개체와 환경의 울림, 박자의 유형</td><td>오랜 연습</td></tr>
-      <tr><td>3 탐지</td><td>수십 걸음 안 위치와 상태. <b>사슬 수색</b>으로 넓은 땅</td><td>많은 감응자, 신호 체계</td></tr>
-      <tr><td>4 새 활용법</td><td>박동의 위상마다 기관 반응이 다름을 앎</td><td>포획 연구, 기록</td></tr>
-      <tr><td>5 이점을 얻는 기술</td><td><b>위상 맞춤</b>(때를 맞춰 다루고 거둠), <b>압력 몰이</b>(사람의 위치로 무리를 걷게 함)</td><td>훈련, 듣는 도구, 시설, 살아 있는 개체</td></tr>
-      <tr><td>6 비밀 교과</td><td>4·5단계의 독점</td><td>봉인 구역</td></tr>
-    </tbody></table></div>
-  <div class="grid2">
-    <div class="card unk"><h3>절대 할 수 없는 것</h3><div class="cant"><span>마음 읽기·명령</span><span>예지</span><span>멀리서 찾기</span><span>무제한 에너지</span><span>기관을 켜고 끄기</span></div></div>
-    <div class="card"><h3>대가</h3><p>감응자: 과부하, 청력·균형 손상 후보, <b>괴로워하는 개체의 박동을 몸으로 듣는 고통</b>. 생물: 스트레스, 번식 저하, 기관 손상, 무리 질서의 붕괴.</p></div>
-    <div class="card"><h3>잔혹한 연구가 성과를 낸 이유</h3><p>측정 도구가 없던 시대에 감응자가 변화를 ‘들을 수’ 있어, 살아 있는 개체에서만 나오는 박동·기관 대응표를 쌓았다.</p></div>
-    <div class="card"><h3>망가뜨린 것</h3><p>연구된 무리의 질서, 길을 기억하던 늙은 개체들(집결의 길 지식), 동원된 어린 감응자들의 마음, 일부 종의 회복 가능성.</p></div>
+    <div class="card"><h3>왜 여러 곳이었나</h3><p>진동을 모아 울리는 지형과 물이 있는 곳마다. 종마다 쓰는 곳과 주기가 다름. 모든 종이 한꺼번에 모이지 않음. 집결하지 않는 종도 많음.</p></div>
+    <div class="card"><h3>첫 번째 침묵의 실제</h3><p>여러 집결형 종의 주기가 드물게 겹친 해. 많은 무리의 박동이 한꺼번에 약해지고(‘조용해졌다’), 한꺼번에 사람의 땅을 지나 집결지로 향함 → 충돌 → 대토벌의 명분.</p></div>
+    <div class="card"><h3>다른 집결지가 사라진 방식</h3><p>집결 중 매복과 학살(가장 효율적인 사냥터) · 샘을 메우고 물길을 돌림 · 길을 아는 늙은 개체의 죽음 · 사람의 정착. <b>가문이 그 정보를 군에 줌.</b></p></div>
+    <div class="card"><h3>‘아르바넬만’의 범위</h3><p><b>마지막으로 기능하는 집결지 + 집결형 종의 마지막 번식 집단.</b> 바깥엔 <b>떠도는 개체</b>(박동이 어긋난 채 옛 터를 찾아 헤매는 마지막 개체)가 있을 수 있음 — 첫 경이 후보.</p></div>
   </div>
 </section>
 
-<section class="tab" id="refuge" role="tabpanel" aria-labelledby="t-refuge" hidden>
-  <h2>생존지와 비밀 관리 <span class="pill cand">후보</span></h2>
+<section class="tab" id="arb" role="tabpanel" aria-labelledby="t-arb" hidden>
+  <h2>아르바넬만 살아남은 이유 <span class="pill cand">후보</span></h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>순서</th><th>사건</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">1</td><td>차별 시대, 가문의 조상이 물러난 ‘조용한 땅’ 곁에 집결지가 있었다. 주기 사이엔 비어 조용하고, 수십 년마다 견딜 수 없는 ‘울림의 해’가 왔다</td></tr>
+      <tr><td class="mono">2</td><td>대토벌 중 연구로 그 울림이 집결이라는 것을 깨달음</td></tr>
+      <tr><td class="mono">3</td><td><b>다른 집결지는 군에 알려 공을 세우고, 자기 땅의 집결지만 숨김</b> — 보호이자 계산</td></tr>
+      <tr><td class="mono">4</td><td>집결의 해에 원정대가 그 땅에 들어가 겹친 박동의 재난(‘흰 골의 참사’). 가문이 막을 수 있었는지는 미결정</td></tr>
+      <tr><td class="mono">5</td><td>가문의 권고로 국가 봉인 구역 지정, 위험의 해를 미리 아는 집안이라는 이유로 관리권 위임</td></tr>
+      <tr><td class="mono">6</td><td>멸종 선언에서 봉인 구역은 면제 규정으로 빠짐</td></tr>
+      <tr><td class="mono">7</td><td>갈 곳 잃은 무리가 흩어지지 않고 <b>머묾</b> → ‘상시 집결’ → 위험이 늘 진짜 → 봉인 유지의 근거</td></tr>
+    </tbody></table></div>
   <div class="grid2">
-    <div class="card"><h3>봉인 구역</h3><p>땅은 왕실 소유의 국가 봉인 구역, <b>관리권만 가문</b>. 해마다 보고와 예산 심사, 몇 년마다 갱신. 몰린 무리의 기관 작용이 겹쳐 냉기·안개·물·땅의 재난이 실제로 일어남 — 가문은 그 빈도를 부풀림.</p></div>
-    <div class="card"><h3>감시소</h3><p>공식적으론 재난 징후를 관측하는 국가 기관. 바깥 초소와 기록소는 공개, 안쪽 연구동과 사육 구역은 비공개. 직원 마을이 대를 이음.</p></div>
+    <div class="card"><h3>머무는 무리의 비용</h3><p>쉬는 시기가 없어 지침, 번식 리듬의 흐트러짐, 병의 확산, 다양성 감소. 가문의 관리(골짜기 나누기, 겨울 먹이, 격리)로도 쇠약을 되돌리지 못함.</p></div>
+    <div class="card"><h3>영웅적 선택이었나</h3><p>실제로 무리를 지켰다. 아르바넬이 없었다면 집결형 종은 모두 사라졌다. 동시에 다른 집결지를 내준 공로, 숨긴 곳에서 얻을 지식과 지위, 식별의 독점이라는 계산이었다. 어느 한쪽으로 정리하지 않음.</p></div>
   </div>
-  <h3>누가 무엇을 아는가</h3>
-  <p class="muted">아는 사람을 줄이는 대신, <b>아는 것의 의미를 바꾸고 묶어 둡니다.</b></p>
+</section>
+
+<section class="tab" id="seal" role="tabpanel" aria-labelledby="t-seal" hidden>
+  <h2>국가 봉인 구역과 멸종 선언 <span class="pill ok">구조 승인</span> <span class="pill cand">보강 후보</span></h2>
+  <div class="grid2">
+    <div class="card"><h3>관리권</h3><p>참사 → 조사 → 가문의 권고 → 봉인령(소유 왕실) → 관리 위임 칙허(연례 보고, 감시 초소, 위험의 해 예고, 몇 년마다 갱신).</p></div>
+    <div class="card"><h3>면제 규정</h3><p>“봉인 구역은 조사단의 생명을 위해 조사에서 제외하고, 관리 기관의 보고로 갈음한다.” 참사 직후의 안전 규칙으로 받아들여짐. 반대한 학자의 의견서는 각주로.</p></div>
+    <div class="card"><h3>감사와 점검</h3><p>재정관은 장부만. 현장 점검은 몇 년마다 <b>고요한 철</b>에, 가문이 정한 길로, 바깥만. 측정도 감시소 직원이 해 순환 검증.</p></div>
+    <div class="card"><h3>마지막 원정</h3><p><b>사실:</b> 다른 집결지의 마지막 무리를 친 실제 학살. <b>허위:</b> ‘세상의 마지막 무리’. 원정 보고서에서 아르바넬 방향의 정찰 기록이 빠짐.</p></div>
+  </div>
+  <h3>두 겹 비밀 — 실무자의 지식과 책임</h3>
   <div class="layers">
-    <div class="layer"><span class="who">핵심 (직계 일부·원로 일부·집사장)</span><span class="k">집결의 의미, 토벌 때의 일, 선언의 원리, 연구와 거두기, 이익</span><span class="u">무리의 장래, 다음 주기</span></div>
-    <div class="layer"><span class="who">연구자</span><span class="k">개체가 살아 있음, 연구 결과</span><span class="u">선언이 만들어진 방식, 은폐 결정</span></div>
-    <div class="layer"><span class="who">사육·관리 직원</span><span class="k">살아 있음, 먹이·병·번식·재난 징후</span><span class="u">집결의 의미, 선언의 내막, 이익의 규모</span></div>
-    <div class="layer"><span class="who">감응 훈련생</span><span class="k">살아 있음, 박동과 위상, 다루는 법</span><span class="u">이익의 흐름, 선언의 내막</span></div>
-    <div class="layer"><span class="who">바깥 초소·기록소</span><span class="k">구역이 위험하다는 것</span><span class="u">안에 살아 있는 개체</span></div>
-    <div class="layer"><span class="who">외부 협력자</span><span class="k">가문이 귀한 재료를 공급함</span><span class="u">재료가 살아 있는 개체에서 나옴</span></div>
+    <div class="layer"><span class="who">핵심 (직계 일부·원로 일부·집사장)</span><span class="k">다른 집결지를 넘긴 일, 원정의 허위, 면제 규정의 경위, 연구의 실체</span><span class="u">—</span></div>
+    <div class="layer"><span class="who">안쪽 사육·관리 직원</span><span class="k">무리가 살아 있다, 수·건강·위험. 무리의 생존을 실제로 책임짐</span><span class="u">영웅 가문이 마지막 무리를 몰래 지킨다</span></div>
+    <div class="layer"><span class="who">감시소 기록관</span><span class="k">두 벌의 장부. 국가 보고서를 쓰는 손(법적 공범)</span><span class="u">공개하면 사냥꾼이 덮친다</span></div>
+    <div class="layer"><span class="who">바깥 초소 직원</span><span class="k">위험의 날짜와 세기</span><span class="u">땅이 위험하다(진실의 일부)</span></div>
   </div>
-  <div class="card cand"><h3>두 겹의 거짓 — ‘영웅적 비밀’</h3><p>실무자들은 “나라가 멸종을 선언했지만 몇 무리가 살아남았다. 공개하면 사냥꾼과 시장이 덮친다. 그래서 영웅 가문이 대를 이어 몰래 지킨다”고 믿습니다. 진짜 비밀은 핵심만 압니다. 그래서 가장 충성스러운 사람들이 진실 앞에서 가장 크게 상처받습니다. 영웅적 비밀만 알고 떠난 사람이 폭로해도 오히려 가문의 명성이 오를 수 있다는 역설도 생깁니다.</p></div>
+  <div class="note">비밀은 ‘아는 사람의 수’가 아니라 <b>‘아는 것의 의미’</b>로 지켜집니다. 실무자는 무리가 살아 있다는 것을 압니다.</div>
+  <h3>지금 흔들리는 계기 (후보)</h3>
+  <p>새 측정 기술이 흔들림에서 생물의 박자를 찾아냄 · 주기의 해와 갱신 심사 · 복원 산업의 출입 요구 · 떠도는 개체 · 실무자의 이탈 · 예산 다툼</p>
 </section>
 
-<section class="tab" id="time" role="tabpanel" aria-labelledby="t-time" hidden>
-  <h2>연표 초안 <span class="pill unk">연도 미정</span></h2>
-  <p class="muted">순서와 최소·최대 기간만 정했습니다. ‘약 200년’은 검토 가설입니다. 연도는 생태 설계(수명·주기·지속 가능성) 뒤에 정합니다.</p>
+<section class="tab" id="history" role="tabpanel" aria-labelledby="t-history" hidden>
+  <h2>가문의 네 시대와 사회 <span class="pill ok">방향 승인</span></h2>
+  <div class="eras">
+    <div class="era"><span class="tag">시대 A</span><h3>차별과 은둔</h3><p>떨리는 눈 → 병, 혼인 거부 → 강요된 내혼, 조용한 땅.</p></div>
+    <div class="era"><span class="tag">시대 B</span><h3>대토벌과 영웅</h3><p>징집 검사와 강제 동원 → 사슬 수색의 실제 공로 → 징집법과 보상 규정으로 작위.</p></div>
+    <div class="era"><span class="tag">시대 C</span><h3>연구와 봉인</h3><p>집결의 이해 → 다른 집결지를 넘기고 아르바넬을 숨김 → 봉인과 관리권.</p></div>
+    <div class="era"><span class="tag">시대 D</span><h3>멸종 뒤의 독점</h3><p>식별의 독점, 감응 면허(후보), 연구와 훈련.</p></div>
+  </div>
   <div class="table-wrap"><table>
-    <thead><tr><th>순서</th><th>사건</th><th>기간</th></tr></thead>
+    <thead><tr><th>‘병든 피’ → ‘순결한 피’</th><th>뒤집힘(후보)</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>감응자 차별 시대, 가문 형성</td><td>최소 3세대</td></tr>
-      <tr><td>2·3</td><td>‘안개의 밤’ → 대토벌 시작</td><td>0~10년</td></tr>
-      <tr><td>4·5</td><td>공로와 권력 확대 · 비밀 연구 시작</td><td>대토벌 중</td></tr>
-      <tr><td>6·7</td><td>집결지 발견 → 봉인 구역 선포</td><td>연구 뒤 5~20년, 발견 뒤 0~10년</td></tr>
-      <tr><td>8</td><td>대토벌의 끝(‘마지막 원정’)</td><td>시작 뒤 15~40년</td></tr>
-      <tr><td>9</td><td>공식 멸종 선언</td><td>끝 뒤 10~50년</td></tr>
-      <tr><td>10·11</td><td>훈련의 변화 · 독점 체제</td><td>선언 뒤 1~4세대</td></tr>
-      <tr><td>12</td><td>지금 은폐가 흔들림</td><td>줄거리에서</td></tr>
+      <tr><td>법</td><td>감응자 징집법, 공훈 보상 규정, 가문이 맡은 감응 면허</td></tr>
+      <tr><td>제도</td><td>징집 검사 → 가문의 공인 검사 → 면허. 판정 권한이 가문으로</td></tr>
+      <tr><td>기록</td><td>낙인의 명부가 가문의 족보와 공훈록으로. 평민 감응자는 ‘병자 명부’에 남음</td></tr>
+      <tr><td>행동</td><td>같은 떨림이 가문 사람에겐 ‘보는 눈’, 평민에겐 ‘떨리는 눈’</td></tr>
     </tbody></table></div>
   <div class="grid2">
-    <div class="card cand"><h3>읽기 가 · 선언이 약 200년 전</h3><p>대토벌 약 260~220년 전. 독점이 설 시간이 충분. 무리가 두 세기 넘게 버틴 근거가 필요.</p></div>
-    <div class="card cand"><h3>읽기 나 · 대토벌이 약 200년 전</h3><p>선언 약 150~130년 전. 비밀 유지가 더 쉬움. 독점 체제가 설 시간이 빠듯함.</p></div>
+    <div class="card"><h3>현재 가문 안</h3><p>공인 감응자는 존경받지만 삶을 가문이 정함 · 비감응 직계는 실제 힘을 쥐지만 선전에서 감춰짐 · 비감응 계승자는 숨김 · 몰래 입양된 감응자는 가장 묶임(후보)</p></div>
+    <div class="card"><h3>가문 밖 감응자</h3><p>지금은 자기가 감응자인지 모름. 살아 있는 개체 곁에서 처음 드러날 때 <b>누가 보았느냐</b>에 따라 운명이 갈림.</p></div>
   </div>
 </section>
 
 <section class="tab" id="secrets" role="tabpanel" aria-labelledby="t-secrets" hidden>
-  <h2>비밀 원장 v3</h2>
-  <p class="muted">핵심 비밀의 새 진실과 공개 방식은 아직 확정되지 않았습니다.</p>
+  <h2>비밀 원장 v4</h2>
   <div class="table-wrap"><table>
     <thead><tr><th>#</th><th>비밀</th><th>상태</th></tr></thead>
     <tbody>
       <tr><td class="mono">01</td><td>‘병든 피’로 차별받던 집안</td><td><span class="pill ok">방향 승인</span></td></tr>
-      <tr><td class="mono">02</td><td>영웅의 공로는 실제였다</td><td><span class="pill ok">방향 승인</span> <span class="pill cand">세부 후보</span></td></tr>
-      <tr><td class="mono">03</td><td>공로의 이면(포획·실험·동원·몰수)</td><td><span class="pill cand">정답 후보</span></td></tr>
-      <tr><td class="mono">04</td><td>첫 번째 침묵의 실제</td><td><span class="pill ok">구조 승인</span> <span class="pill cand">세부 후보</span></td></tr>
-      <tr><td class="mono">05</td><td>이상 현상과 집결의 원인</td><td><span class="pill unk">미결정 · 생태 대기</span></td></tr>
-      <tr><td class="mono">06</td><td>잔혹한 연구의 내용과 성과</td><td><span class="pill ok">방향 승인</span> <span class="pill cand">세부 후보</span></td></tr>
-      <tr><td class="mono">07</td><td>집결지 발견과 봉인 구역</td><td><span class="pill ok">방향 승인</span> <span class="pill cand">세부 후보</span></td></tr>
-      <tr><td class="mono">08</td><td>멸종 선언의 작동 원리</td><td><span class="pill unk">미결정(추천 있음)</span></td></tr>
-      <tr><td class="mono">09</td><td>살아 있는 개체군</td><td><span class="pill ok">존재 승인</span> <span class="pill unk">위치·규모 생태 대기</span></td></tr>
-      <tr><td class="mono">10</td><td>독점한 이점의 실체</td><td><span class="pill ok">방향 승인</span> <span class="pill unk">세부 미결정</span></td></tr>
-      <tr><td class="mono">11</td><td>감응 훈련의 진화</td><td><span class="pill ok">방향 승인</span> <span class="pill cand">세부 후보</span></td></tr>
-      <tr><td class="mono">12</td><td>두 겹의 거짓(영웅적 비밀)</td><td><span class="pill cand">후보 · 후속 승인</span></td></tr>
-      <tr><td class="mono">13</td><td>감응의 실체와 가문 밖 감응자</td><td><span class="pill unk">실체 미결정</span></td></tr>
-      <tr><td class="mono">14</td><td>의심한 사람들의 흔적</td><td><span class="pill cand">정답 후보</span></td></tr>
-      <tr><td class="mono">15</td><td>지금 흔들리는 사건</td><td><span class="pill unk">미결정 · 줄거리 대기</span></td></tr>
-      <tr><td class="mono">16</td><td>주인공이 처음 만나는 개체</td><td><span class="pill unk">미결정</span></td></tr>
-      <tr><td class="mono">17</td><td>독립 연구자의 위치</td><td><span class="pill unk">미결정 · 인물 대기</span></td></tr>
+      <tr><td class="mono">02</td><td>하나의 현상, 두 해석(떨리는 눈 = 수색의 바늘)</td><td><span class="pill cand">정답 후보</span></td></tr>
+      <tr><td class="mono">03</td><td>영웅의 공로는 실제였다</td><td><span class="pill ok">방향 승인</span></td></tr>
+      <tr><td class="mono">04</td><td>공로의 이면(강제 동원·연구·다른 집결지를 넘김)</td><td><span class="pill cand">정답 후보</span></td></tr>
+      <tr><td class="mono">05</td><td>첫 번째 침묵의 실제(주기가 겹친 해)</td><td><span class="pill ok">구조 승인</span> <span class="pill cand">세부 후보</span></td></tr>
+      <tr><td class="mono">06</td><td>집결의 목적(재동기화와 번식)</td><td><span class="pill cand">정답 후보 · 생태</span></td></tr>
+      <tr><td class="mono">07</td><td>집결지는 여러 곳이었다</td><td><span class="pill ok">방향 승인</span></td></tr>
+      <tr><td class="mono">08</td><td>아르바넬은 조상의 땅 곁</td><td><span class="pill cand">정답 후보</span></td></tr>
+      <tr><td class="mono">09</td><td>아르바넬만 숨긴 계산</td><td><span class="pill ok">은폐 승인</span> <span class="pill cand">동기 후보</span></td></tr>
+      <tr><td class="mono">10</td><td>흰 골의 참사</td><td><span class="pill cand">후보 · 의도 미결정</span></td></tr>
+      <tr><td class="mono">11</td><td>마지막 원정의 실제</td><td><span class="pill cand">정답 후보</span></td></tr>
+      <tr><td class="mono">12</td><td>면제 규정과 감사의 실체</td><td><span class="pill ok">구조 승인</span> <span class="pill cand">세부 후보</span></td></tr>
+      <tr><td class="mono">13</td><td>머무는 무리와 상시 위험</td><td><span class="pill cand">정답 후보 · 생태</span></td></tr>
+      <tr><td class="mono">14</td><td>두 겹 비밀</td><td><span class="pill ok">방향 승인</span></td></tr>
+      <tr><td class="mono">15</td><td>식별의 독점</td><td><span class="pill cand">정답 후보</span></td></tr>
+      <tr><td class="mono">16</td><td>가문 안의 위선(입양·비감응 계승자)</td><td><span class="pill cand">후보 · 후속 승인</span></td></tr>
+      <tr><td class="mono">17</td><td>감응의 실체와 유전</td><td><span class="pill unk">유전 미결정</span></td></tr>
+      <tr><td class="mono">18</td><td>떠도는 개체</td><td><span class="pill cand">후보 · 줄거리</span></td></tr>
+      <tr><td class="mono">19</td><td>지금 흔들리는 계기</td><td><span class="pill unk">미결정</span></td></tr>
+      <tr><td class="mono">20</td><td>위상 맞춤·압력 몰이·경제적 이익</td><td><span class="pill unk">보류</span></td></tr>
+      <tr><td class="mono">21</td><td>독립 연구자의 위치</td><td><span class="pill unk">미결정</span></td></tr>
     </tbody></table></div>
 </section>
 
-<section class="tab" id="holes" role="tabpanel" aria-labelledby="t-holes" hidden>
-  <h2>메워야 할 인과의 구멍</h2>
+<section class="tab" id="check" role="tabpanel" aria-labelledby="t-check" hidden>
+  <h2>설정 검증과 남은 구멍</h2>
+  <div class="note"><b>설정 하나가 여러 의문을 풉니다.</b> 박동의 재동기화 하나로 침묵·대이동·집결지의 위험·감응자의 과부하·떠도는 개체가, 눈 떨림 하나로 차별·수색의 쓸모·강제 동원·멸종 뒤의 비가시성·식별의 독점이 설명됩니다.</div>
   <div class="table-wrap"><table>
-    <thead><tr><th>#</th><th>구멍</th><th>풀 단계</th></tr></thead>
+    <thead><tr><th>이전 구멍</th><th>상태</th></tr></thead>
     <tbody>
-      <tr><td class="mono">1</td><td><b>집결의 이유와 주기</b> — 정해지지 않으면 침묵·토벌·봉인·현재 사건이 모두 흔들림</td><td>생태</td></tr>
-      <tr><td class="mono">2</td><td>작은 무리가 두 세기를 버틴 근거</td><td>생태</td></tr>
-      <tr><td class="mono">3</td><td>봉인 구역 면제 규정이 판정 규칙에 들어간 경위</td><td>제도</td></tr>
-      <tr><td class="mono">4</td><td>위상 맞춤으로 무엇을 거두고 어디에 쓰는가</td><td>생태</td></tr>
-      <tr><td class="mono">5</td><td>약재가 ‘옛 재료’로 설명되지 않을 만큼 늘었을 때 왜 아무도 묻지 않았나</td><td>사회</td></tr>
-      <tr><td class="mono">6</td><td>국가 감사가 수백 년 동안 안쪽을 보지 못한 이유</td><td>제도</td></tr>
-      <tr><td class="mono">7</td><td>가문 밖 감응자가 봉인 구역 둘레에서 느낀 것</td><td>감응·생태</td></tr>
-      <tr><td class="mono">8</td><td>‘병든 피’ 낙인이 지금 사회에 남은 정도</td><td>사회</td></tr>
-      <tr><td class="mono">9</td><td>지금 은폐가 흔들리는 직접 계기</td><td>줄거리</td></tr>
-      <tr><td class="mono">10</td><td>독점을 끝내는 행동이 생물에 주는 새 위험</td><td>줄거리·생태</td></tr>
+      <tr><td>집결의 이유와 주기</td><td><span class="pill cand">방향 해결</span> 주기 범위는 생태</td></tr>
+      <tr><td>작은 무리가 두 세기를 버틴 근거</td><td><span class="pill cand">부분 해결</span> 수치는 생태</td></tr>
+      <tr><td>면제 규정의 경위</td><td><span class="pill cand">해결 후보</span></td></tr>
+      <tr><td>감사가 안쪽을 못 본 이유</td><td><span class="pill cand">해결 후보</span></td></tr>
+      <tr><td>가문 밖 감응자가 느낀 것</td><td><span class="pill cand">해결 후보</span></td></tr>
+      <tr><td>낙인이 지금 남은 정도</td><td><span class="pill cand">해결 후보</span></td></tr>
+      <tr><td>위상 맞춤으로 거두는 것 · 약재 문제</td><td><span class="pill unk">남음(보류)</span></td></tr>
+      <tr><td>지금 흔들리는 계기</td><td><span class="pill unk">남음(줄거리)</span></td></tr>
+      <tr><td>새로 생긴 구멍</td><td>진동을 모으는 지형 · 맞춤과 번식의 관계 · 참사의 의도 · 조상이 ‘울림의 해’에 버틴 법</td></tr>
     </tbody></table></div>
-  <h3>역사와 생태가 서로 요구하는 것 (요약)</h3>
-  <div class="grid2">
-    <div class="card"><h3>역사 → 생태</h3><p>박동 진동의 성질과 거리 · 집결의 이유와 주기 · 길목의 충돌 피해 · 포획 개체가 버티는 조건 · 몰린 무리의 재난 · 두 세기의 지속 · 거둘 수 있는 것과 쓸모</p></div>
-    <div class="card"><h3>생태 → 역사</h3><p>수명·세대(연표) · 주기 길이(침묵·토벌의 시점) · 살아남은 종 · 집결지의 조건(봉인 구역의 지형) · 거두기의 비용(이익의 상한) · 감응의 한계(가문 권력의 한계)</p></div>
-  </div>
 </section>
 
 <section class="tab" id="people" role="tabpanel" aria-labelledby="t-people" hidden>
-  <h2>앞으로 필요한 인물의 역할 <span class="pill unk">인물은 아직 정하지 않음</span></h2>
-  <p class="muted">주인공을 포함해 모든 인물을 다시 설계할 수 있습니다. 한 인물이 여러 역할을 맡을 수 있습니다.</p>
+  <h2>인물 설계로 넘길 역할 <span class="pill unk">인물은 아직 정하지 않음</span></h2>
   <div class="grid2">
-    <div class="card"><h3>공적 이상을 믿는 후손</h3><p>진실로 선택이 바뀔 사람</p></div>
-    <div class="card"><h3>비밀을 계승할 사람</h3><p>무엇을 지키는지 스스로 묻게 됨</p></div>
-    <div class="card"><h3>영웅적 비밀을 믿는 실무자</h3><p>무리를 가장 잘 알고, 진실 앞에서 가장 크게 상처받음</p></div>
-    <div class="card"><h3>가문 밖의 감응자</h3><p>‘피’의 신화를 무너뜨리는 사람</p></div>
-    <div class="card"><h3>기록을 의심하는 사람</h3><p>연례 보고와 보급 장부의 어긋남을 찾음</p></div>
-    <div class="card"><h3>은폐의 대가를 치른 쪽의 후손</h3><p>옮겨 간 주민, 반대 학자, 동원된 아이들</p></div>
+    <div class="card"><h3>자기가 감응자인지 모르는 가문 밖 아이</h3><p>처음 살아 있는 개체 곁에서 눈이 떨림. 누가 보았는가</p></div>
+    <div class="card"><h3>공적 이상을 믿는 후손</h3><p>진실로 선택이 바뀜</p></div>
+    <div class="card"><h3>영웅적 보호 활동을 믿는 실무자</h3><p>무리를 가장 잘 알고, 손수 거짓 보고를 씀</p></div>
+    <div class="card"><h3>비감응 계승자</h3><p>힘은 쥐었지만 ‘순결한 혈통’에서 감춰진 사람</p></div>
+    <div class="card"><h3>몰래 입양된 감응자</h3><p>가문의 피가 아닌, 가장 묶인 사람</p></div>
+    <div class="card"><h3>반대 학자의 후손</h3><p>각주가 된 의견서를 가진 사람</p></div>
   </div>
 </section>
 
 <footer>
-  <span>마지막 갱신: 2026-10-30 · P결정-003(영웅 가문의 부상과 은폐·연구·독점) 반영</span>
-  <span>원본: docs/redesign/README.md(문서 지도) · p-canon/decisions.md · candidates/house-history.md · anomaly-and-gathering.md · declaration-v3.md · sensing-tech.md · refuge-secrecy.md · timeline-v3.md · cross-requirements.md · secrets-ledger-v3.md · decisions-pending-v3.md</span>
+  <span>마지막 갱신: 2026-10-30 · P결정-004(식별·다중 집결지·아르바넬) 반영</span>
+  <span>원본: docs/redesign/README.md · p-canon/decisions.md · candidates/sensing-identification.md · gathering-ecology.md · arbanel-survival.md · seal-declaration-v4.md · sensing-society.md · secrets-ledger-v4.md · decisions-pending-v4.md</span>
   <span>이 현황판은 요약입니다. 내용이 다르면 저장소 문서가 맞습니다.</span>
 </footer>
 </div>

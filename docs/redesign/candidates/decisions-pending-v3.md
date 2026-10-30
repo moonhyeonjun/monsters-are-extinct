@@ -1,5 +1,6 @@
 # 작가 결정 대기·대체 목록·인과 구멍 (v3) `[P 후보]`
 
+> **[대체됨 · 2026-10-30 · P결정-004]** 결정 1·3·4는 방향이 채택되었고, 2는 일부 종으로 한정해 채택, 5는 탐지·해석까지만 채택되었다. 현재 목록: [decisions-pending-v4.md](decisions-pending-v4.md).
 > 상태: **P 설계 후보 · 미승인.** 작성 2026-10-30. 이전 목록 [decisions-pending-v2.md](decisions-pending-v2.md)는 [대체됨].
 > 승인된 것: [P결정-001·002·003](../p-canon/decisions.md).
 

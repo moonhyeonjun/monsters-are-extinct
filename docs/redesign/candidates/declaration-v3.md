@@ -1,5 +1,6 @@
 # 공식 멸종 선언 — 성립 방식 비교 (재설계) `[P 후보]` `[작가 전용]`
 
+> **[구조 채택 · 2026-10-30 · P결정-004]** 제도의 빈틈 + 영웅 가문의 마지막 원정 구조가 채택되었다. 법적 절차와 증거 체계의 보강은 [seal-declaration-v4.md](seal-declaration-v4.md)에 있다.
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-30. 이전 구조 나(증거 경로 조작 + 죽은 개체 제출)는 승인되지 않아 기본값으로 쓰지 않는다([extinction-declaration.md](extinction-declaration.md)는 [거절·대체됨]).
 > 승인된 것: 가문이 멸종 선언의 조작을 주도했다([P결정-002·003](../p-canon/decisions.md)). 판정 기구의 독립성은 유지할 수도, 무너뜨릴 수도 있다.
 > 전제(후보): 집결지는 봉인 구역이고 가문이 그 관리권을 가진다([house-history.md](house-history.md) §3-2, [refuge-secrecy.md](refuge-secrecy.md)).

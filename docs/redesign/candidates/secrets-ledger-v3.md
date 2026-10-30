@@ -1,5 +1,6 @@
 # P 비밀 원장 v3 (영웅 가문 역사 기준) `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-30 · P결정-004]** 현재 원장: [secrets-ledger-v4.md](secrets-ledger-v4.md).
 > 상태: **P 설계 후보 · 정본 아님.** 작성 2026-10-30. 이전 원장 [secrets-ledger-v2.md](secrets-ledger-v2.md)는 [대체됨].
 > 근거: [P결정-002·003](../p-canon/decisions.md), [house-history.md](house-history.md), [anomaly-and-gathering.md](anomaly-and-gathering.md), [declaration-v3.md](declaration-v3.md), [sensing-tech.md](sensing-tech.md), [refuge-secrecy.md](refuge-secrecy.md)
 > **핵심 비밀의 새 진실과 공개 방식은 아직 확정되지 않았다.** 이 원장은 그 상태를 숨기지 않는다.
