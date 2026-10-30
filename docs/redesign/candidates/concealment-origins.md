@@ -1,5 +1,6 @@
 # 가문의 은폐 기원안 비교 `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-30 · P결정-003]** 작가가 가문의 역사적 큰 방향(차별받던 감응자 집안 → 대토벌의 영웅 → 비밀 연구와 위험지역 → 멸종 이후의 독점)을 정했다. 이 문서의 기원안 A~E는 그 방향으로 **대체**되었다. 현재 후보: [house-history.md](house-history.md). 참고용으로만 남긴다.
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-30(1단계 개정). 전제: [P결정-002](../p-canon/decisions.md)(가문이 은폐·기록 말살·멸종 선언 조작을 주도, 아는 사람은 극소수).
 > 이 문서는 ‘왜 숨겼는가’의 후보를 비교한다. 어느 안도 확정하지 않는다. 가문 이름과 인물 이름은 쓰지 않는다(직함으로만 부름).
 > 함께 보는 문서: [house-world.md](house-world.md), [first-silence-review.md](first-silence-review.md), [extinction-declaration.md](extinction-declaration.md), [timeline-options.md](timeline-options.md)

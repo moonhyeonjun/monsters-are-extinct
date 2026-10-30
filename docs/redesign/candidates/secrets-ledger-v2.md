@@ -1,5 +1,6 @@
 # P 비밀 원장 개정판 (단일 가문 구조) `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-30 · P결정-003]** 현재 원장: [secrets-ledger-v3.md](secrets-ledger-v3.md).
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-30(1단계 개정). 이전 원장 [secrets-ledger.md](secrets-ledger.md)는 [대체됨].
 > 작업 가정: [concealment-origins.md](concealment-origins.md) 안 E, [first-silence-review.md](first-silence-review.md) 안 3, [extinction-declaration.md](extinction-declaration.md) 구조 나, [timeline-options.md](timeline-options.md) 후보 2. 다른 안이 채택되면 해당 칸을 고친다.
 > **상태 표기:** `후보 있음 · 승인 대기`(작가가 승인하면 ‘작가는 알고 독자에게 숨김’) / `선택지 · 결정 대기`(후보가 둘 이상) / `작가도 모름`(정답 후보가 아직 없음. 이 상태로 집필하지 않음)

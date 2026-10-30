@@ -1,5 +1,6 @@
 # 단일 가문 중심 P 세계관 후보 `[P 후보]` `[작가 전용]`
 
+> **[거절·대체됨 · 2026-10-30 · P결정-003]** 가문 영지 위쪽 골짜기 생존지와 일곱 단계 비밀 계층, 덮개 이야기는 **승인되지 않았다.** 현재 후보: [refuge-secrecy.md](refuge-secrecy.md), [house-history.md](house-history.md). §5의 인물 역할 목록만 참고로 남긴다.
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-30(1단계 개정).
 > 승인된 방향: [P결정-002](../p-canon/decisions.md) — 가문이 은폐·기록 말살·멸종 선언 조작을 주도, 아는 사람은 극소수, 별개 은폐 조직 없음.
 > 아래의 구체적 내용은 모두 후보다. 기원은 [concealment-origins.md](concealment-origins.md)의 추천안 E, 첫 번째 침묵은 [first-silence-review.md](first-silence-review.md)의 추천안 3, 선언은 [extinction-declaration.md](extinction-declaration.md)의 구조 나를 **작업 가정**으로 썼다. 다른 안이 채택되면 해당 부분을 고친다.
