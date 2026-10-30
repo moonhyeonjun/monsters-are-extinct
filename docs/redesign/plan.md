@@ -34,14 +34,14 @@
 | 단계 | 하는 일 | 산출 문서(§4) | 끝나는 조건(관문) |
 |---|---|---|---|
 | 0. 기반 정비 | AGENTS.md 정비, 이 계획, 점검 목록, 충돌 목록, 인물·작명 기준 | 이 문서들 | 작가 확인(이번 작업) |
-| 1. 세계관 설계 | 역사·사회, 환류종, 감응과 마녀, 이르바넬과 세력 | `world/`, `creatures/`, `sensing.md`, `factions.md` | checklist A~D의 필수 항목에 답이 있음 |
+| 1. 세계관 설계 | 역사·사회, 환류종, 감응과 마녀, 이르바넬과 세력 | `candidates/history.md`, `factions.md`, `creatures.md`, `sensing.md` | checklist A~D의 필수 항목에 답이 있음 |
 | 2. 설정 모순 검증 | 1단계 결과끼리, 그리고 현행 정본과의 모순 확인. 비밀 원장 작성 | `secrets-ledger.md`, `conflicts.md` 갱신 | 해소되지 않은 모순이 ‘작가 결정 필요’로 묶여 있음 |
 | 3. 인물·관계 설계 | 역할 → 욕망·결함 → 결정적 선택 → 관계망 → 출신 문화 → 이름 후보 | `cast.md`, `relationships.md`, `naming.md` | checklist F·G 필수 항목. 이름은 후보와 비교까지 |
 | 4. 최종 결말 확정 | 결말과 수미상관의 목표, 최종 선택, 인물의 귀결 | `ending.md` | **작가 승인** |
 | 5. 전체 시리즈 줄거리 | 권수 비교, 중심 목표, 돌이킬 수 없는 첫 사건, 중반의 이해 전환, 후반의 결정적 손실, 최종 갈등 | `series-outline.md` | **작가 승인**(권수 포함) |
 | 6. 권별·장별 사건 배치 | 대사 없이 사건과 인과. 장마다 사건·목표·결과·다음 연결 | `volumes/P{n}.md` | 모든 장에 네 항목이 있음 |
 | 7. 재미와 속도 검증 | checklist I의 질문으로 줄거리만 읽고 판단 | `fun-check.md` | 실패 항목이 있으면 5~6단계로 되돌아감 |
-| 8. 작가 승인 | 1~7의 결과 전체 | `approval-log.md` | **작가 승인** |
+| 8. 작가 승인 | 1~7의 결과 전체 | `p-canon/`, `p-canon/decisions.md` | **작가 승인** |
 | 9. 집필 | 승인된 장별 설계로 P 원고 | P 원고 경로 | 장별 검증과 승인 |
 
 - **왕복:** 단계 사이를 오가는 것은 허용한다. 예를 들어 1단계에서 결말에 필요한 조건을 거꾸로 확인할 수 있고, 6단계에서 인물이 모자라면 3단계로 돌아갈 수 있다. 되돌아간 내용은 해당 문서에 이력으로 남긴다.
@@ -51,27 +51,31 @@
 
 ## 4. 문서 체계와 작성 순서
 
-> 모두 `docs/redesign/` 아래에 둔다. 0단계 문서만 이번에 만들고, 나머지는 해당 단계에서 만든다.
+> 모두 `docs/redesign/` 아래에 둔다. 후보는 `candidates/`, 작가가 승인한 것은 `p-canon/`에 둔다(2026-10-30 1단계에서 구조 개정, 지도: [README.md](README.md)).
 
 ```
 docs/redesign/
-  plan.md                  0  이 문서
-  checklist.md             0  설계 누락 점검 목록(A~J)
-  conflicts.md             0  기존 결정·제안서와의 충돌 목록(단계마다 갱신)
-  character-and-naming.md  0  인물 재창조·작명 기준
-  world/                   1  history.md(공존·첫 번째 침묵·대토벌·판정·잔존) / society.md(왕국·도시·지역·경제·화폐) / restoration.md(복원 산업과 제도)
-  creatures/               1  species-{이름}.md(주요 종만, 공통 양식) / organ.md(환류기관의 작동 원리)
-  sensing.md               1  감응 능력, 가족성, 가문 밖 감응자, 훈련, 마녀, 사회적 지위
-  factions.md              1  이르바넬과 세력(은폐 조직, 모계 가문, 연구·상업 세력, 국가 기관)
-  secrets-ledger.md        2  핵심 비밀 원장(비밀마다 여덟 칸)
-  cast.md                  3  인물표(유지·재설계·통합·삭제·신규 판정 포함)
-  relationships.md         3  관계망과 관계 아크(우정·경쟁·로맨스 포함)
-  naming.md                3  지역별 작명 규칙, 이름 후보 비교표, 혼동 검사
-  ending.md                4  최종 결말, 최종 선택, 귀결, 수미상관 목표
-  series-outline.md        5  권수 비교와 전체 줄거리
-  volumes/P{n}.md          6  권별·장별 사건 배치
-  fun-check.md             7  재미·속도 검증 기록
-  approval-log.md          0~8 단계별 승인 기록(날짜, 승인 범위, 보류 항목)
+  README.md                  문서 지도, 권한과 적용 범위, 승격 절차
+  plan.md                    0  이 문서
+  checklist.md               0  설계 누락 점검 목록(A~J)
+  conflicts.md               0  기존 결정·제안서와의 충돌 목록(단계마다 갱신)
+  character-and-naming.md    0  인물 재창조·작명 기준
+  candidates/                P 설계 후보(승인 전)
+    history.md               1  역사 인과(공존·첫 번째 침묵·대토벌·은폐·판정·복원 시대)
+    factions.md              1  세력별 자산·정보·권한·목표·한계
+    secrets-ledger.md        1~2 비밀 원장 초안
+    recommendations.md       1  작가 승인 권고안과 결정 목록
+    creatures.md             1  환류종 생태(다음 단계)
+    sensing.md               1  감응·마녀(다음 단계)
+    society.md               1  왕국·도시·경제·복원 제도(필요 시)
+    cast.md, relationships.md, naming.md   3
+    ending.md                4
+    outline.md               5  권수 비교와 전체 줄거리
+    volumes/P{n}.md          6  권별·장별 사건 배치
+    fun-check.md             7  재미·속도 검증 기록
+  p-canon/                   P 정본(작가 승인분만)
+    README.md, decisions.md  P결정 기록(근거와 변경 이력)
+    world.md, factions.md, secrets.md, creatures.md, sensing.md, cast.md, relationships.md, outline.md, volumes/   승인 뒤 생김
 ```
 
 - **작성 순서의 원칙**
@@ -79,7 +83,7 @@ docs/redesign/
   - 비밀 원장(2단계)은 1단계 문서가 생길 때마다 줄을 더하고, 2단계에서 모아 검증한다.
   - 인물(3단계)은 결말(4단계)과 왕복한다. 인물의 최종 운명은 4·5단계에서 확정한다.
 - **각 문서의 공통 머리:** 상태(`[재설계 후보]`/`[재설계 승인]`), 근거, 현행 정본과의 관계, 작가 결정 필요 항목
-- `approval-log.md`는 첫 승인이 생길 때 만든다.
+- 승인 기록은 `p-canon/decisions.md`의 P결정으로 남긴다(처음 계획의 `approval-log.md`를 대신함).
 
 ## 5. 기존 자료의 지위와 사용법
 
@@ -93,7 +97,7 @@ docs/redesign/
 ## 6. 승인 절차
 
 1. 단계 산출 문서를 `[재설계 후보]`로 저장하고 보고한다. 보고에는 작가가 결정할 항목을 최대 다섯 개로 묶는다.
-2. 작가가 승인한 범위만 `[재설계 승인]`으로 바꾸고 `approval-log.md`에 적는다.
+2. 작가가 승인한 범위만 `p-canon/`으로 옮기고 `p-canon/decisions.md`에 P결정 번호로 적는다([README.md](README.md) §3).
 3. 현행 정본을 바꿔야 하면 바꾸기 전후와 영향 범위를 conflicts.md에 적고, 작가 승인 뒤 새 결정 번호로 decisions.md에 기록한다. 옛 결정은 지우지 않는다.
 4. 승인되지 않은 항목은 다음 단계의 전제로 쓰지 않는다. 쓸 수밖에 없으면 ‘작업 가정’으로 표시하고 보고한다.
 
@@ -114,5 +118,5 @@ docs/redesign/
 ## 9. 첫 번째 후속 작업 (권장, 작가 승인 뒤 시작)
 
 1. **작가 결정 다섯 가지 받기** ([conflicts.md](conflicts.md) §5): 감응 소인의 가족성과 D-125 2항, 마렌 계열 인물의 과거, 이르바넬 훈련권의 채택 여부, 새 세계관의 비중(주축인지 부플롯인지), 인물 재창조의 범위(주인공을 유지할지)
-2. 그 결정을 바탕으로 **1단계 ‘역사와 이르바넬’부터** 설계한다(`world/history.md`, `factions.md` 초안). 첫 번째 침묵, 대토벌, 기록 말살, 이르바넬의 형성이 다른 모든 설정의 바탕이기 때문이다.
+2. 그 결정을 바탕으로 **1단계 ‘역사와 이르바넬’부터** 설계한다(`candidates/history.md`, `candidates/factions.md` 초안. 2026-10-30 1단계에서 작성). 첫 번째 침묵, 대토벌, 기록 말살, 이르바넬의 형성이 다른 모든 설정의 바탕이기 때문이다.
 3. 같은 작업에서 비밀 원장(`secrets-ledger.md`)의 첫 줄들을 함께 만든다.

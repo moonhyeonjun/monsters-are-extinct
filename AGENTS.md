@@ -18,14 +18,21 @@
 
 작업 규칙이 서로 다를 때는 다음 순서를 따른다.
 
-1. 이번 작업에 대한 사용자의 명시적 지시(작업 지시서). 읽기 전용·커밋 금지 지시는 자동 커밋·push 규칙보다 우선한다.
-2. 전면 재설계 계획 [docs/redesign/plan.md](docs/redesign/plan.md)과 그 현재 단계(2026-10-30부터)
-3. 권별 현행 지시 요약(예: 제4권은 [book4-scene-design.md](docs/proposals/book4-scene-design.md) 맨 위 '현행 지시 요약'). W 원고에만 해당한다.
-4. 이 문서(AGENTS.md)
-5. [docs/plot/workflow-guide.md](docs/plot/workflow-guide.md)의 해당 단계
-6. 참고 원칙 문서(style-guide, creative-principles, adventure-engagement-design 등)
-7. 각 AI 도구의 개인 설정(예: Claude 메모리). 위 1~6과 어긋나면 위가 이긴다.
-- 이전 규칙(2026-10-25~10-29): 2번(재설계 계획)이 없었고, 권별 현행 지시 요약이 2번이었다.
+1. **작가의 명시적 지시와 승인.** 이번 작업의 작업 지시서를 포함한다. 읽기 전용·커밋 금지 지시는 자동 커밋·push 규칙보다 우선한다.
+2. **프로젝트 운영 규칙:** 이 문서(AGENTS.md). 작업 방식만 담고 세계관의 사실은 담지 않는다.
+3. **해당 원고에 적용되는 승인된 세계관·인물·줄거리**
+   - W: [docs/canon.md](docs/canon.md), [docs/decisions.md](docs/decisions.md)(D 번호), characters·world·creatures 문서
+   - P: [docs/redesign/p-canon/](docs/redesign/p-canon/README.md)(P결정 번호, 작가가 승인한 것만)
+4. **단계별 작업 계획과 절차**
+   - P: [docs/redesign/plan.md](docs/redesign/plan.md)와 같은 폴더의 관리 문서
+   - W: 권별 현행 지시 요약(예: 제4권은 [book4-scene-design.md](docs/proposals/book4-scene-design.md) 맨 위 '현행 지시 요약')
+   - 공통: [docs/plot/workflow-guide.md](docs/plot/workflow-guide.md)의 해당 단계, 참고 원칙 문서(style-guide, creative-principles, adventure-engagement-design 등)
+5. **기존 버전 자료와 미승인 제안서:** `docs/proposals/`, [docs/redesign/candidates/](docs/redesign/candidates/history.md). P 설계에서는 W의 정본과 원고도 여기에 든다(근거로 인용할 수 있지만 P를 구속하지 않는다).
+6. 각 AI 도구의 개인 설정(예: Claude 메모리). 위 1~5와 어긋나면 위가 이긴다.
+- 문서마다 권한과 적용 범위는 [docs/redesign/README.md](docs/redesign/README.md) §2에 있다.
+- 이전 규칙
+  - 2026-10-25~10-29: 1 지시서, 2 권별 현행 지시 요약, 3 AGENTS.md, 4 workflow-guide, 5 참고 원칙 문서, 6 개인 설정
+  - 2026-10-30 1차 개정: 재설계 계획(plan.md)을 2번에 두었다. 작업 계획 문서가 운영 규칙보다 높아지는 문제가 있어 같은 날 위와 같이 고쳤다.
 
 - §4의 절대 변경 금지 사항은 사용자가 그 항목을 콕 집어 해제하지 않는 한 작업 지시서보다도 우선한다.
 - 지시가 모호하거나 서로 충돌해 판단할 수 없으면 임의로 고르지 않고 보고한다.
@@ -40,6 +47,7 @@
   4. 이전 작업 초안
   5. AI가 제안한 새로운 아이디어
 - 충돌을 해소할 근거가 부족하면 임의로 확정하지 않고 보고한다.
+- **W와 P의 적용 범위:** W의 정본과 D 결정은 W에 적용된다. P의 정본과 P결정은 P에 적용된다. 두 버전의 결정이 다르면 각자 자기 버전에만 적용되고, 서로를 고치지 않는다. 기존 D 번호의 뜻을 바꾸지 않는다([docs/redesign/README.md](docs/redesign/README.md) §1).
 - 상태 표기(`[확정]`, `[초안]`, `[보류]`, `[작가 비밀]`, 작업 가정 등)는 [docs/canon.md](docs/canon.md) §1을 따른다.
 - 새 결정 번호(D-NNN)는 `docs/decisions.md`의 **마지막 번호 다음 번호**로 쓴다. 번호를 새로 쓸지는 사용자가 정한다.
 - 권별 원고 상태(초고, 승인, 마감, 보류)는 [docs/canon.md](docs/canon.md) §3 '원고' 표와 §4가 기준이다. 이 문서에 권별 상태를 따로 적지 않는다.
@@ -125,7 +133,8 @@
 - 작가가 모르는 핵심 비밀을 남긴 채 집필을 시작하지 않는다. 핵심 비밀은 진실, 첫 사건, 아는 사람, 잘못 아는 사람, 남은 물증, 발견 시점, 공개의 손실, 다음 사건과의 연결까지 적는다(비밀 원장, [docs/redesign/checklist.md](docs/redesign/checklist.md) E).
 - 출간 권수, 최종 결말, 수미상관 문장, 인물과 이름, 로맨스 관계는 작가 승인 없이 확정하지 않는다. 권수는 여러 안을 비교하되, 가장 적은 권수로 가장 밀도 높은 이야기를 전하는 구성을 우선한다. 압축할 수 있다는 이유만으로 중요한 관계 변화나 인과를 빼지 않는다.
 - 정본을 바꿔야 하면 바꾸기 전후와 영향 범위를 먼저 보고하고, 작가 승인 뒤에 새 결정 번호로 기록한다(§3). 옛 결정은 지우지 않고 [대체됨]으로 표시한다.
-- 재설계 계획, 점검 목록, 충돌 목록, 인물·작명 기준: [docs/redesign/](docs/redesign/plan.md)
+- P 정본은 [docs/redesign/p-canon/](docs/redesign/p-canon/README.md), P 설계 후보는 [docs/redesign/candidates/](docs/redesign/candidates/history.md)에 둔다. 이 문서(AGENTS.md)에는 작업 방식만 적고, 세계관과 인물의 사실은 해당 정본 문서에 적는다.
+- 문서 지도와 권한: [docs/redesign/README.md](docs/redesign/README.md). 재설계 계획, 점검 목록, 충돌 목록, 인물·작명 기준: [docs/redesign/plan.md](docs/redesign/plan.md) 등
 
 ## 10. 문체 원칙 (P 집필용)
 
