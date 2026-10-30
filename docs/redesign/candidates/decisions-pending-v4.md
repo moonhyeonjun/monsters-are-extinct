@@ -1,5 +1,7 @@
 # 작가 결정 대기·설정 검증·전달 사항 (v4) `[P 후보]`
 
+> **[대체됨 · 2026-10-30 · P결정-005]** 1·2·3·5번 항목은 작가가 결정했다(1은 거절). 새 목록은 [decisions-pending-v5.md](decisions-pending-v5.md).
+
 > 상태: **P 설계 후보 · 미승인.** 작성 2026-10-30(2단계). 이전 목록 [decisions-pending-v3.md](decisions-pending-v3.md)는 [대체됨].
 > 승인된 것: [P결정-001~004](../p-canon/decisions.md).
 

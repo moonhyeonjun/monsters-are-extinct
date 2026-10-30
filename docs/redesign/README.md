@@ -34,22 +34,26 @@
 3. 승인되지 않은 후보는 다음 설계의 전제로 쓰지 않는다. 쓸 수밖에 없으면 ‘작업 가정’이라고 적는다.
 4. 바뀐 P결정은 지우지 않고 [대체됨]으로 표시한다.
 
-## 4. 영역별 위치 (2026-10-30 2단계 개정, P결정-004)
+## 4. 영역별 위치 (2026-10-30 3단계 개정, P결정-005)
 
 | 영역 | 현재 후보 | 이전 후보(상태) | 정본(승인 뒤) |
 |---|---|---|---|
 | 가문의 역사(차별·대토벌·연구·독점) | [candidates/house-history.md](candidates/house-history.md)(방향 채택, 세부 후속) | concealment-origins.md(대체), history.md(대체) | p-canon/world.md |
-| 감응자 식별과 신호 | [candidates/sensing-identification.md](candidates/sensing-identification.md) | — | p-canon/sensing.md |
-| 감응과 사회·가문 계층 | [candidates/sensing-society.md](candidates/sensing-society.md) | — | p-canon/sensing.md |
+| 감응자 식별과 신호 | [candidates/sensing-identification-v2.md](candidates/sensing-identification-v2.md) | sensing-identification.md(거절) | p-canon/sensing.md |
+| 감응과 사회·가문 계층 | [candidates/sensing-identification-v2.md](candidates/sensing-identification-v2.md) §4~§5 | sensing-society.md(보류, 전제 거절) | p-canon/sensing.md |
 | 감응 기술 | [candidates/sensing-tech.md](candidates/sensing-tech.md)(탐지·해석까지 채택, 4~6단계 보류) | — | p-canon/sensing.md |
-| 다중 집결지·집결 모델·첫 번째 침묵 | [candidates/gathering-ecology.md](candidates/gathering-ecology.md) | anomaly-and-gathering.md(일부 채택·대체), first-silence-review.md(구조만 채택) | p-canon/world.md, creatures.md |
-| 아르바넬 생존 | [candidates/arbanel-survival.md](candidates/arbanel-survival.md) | house-world.md(거절) | p-canon/world.md |
-| 봉인 구역·멸종 선언 | [candidates/seal-declaration-v4.md](candidates/seal-declaration-v4.md) | declaration-v3.md(구조 채택), refuge-secrecy.md(기본 구조 채택), extinction-declaration.md(거절) | p-canon/world.md |
+| 다중 집결지·집결 모델 | [candidates/gathering-ecology.md](candidates/gathering-ecology.md)(모델·범위 채택, 원리 후보) | anomaly-and-gathering.md(일부 채택·대체) | p-canon/world.md, creatures.md |
+| 첫 번째 침묵과 대토벌 | [candidates/silence-and-hunt-v2.md](candidates/silence-and-hunt-v2.md) | first-silence-review.md(구조만 채택) | p-canon/world.md |
+| 아르바넬 생존 | [candidates/arbanel-survival.md](candidates/arbanel-survival.md)(일부 채택) | house-world.md(거절) | p-canon/world.md |
+| 아르바넬 생태·정상 집결과 분산 | [candidates/arbanel-ecology.md](candidates/arbanel-ecology.md) | arbanel-survival.md §2(대체) | p-canon/world.md, creatures.md |
+| 억류 구조·탈출·감사 보강 | [candidates/containment.md](candidates/containment.md) | — | p-canon/world.md |
+| 첫 탈출 개체와 첫 만남 | [candidates/first-encounter.md](candidates/first-encounter.md) | — | p-canon/outline.md |
+| 봉인 구역·멸종 선언 | [candidates/seal-declaration-v4.md](candidates/seal-declaration-v4.md)(구조 채택) | declaration-v3.md(구조 채택), refuge-secrecy.md(기본 구조 채택), extinction-declaration.md(거절) | p-canon/world.md |
 | 연표 | [candidates/timeline-v3.md](candidates/timeline-v3.md)(‘약 200년’ 가설) | timeline-options.md(보류) | p-canon/world.md |
 | 역사·생태의 상호 요구 | [candidates/cross-requirements.md](candidates/cross-requirements.md) | — | — |
-| 비밀 원장 | [candidates/secrets-ledger-v4.md](candidates/secrets-ledger-v4.md) | v3·v2·v1(대체) | p-canon/secrets.md |
-| 결정 대기·검증·전달 | [candidates/decisions-pending-v4.md](candidates/decisions-pending-v4.md) | v3·v2(대체), recommendations.md(일부 대체) | p-canon/decisions.md |
-| 세력 | (생존지·선언 확정 뒤 다시 정리) | factions-v2.md(보류), factions.md(대체) | p-canon/factions.md |
+| 비밀 원장 | [candidates/secrets-ledger-v5.md](candidates/secrets-ledger-v5.md) | v4·v3·v2·v1(대체) | p-canon/secrets.md |
+| 결정 대기·검증·전달 | [candidates/decisions-pending-v5.md](candidates/decisions-pending-v5.md) | v4·v3·v2(대체), recommendations.md(일부 대체) | p-canon/decisions.md |
+| 세력·국제 정치·경제 | [candidates/world-powers.md](candidates/world-powers.md) | factions-v2.md(보류), factions.md(대체) | p-canon/factions.md |
 | 환류종 생태 | candidates/creatures.md(다음 단계) | — | p-canon/creatures.md |
 | 인물·관계 | candidates/cast.md, relationships.md | — | p-canon/cast.md, relationships.md |
 | 전체 줄거리 | candidates/outline.md | — | p-canon/outline.md |
