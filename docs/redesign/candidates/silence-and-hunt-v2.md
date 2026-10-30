@@ -1,5 +1,7 @@
 # 첫 번째 침묵과 대토벌 — 역사 보완 `[P 후보]` `[작가 전용]`
 
+> **[일부 보류 · 2026-10-30 · P결정-006]** 분할 조약과 ‘비워진 땅’에 기댄 부분은 채택되지 않았다. 밤걸음 같은 식별 세부는 [sensing-identification-v3.md](sensing-identification-v3.md)를 따른다. 역사·생태·정치·종교의 새 연결은 [world-causality.md](world-causality.md).
+
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-30(3단계).
 > 채택된 방향: 첫 번째 침묵은 공식 역사와 실제 역사가 다르다(P결정-003·004). 가문은 다른 집결지를 대토벌 세력에 제공하고 아르바넬만 숨겼다(P결정-005 4).
 > 이번 보완: 새 식별 후보([sensing-identification-v2.md](sensing-identification-v2.md)), 억류 구조([containment.md](containment.md)), 세력([world-powers.md](world-powers.md))을 반영한다. 연대는 정하지 않는다(‘약 200년’은 가설).

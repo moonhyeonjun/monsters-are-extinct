@@ -1,5 +1,7 @@
 # 작가 결정 대기·모순 점검·재미 검증 (v5) `[P 후보]`
 
+> **[대체됨 · 2026-10-30 · P결정-006]** 새 목록은 [decisions-pending-v6.md](decisions-pending-v6.md).
+
 > 상태: **P 설계 후보 · 미승인.** 작성 2026-10-30(3단계). 이전 목록 [decisions-pending-v4.md](decisions-pending-v4.md)는 [대체됨].
 > 승인된 것: [P결정-001~005](../p-canon/decisions.md).
 

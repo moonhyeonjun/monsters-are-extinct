@@ -1,5 +1,7 @@
 # P 비밀 원장 v5 `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-30 · P결정-006]** 새 원장은 [secrets-ledger-v6.md](secrets-ledger-v6.md).
+
 > 상태: **P 설계 후보 · 정본 아님.** 작성 2026-10-30(3단계). 이전 원장 [secrets-ledger-v4.md](secrets-ledger-v4.md)는 [대체됨].
 > 근거: [P결정-002~005](../p-canon/decisions.md), [sensing-identification-v2.md](sensing-identification-v2.md), [arbanel-ecology.md](arbanel-ecology.md), [containment.md](containment.md), [first-encounter.md](first-encounter.md), [world-powers.md](world-powers.md), [silence-and-hunt-v2.md](silence-and-hunt-v2.md), [seal-declaration-v4.md](seal-declaration-v4.md)
 > 구분: **방향 승인**(P결정) / **정답 후보**(작가 승인 대기) / **미결정**(작가도 모름)
