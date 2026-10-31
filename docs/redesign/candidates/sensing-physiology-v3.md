@@ -1,5 +1,7 @@
 # 물결 피와 감응자 판별 — 여성 중심 유전에 맞춘 보강 `[P 후보]` `[작가 전용]`
 
+> **[일부 유지 · 2026-10-31 · P결정-010]** 물결 피의 단계는 후보로 남는다. 판별 절차(딸의 책·승전 행렬)는 마녀의 역사 세부와 함께 다시 설계한다: [attraction.md](attraction.md), [hunt-and-women.md](hunt-and-women.md).
+
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-31(7단계).
 > 유지할 방향: 단계형 물결 피(P결정-007), 아동기에 강하고 자라며 신체 반응이 줄어듦. 이전 생리 설명: [sensing-physiology-v2.md](sensing-physiology-v2.md)(일부 유지).
 > 유전 전제(후보): [sensing-heredity-v2.md](sensing-heredity-v2.md) — 딸에게서만 드러나고, 세기는 변이의 비율로 정해짐.

@@ -1,5 +1,7 @@
 # 정치·종교와 감응자 여성의 박해 `[P 후보]` `[작가 전용]`
 
+> **[보류 · 2026-10-31 · P결정-010]** 새 설계는 [hunt-and-women.md](hunt-and-women.md) §4.
+
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-31(7단계).
 > 유지할 방향: 왕권과 종교 권위의 병존(P결정-009). 나라·가문·교단의 수와 이름은 보류다. 아래 나라 표기(갑·을·병)와 교단 분파는 임시다.
 > 전제(후보): [witches-history.md](witches-history.md), [sensing-heredity-v2.md](sensing-heredity-v2.md).

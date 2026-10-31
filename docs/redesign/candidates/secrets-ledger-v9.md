@@ -1,5 +1,7 @@
 # P 비밀 원장 v9 `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-31 · P결정-010]** 새 원장은 [secrets-ledger-v10.md](secrets-ledger-v10.md).
+
 > 상태: **P 설계 후보 · 정본 아님.** 작성 2026-10-31(7단계). 이전 원장 [secrets-ledger-v8.md](secrets-ledger-v8.md)는 [대체됨].
 > 근거: [P결정-002~009](../p-canon/decisions.md), [sensing-heredity-v2.md](sensing-heredity-v2.md), [sensing-physiology-v3.md](sensing-physiology-v3.md), [gathering-purpose-v2.md](gathering-purpose-v2.md), [last-site-v3.md](last-site-v3.md), [witches-history.md](witches-history.md), [polity-faith-v4.md](polity-faith-v4.md), [final-truths-v3.md](final-truths-v3.md)
 > 구분: **승인**(P결정) / **후보** / **미결정** / **대기** / **폐기**. 층: 1 공식 / 2 가문의 비밀 / 3 가문도 모른 것.
