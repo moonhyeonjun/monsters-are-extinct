@@ -34,35 +34,36 @@
 3. 승인되지 않은 후보는 다음 설계의 전제로 쓰지 않는다. 쓸 수밖에 없으면 ‘작업 가정’이라고 적는다.
 4. 바뀐 P결정은 지우지 않고 [대체됨]으로 표시한다.
 
-## 4. 영역별 위치 (2026-10-31 9단계 개정, P결정-011)
+## 4. 영역별 위치 (2026-10-31 10단계 개정, P결정-012)
 
 | 영역 | 현재 후보 | 이전 후보(상태) | 정본(승인 뒤) |
 |---|---|---|---|
 | 가문의 역사(차별·대토벌·연구·독점) | [candidates/house-history.md](candidates/house-history.md)(방향 채택, 세부 후속) | concealment-origins.md(대체), history.md(대체) | p-canon/world.md |
 | 감응자 식별과 신호(물결 피) | [candidates/sensing-physiology-v3.md](candidates/sensing-physiology-v3.md)(일부 유지) |
-| 환류종의 끌림(되울림) | [candidates/echo-ecology.md](candidates/echo-ecology.md) | attraction.md(방향 채택) | p-canon/sensing.md, creatures.md | sensing-physiology-v2.md(일부 유지), sensing-physiology.md(일부 유지), sensing-identification-v3.md(일부 채택), v2(방향 채택), v1(거절) | p-canon/sensing.md |
+| 환류종의 끌림(되울림) | [candidates/echo-ecology.md](candidates/echo-ecology.md)(근거리·종별 차이 채택) | attraction.md(방향 채택) | p-canon/sensing.md, creatures.md | sensing-physiology-v2.md(일부 유지), sensing-physiology.md(일부 유지), sensing-identification-v3.md(일부 채택), v2(방향 채택), v1(거절) | p-canon/sensing.md |
 | 감응 유전(여성 중심) | [candidates/sensing-heredity-v3.md](candidates/sensing-heredity-v3.md) | sensing-heredity-v2.md(거절), sensing-heredity.md(일부 유지), sensing-incidence.md(거절), sensing-society.md(보류) | p-canon/sensing.md |
-| 집결의 목적과 환류기관 | [candidates/gathering-v5.md](candidates/gathering-v5.md) | gathering-ecology-v4.md(미채택), gathering-purpose-v2.md(거절), gathering-purpose.md(거절), organ-and-gathering.md(거절) | p-canon/creatures.md |
+| 집결의 목적(초장주기) | [candidates/long-cycle.md](candidates/long-cycle.md) | gathering-v5.md(미채택), gathering-ecology-v4.md(미채택), gathering-purpose-v2.md(거절), gathering-purpose.md(거절), organ-and-gathering.md(거절) | p-canon/creatures.md |
 | 감응자 여성들의 역사(마녀)와 착취 제도 | [candidates/witches-institutions.md](candidates/witches-institutions.md) | before-the-hunt.md·hunt-and-women.md(방향 유지), witches-history.md(대체) | p-canon/world.md, secrets.md |
-| 마지막 생존지의 여성 공동체와 통제 | [candidates/last-site-v5.md](candidates/last-site-v5.md) §1, [candidates/house-control.md](candidates/house-control.md)(방향 유지) | — | p-canon/world.md |
-| 복원 협회 | [candidates/restoration-society.md](candidates/restoration-society.md) | — | p-canon/factions.md |
-| 아카데미(두 기관의 관계 포함) | [candidates/academy.md](candidates/academy.md) | — | p-canon/factions.md |
-| 중후반 교류 장면 | [candidates/bond-scene.md](candidates/bond-scene.md) | — | p-canon/outline.md |
+| 마지막 생존지의 여성 공동체와 통제 | [candidates/last-site-v6.md](candidates/last-site-v6.md) §4, [candidates/last-site-v5.md](candidates/last-site-v5.md) §1(참고), [candidates/house-control.md](candidates/house-control.md)(방향 유지) | — | p-canon/world.md |
+| 복원 협회 | [candidates/restoration-society.md](candidates/restoration-society.md)(방향 채택), [candidates/institutions-v2.md](candidates/institutions-v2.md) §1 | — | p-canon/factions.md |
+| 아카데미(두 기관의 관계 포함) | [candidates/academy.md](candidates/academy.md)(방향 채택), [candidates/institutions-v2.md](candidates/institutions-v2.md) §2·§3 | — | p-canon/factions.md |
+| 중후반 교류 장면 | [candidates/bond-scene.md](candidates/bond-scene.md)(핵심 행동 채택), [candidates/bond-scene-check.md](candidates/bond-scene-check.md) | — | p-canon/outline.md |
 | 감응 기술 | [candidates/sensing-tech.md](candidates/sensing-tech.md)(탐지·해석까지 채택, 4~6단계 보류) | — | p-canon/sensing.md |
 | 다중 집결지·집결 모델 | [candidates/gathering-ecology.md](candidates/gathering-ecology.md)(모델·범위 채택, 원리 후보) | anomaly-and-gathering.md(일부 채택·대체) | p-canon/world.md, creatures.md |
-| 첫 번째 침묵과 국제 대토벌 | [candidates/before-the-hunt.md](candidates/before-the-hunt.md) §3, [candidates/hunt-and-women.md](candidates/hunt-and-women.md), [candidates/great-hunt-history.md](candidates/great-hunt-history.md)(시기별 역할 채택) | silence-and-hunt-v2.md(일부 보류), world-causality.md(일부 무효), first-silence-review.md(구조만 채택) | p-canon/world.md |
+| 고대 집결의 증거와 조사 경로 | [candidates/deep-time-evidence.md](candidates/deep-time-evidence.md) | — | p-canon/world.md |
+| 첫 번째 침묵과 국제 대토벌 | [candidates/first-silence-v4.md](candidates/first-silence-v4.md), [candidates/before-the-hunt.md](candidates/before-the-hunt.md) §3, [candidates/hunt-and-women.md](candidates/hunt-and-women.md), [candidates/great-hunt-history.md](candidates/great-hunt-history.md)(시기별 역할 채택) | silence-and-hunt-v2.md(일부 보류), world-causality.md(일부 무효), first-silence-review.md(구조만 채택) | p-canon/world.md |
 | 아르바넬 생존 | [candidates/arbanel-survival.md](candidates/arbanel-survival.md)(일부 채택) | house-world.md(거절) | p-canon/world.md |
-| 마지막 집결지 생태와 억류 | [candidates/last-site-v5.md](candidates/last-site-v5.md) | last-site-v4.md(억류 미채택), last-site-v3.md(거절), last-site-v2.md(일부 유지), gathering-ecosystems.md(거절), gathering-wonders-review.md(미승인), arbanel-ecology.md(일부 채택), arbanel-survival.md §2(대체) | p-canon/world.md, creatures.md |
-| 억류 구조·탈출 | [candidates/last-site-v5.md](candidates/last-site-v5.md) §3 | last-site-v4.md §3(미채택), last-site-v3.md §3(거절), last-site-v2.md §3(거절), containment-v3.md·v2·v1(거절) | p-canon/world.md |
-| 가문조차 모른 진실과 마지막 선택 | [candidates/final-truths-v5.md](candidates/final-truths-v5.md) | final-truths-v4.md(진실 1은 중후반 반전으로 채택), final-truths-v3.md(거절), final-truths-v2.md(거절), final-truths.md(거절) | p-canon/secrets.md, outline.md |
-| 인과·모순 검증 | [candidates/decisions-pending-v11.md](candidates/decisions-pending-v11.md) §2 | causality-check-v6.md(대체) | — |
+| 마지막 집결지 생태와 억류 | [candidates/last-site-v6.md](candidates/last-site-v6.md) | last-site-v5.md(미채택), last-site-v4.md(억류 미채택), last-site-v3.md(거절), last-site-v2.md(일부 유지), gathering-ecosystems.md(거절), gathering-wonders-review.md(미승인), arbanel-ecology.md(일부 채택), arbanel-survival.md §2(대체) | p-canon/world.md, creatures.md |
+| 억류 구조·탈출 | [candidates/last-site-v6.md](candidates/last-site-v6.md) §3 | last-site-v5.md §3(미채택), last-site-v4.md §3(미채택), last-site-v3.md §3(거절), last-site-v2.md §3(거절), containment-v3.md·v2·v1(거절) | p-canon/world.md |
+| 가문조차 모른 진실과 마지막 선택 | [candidates/final-truths-v6.md](candidates/final-truths-v6.md) | final-truths-v5.md(미확정 비교 후보), final-truths-v4.md(진실 1은 중후반 반전으로 채택), final-truths-v3.md(거절), final-truths-v2.md(거절), final-truths.md(거절) | p-canon/secrets.md, outline.md |
+| 인과·모순·연표 검증 | [candidates/timeline-axes.md](candidates/timeline-axes.md) | causality-check-v6.md(대체) | — |
 | 첫 만남 | [candidates/final-truths-v4.md](candidates/final-truths-v4.md) §4(조건), [candidates/final-truths-v5.md](candidates/final-truths-v5.md) §1 | first-encounter-v2.md(보류), first-encounter.md(거절) | p-canon/outline.md |
 | 작명 규칙·마지막 집결지의 이름 | [candidates/naming-rules.md](candidates/naming-rules.md) | site-naming.md(보류, 우선권 없음), ‘아르바넬’(확정 안 함) | p-canon/world.md |
 | 봉인 구역·멸종 선언 | [candidates/seal-declaration-v4.md](candidates/seal-declaration-v4.md)(구조 채택) | declaration-v3.md(구조 채택), refuge-secrecy.md(기본 구조 채택), extinction-declaration.md(거절) | p-canon/world.md |
 | 연표 | [candidates/timeline-v3.md](candidates/timeline-v3.md)(‘약 200년’ 가설) | timeline-options.md(보류) | p-canon/world.md |
 | 역사·생태의 상호 요구 | [candidates/cross-requirements.md](candidates/cross-requirements.md) | — | — |
-| 비밀 원장·정보 공개 순서 | [candidates/secrets-ledger-v11.md](candidates/secrets-ledger-v11.md) | v10~v1(대체) | p-canon/secrets.md |
-| 결정 대기·충돌 목록·전달 | [candidates/decisions-pending-v11.md](candidates/decisions-pending-v11.md) | v10~v2(대체), recommendations.md(일부 대체) | p-canon/decisions.md |
+| 비밀 원장·정보 공개 순서 | [candidates/secrets-ledger-v12.md](candidates/secrets-ledger-v12.md) | v11~v1(대체) | p-canon/secrets.md |
+| 결정 대기·충돌 목록·전달 | [candidates/decisions-pending-v12.md](candidates/decisions-pending-v12.md) | v11~v2(대체), recommendations.md(일부 대체) | p-canon/decisions.md |
 | 정치·종교(나라·가문·교단·박해) | [candidates/hunt-and-women.md](candidates/hunt-and-women.md) §4 | polity-faith-v4.md(보류), polity-faith-v3.md(보류), polity-faith-v2.md(대체), polity.md·faith.md(일부 채택), world-powers.md(거절), factions-v2.md(보류), factions.md(대체) | p-canon/factions.md, faith.md |
 | 환류종 생태 | candidates/creatures.md(다음 단계) | — | p-canon/creatures.md |
 | 인물·관계 | candidates/cast.md, relationships.md | — | p-canon/cast.md, relationships.md |

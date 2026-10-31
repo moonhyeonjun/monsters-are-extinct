@@ -1,5 +1,7 @@
 # P 비밀 원장 v11과 정보 공개 순서 `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-31 · P결정-012]** 새 원장은 [secrets-ledger-v12.md](secrets-ledger-v12.md).
+
 > 상태: **P 설계 후보 · 정본 아님. 공개 순서는 잠정적이다.** 작성 2026-10-31(9단계). 이전 원장 [secrets-ledger-v10.md](secrets-ledger-v10.md)는 [대체됨].
 > 근거: [P결정-002~011](../p-canon/decisions.md), [echo-ecology.md](echo-ecology.md), [gathering-v5.md](gathering-v5.md), [witches-institutions.md](witches-institutions.md), [last-site-v5.md](last-site-v5.md), [restoration-society.md](restoration-society.md), [academy.md](academy.md), [bond-scene.md](bond-scene.md), [final-truths-v5.md](final-truths-v5.md)
 
