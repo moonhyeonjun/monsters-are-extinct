@@ -1,5 +1,7 @@
 # P 비밀 원장 v7 `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-31 · P결정-008]** 새 원장은 [secrets-ledger-v8.md](secrets-ledger-v8.md).
+
 > 상태: **P 설계 후보 · 정본 아님.** 작성 2026-10-31(5단계). 이전 원장 [secrets-ledger-v6.md](secrets-ledger-v6.md)는 [대체됨].
 > 근거: [P결정-002~007](../p-canon/decisions.md), [organ-and-gathering.md](organ-and-gathering.md), [sensing-incidence.md](sensing-incidence.md), [sensing-physiology.md](sensing-physiology.md), [gathering-ecosystems.md](gathering-ecosystems.md), [containment-v3.md](containment-v3.md), [final-truths.md](final-truths.md), [polity-faith-v2.md](polity-faith-v2.md)
 > 구분: **승인**(P결정) / **후보**(구체 후보, 작가 승인 대기) / **미결정**(작가도 모름) / **대기**(다른 설계를 기다림) / **폐기**(거절된 후보)

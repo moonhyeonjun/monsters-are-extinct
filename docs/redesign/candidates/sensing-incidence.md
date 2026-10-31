@@ -1,5 +1,7 @@
 # 감응 소인의 발생과 가문의 독점 `[P 후보]` `[작가 전용]`
 
+> **[거절 · 2026-10-31 · P결정-008]** 모델 C(복합형)와 네 겹 독점은 채택되지 않았다. 감응은 한 가문의 조상에게 생긴 변이에서 시작되었다는 방향이 승인되었다. 새 후보는 [sensing-heredity.md](sensing-heredity.md).
+
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-31(5단계).
 > 작가 요구([P결정-007](../p-canon/decisions.md) A): 가문 밖에서도 감응자가 생긴다는 설정이 영웅 가문의 능력 활용·독점과 어떻게 양립하는지 다시 설계한다. 근거 없는 혈통 우월성을 사실로 만들지 않는다. 유전 법칙은 확정하지 않는다.
 > 생리 전제(후보): [sensing-physiology.md](sensing-physiology.md), [organ-and-gathering.md](organ-and-gathering.md).
