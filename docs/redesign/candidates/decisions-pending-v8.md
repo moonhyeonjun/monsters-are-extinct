@@ -1,5 +1,7 @@
 # 작가 결정 대기·충돌 목록 (v8) `[P 후보]`
 
+> **[대체됨 · 2026-10-31 · P결정-009]** 새 목록은 [decisions-pending-v9.md](decisions-pending-v9.md).
+
 > 상태: **P 설계 후보 · 미승인.** 작성 2026-10-31(6단계). 이전 목록 [decisions-pending-v7.md](decisions-pending-v7.md)는 [대체됨].
 > 승인된 것: [P결정-001~008](../p-canon/decisions.md). 검증 메모: [causality-check-v6.md](causality-check-v6.md).
 

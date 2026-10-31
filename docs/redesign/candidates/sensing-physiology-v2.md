@@ -1,5 +1,7 @@
 # 단계형 물결 피 — 유전 모델에 맞춘 재검증 `[P 후보]` `[작가 전용]`
 
+> **[일부 유지 · 2026-10-31 · P결정-009]** 물결 피의 단계와 성인기의 해석은 후보로 남는다. 두 벌 아이에 기댄 설명은 무효다. 보강은 [sensing-physiology-v3.md](sensing-physiology-v3.md).
+
 > 상태: **P 설계 후보 · 미승인 · 정본 아님.** 작성 2026-10-31(6단계).
 > 유지할 방향: 물결 피의 시각적 방향(붉은 물결·멈춤·깊은 잠은 후보). 이전 생리 설명: [sensing-physiology.md](sensing-physiology.md)(일부 유지).
 > 유전 전제(후보): [sensing-heredity.md](sensing-heredity.md) — ‘한 벌과 두 벌’. 신호 전제(후보): [gathering-purpose.md](gathering-purpose.md) — 기관의 느린 수축이 남기는 낮은 진동.

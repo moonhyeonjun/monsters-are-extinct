@@ -1,5 +1,7 @@
 # 6단계 인과와 재미의 검증 `[P 후보]` `[작가 전용]`
 
+> **[대체됨 · 2026-10-31 · P결정-009]** 7단계 검증은 [decisions-pending-v9.md](decisions-pending-v9.md) §2.
+
 > 상태: **P 설계 후보 · 검증 메모.** 작성 2026-10-31(6단계).
 > 대상(추천안 조합): [gathering-purpose.md](gathering-purpose.md) 모델 1, [sensing-heredity.md](sensing-heredity.md) 모델 3, [sensing-physiology-v2.md](sensing-physiology-v2.md), [great-hunt-history.md](great-hunt-history.md) 모델 D, [polity-faith-v3.md](polity-faith-v3.md), [last-site-v2.md](last-site-v2.md) 안 1, [final-truths-v2.md](final-truths-v2.md) 진실 1.
 
